@@ -13,28 +13,54 @@ export default async function Image() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          background: "#FAF8F3",
+          background: "linear-gradient(180deg, #fdeec2 0%, #fef9ee 65%)",
           padding: "80px",
         }}
       >
         <div
           style={{
-            fontSize: 28,
-            fontWeight: 600,
-            letterSpacing: 4,
-            textTransform: "uppercase",
-            color: "#4B473F",
-            marginBottom: 24,
+            display: "flex",
+            alignItems: "center",
+            gap: 20,
+            marginBottom: 32,
           }}
         >
-          ทองคำออนไลน์ · ราคาวันนี้
+          <div
+            style={{
+              width: 72,
+              height: 72,
+              borderRadius: "50%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              background: "linear-gradient(135deg, #f0b429 0%, #b87d0a 100%)",
+              fontSize: 40,
+              fontWeight: 700,
+              color: "#211a0e",
+            }}
+          >
+            ฿
+          </div>
+          <div
+            style={{
+              fontSize: 28,
+              fontWeight: 600,
+              letterSpacing: 4,
+              textTransform: "uppercase",
+              color: "#6b5a2e",
+              display: "flex",
+            }}
+          >
+            ทองวันนี้ราคา.com
+          </div>
         </div>
         <div
           style={{
             fontSize: 96,
             fontWeight: 600,
-            color: "#14120F",
+            color: "#211a0e",
             lineHeight: 1.1,
+            display: "flex",
           }}
         >
           ราคาทองคำวันนี้
@@ -42,11 +68,12 @@ export default async function Image() {
         <div
           style={{
             fontSize: 32,
-            color: "#4B473F",
+            color: "#6b5a2e",
             marginTop: 28,
+            display: "flex",
           }}
         >
-          ราคาจริงจากสมาคมค้าทองคำ · คำนวณกำไรขาดทุน
+          ราคาจริงจากสมาคมค้าทองคำ · คำนวณกำไรขาดทุน · อัปเดตเรียลไทม์
         </div>
         <div
           style={{
@@ -55,7 +82,8 @@ export default async function Image() {
             left: 80,
             width: 120,
             height: 6,
-            background: "#9C7A1F",
+            borderRadius: 3,
+            background: "linear-gradient(90deg, #f0b429 0%, #b87d0a 100%)",
           }}
         />
       </div>
