@@ -74,6 +74,14 @@ Re-read your own draft fresh, as if you were a skeptical editor, and answer each
 **If all 8 pass:** run `node web/scripts/publish-draft.mjs <slug>` yourself. It's now live at `/articles/<slug>`.
 **If any fail:** leave it in `drafts/` — do not publish. State clearly which check(s) failed and why in your report/log entry, so a human knows exactly what to review.
 
+## Facebook Page auto-post (only after a successful auto-publish)
+
+Right after `publish-draft.mjs` succeeds (never for a held-back draft), run:
+```
+node web/scripts/post-to-facebook.mjs <slug>
+```
+It reads `FACEBOOK_PAGE_ID` / `FACEBOOK_PAGE_ACCESS_TOKEN` from `web/.env.local`. If either is unset it exits quietly with `{"skipped": true, ...}` — treat that as normal, not an error, and just note "Facebook: not configured" in your log entry. If it actually fails (non-zero exit, an error JSON), don't retry and don't treat it as blocking the article's publish state — the article is already live either way; just note the failure in your report/log entry so a human can check the token hasn't expired (Page tokens typically expire ~60 days unless it's a System User token).
+
 ## Logging (every run, no exceptions)
 
 Append one entry to `web/content/publish-log.md` (create it with a one-line header if it doesn't exist yet) for every run, in this format:
@@ -83,6 +91,7 @@ Append one entry to `web/content/publish-log.md` (create it with a one-line head
 - Trigger: manual / scheduled (1h) / scheduled (4h)
 - Outcome: published / held for review / no newsworthy news found
 - Self-check: 8/8 passed — or list which failed
+- Facebook: posted / not configured / failed (reason)
 - Summary: one sentence
 ```
 
