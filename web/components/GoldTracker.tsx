@@ -16,8 +16,6 @@ import {
   Plus,
   Trash2,
   RefreshCw,
-  ArrowUpRight,
-  ArrowDownRight,
   Download,
   Share2,
   X,
@@ -1276,97 +1274,96 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
 
         {/* Portfolio */}
         <section className="p-5" style={cardStyle}>
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center justify-between mb-3">
             <SectionHeading>{tt.portfolioHeading}</SectionHeading>
             <button onClick={addEntry} className={`${pillPrimary} px-3.5 py-2`} style={accentButtonStyle}>
               <Plus size={13} /> {tt.addEntry}
             </button>
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-2">
             {entries.map((e) => {
               const w = weightInBaht(e);
               const p = Number(e.price) || 0;
               const fee = Number(e.makingCharge) || 0;
               const pl = w * (currentPrice - p) - fee;
               const isProfit = pl >= 0;
+              const miniInput = "font-mono-led text-xs rounded-lg px-2 py-1.5 outline-none w-full";
+              const miniInputStyle = { background: C.card, color: C.ink, border: `1px solid ${C.line}` };
               return (
-                <div key={e.id} className="rounded-xl p-4" style={{ background: C.cardSoft }}>
-                  <div className="flex items-center justify-between mb-3">
+                <div key={e.id} className="rounded-xl p-2.5" style={{ background: C.cardSoft }}>
+                  <div className="flex items-center gap-1.5 mb-1.5">
                     <input
                       value={e.label}
                       onChange={(ev) => updateEntry(e.id, { label: ev.target.value })}
-                      className="font-body text-base font-medium bg-transparent outline-none w-2/3"
+                      className="font-body text-sm font-medium bg-transparent outline-none flex-1 min-w-0"
                       style={{ color: C.ink }}
                     />
-                    <button
-                      onClick={() => removeEntry(e.id)}
-                      aria-label={tt.removeEntryAria}
-                      className="rounded-full p-1.5 transition hover:bg-black/[0.05]"
-                    >
-                      <Trash2 size={15} style={{ color: C.inkFaint }} />
-                    </button>
-                  </div>
-                  <div className="grid grid-cols-2 gap-3">
                     <select
                       value={e.type}
                       onChange={(ev) => updateEntry(e.id, { type: ev.target.value as "bar" | "jewelry" })}
-                      className={`${inputClass} font-body text-sm py-2`}
-                      style={{ background: C.card, color: C.ink }}
+                      className="font-body text-[11px] rounded-lg px-1.5 py-1 outline-none shrink-0"
+                      style={miniInputStyle}
                     >
                       <option value="bar">{tt.typeBar}</option>
                       <option value="jewelry">{tt.typeJewelry}</option>
                     </select>
-                    <div className="flex gap-1.5">
-                      <label className="text-[13px] font-body flex-1" style={{ color: C.inkFaint }}>
-                        {tt.weightLabel}
-                        <input
-                          type="number"
-                          step="0.01"
-                          value={e.weight}
-                          onChange={(ev) => updateEntry(e.id, { weight: ev.target.value })}
-                          className={`${inputClass} mt-0.5 text-base`}
-                          style={{ background: C.card, color: C.ink }}
-                        />
-                      </label>
+                    <button
+                      onClick={() => removeEntry(e.id)}
+                      aria-label={tt.removeEntryAria}
+                      className="rounded-full p-1 shrink-0 transition hover:bg-black/[0.05]"
+                    >
+                      <Trash2 size={13} style={{ color: C.inkFaint }} />
+                    </button>
+                  </div>
+                  <div className="grid grid-cols-4 gap-1.5">
+                    <div className="flex items-center gap-1 rounded-lg px-1.5" style={miniInputStyle}>
+                      <input
+                        type="number"
+                        step="0.01"
+                        value={e.weight}
+                        onChange={(ev) => updateEntry(e.id, { weight: ev.target.value })}
+                        title={tt.weightLabel}
+                        className="font-mono-led text-xs py-1.5 outline-none w-full min-w-0 bg-transparent"
+                        style={{ color: C.ink }}
+                      />
                       <select
                         value={e.unit || "baht"}
                         onChange={(ev) => updateEntry(e.id, { unit: ev.target.value as "baht" | "salung" })}
-                        className="font-body text-[13px] mt-5 bg-transparent outline-none"
-                        style={{ color: C.inkSoft }}
+                        className="font-body text-[10px] bg-transparent outline-none shrink-0"
+                        style={{ color: C.inkFaint }}
                       >
                         <option value="baht">{tt.unitBaht}</option>
                         <option value="salung">{tt.unitSalung}</option>
                       </select>
                     </div>
-                    <label className="text-[13px] font-body" style={{ color: C.inkFaint }}>
-                      {tt.priceLabel}
-                      <input
-                        type="text"
-                        inputMode="decimal"
-                        value={formatNumberInput(e.price)}
-                        onChange={(ev) => updateEntry(e.id, { price: unformatNumberInput(ev.target.value) })}
-                        className={`${inputClass} mt-0.5 text-base`}
-                        style={{ background: C.card, color: C.ink }}
-                      />
-                    </label>
-                    <label className="text-[13px] font-body" style={{ color: C.inkFaint }}>
-                      {tt.makingChargeLabel}
-                      <input
-                        type="text"
-                        inputMode="decimal"
-                        value={formatNumberInput(e.makingCharge || 0)}
-                        onChange={(ev) => updateEntry(e.id, { makingCharge: unformatNumberInput(ev.target.value) })}
-                        className={`${inputClass} mt-0.5 text-base`}
-                        style={{ background: C.card, color: C.ink }}
-                      />
-                    </label>
-                  </div>
-                  <div className="flex justify-end mt-2">
-                    <span className="font-mono-led text-sm font-bold flex items-center gap-1" style={{ color: isProfit ? C.profit : C.loss }}>
-                      {isProfit ? <ArrowUpRight size={12} /> : <ArrowDownRight size={12} />}
+                    <input
+                      type="text"
+                      inputMode="decimal"
+                      value={formatNumberInput(e.price)}
+                      onChange={(ev) => updateEntry(e.id, { price: unformatNumberInput(ev.target.value) })}
+                      title={tt.priceLabel}
+                      placeholder={tt.priceLabel}
+                      className={miniInput}
+                      style={miniInputStyle}
+                    />
+                    <input
+                      type="text"
+                      inputMode="decimal"
+                      value={formatNumberInput(e.makingCharge || 0)}
+                      onChange={(ev) => updateEntry(e.id, { makingCharge: unformatNumberInput(ev.target.value) })}
+                      title={tt.makingChargeLabel}
+                      placeholder={tt.makingChargeLabel}
+                      className={miniInput}
+                      style={miniInputStyle}
+                    />
+                    <span
+                      className="font-mono-led text-xs font-bold flex items-center justify-end gap-0.5"
+                      style={{ color: isProfit ? C.profit : C.loss }}
+                      title={tt.summaryPl}
+                    >
                       {isProfit ? "+" : ""}
-                      {fmt(toDisplay(pl), digits)} {suffix}
+                      {fmt(toDisplay(pl), digits)}
                     </span>
                   </div>
                 </div>
