@@ -1115,7 +1115,7 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
       </div>
 
       <main className="max-w-2xl mx-auto px-6 pb-20 space-y-6">
-        <AffiliateBanner variant={0} />
+        <AffiliateBanner />
 
         {/* Price board */}
         <section className="p-5" style={cardStyle}>
@@ -1417,7 +1417,7 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
           )}
         </section>
 
-        <AffiliateBanner variant={1} />
+        <AffiliateBanner />
 
         <section className="p-5" style={cardStyle}>
           <SectionHeading>{tt.chartHeading}</SectionHeading>
@@ -1526,7 +1526,7 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
           <ShareButtons url={SITE_URL} title={tt.title} />
         </section>
 
-        <AffiliateBanner variant={0} />
+        <AffiliateBanner />
       </main>
     </div>
   );
