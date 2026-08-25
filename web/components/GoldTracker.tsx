@@ -31,6 +31,7 @@ import { isGoogleSyncConfigured, requestDriveAccessToken, revokeDriveAccessToken
 import { readSyncedData, writeSyncedData } from "@/lib/driveSync";
 import TradingViewGoldWidget from "@/components/TradingViewGoldWidget";
 import ShareButtons from "@/components/ShareButtons";
+import AffiliateBanner from "@/components/AffiliateBanner";
 import { SITE_URL } from "@/lib/site";
 import type { ArticleMeta } from "@/lib/articles";
 
@@ -421,17 +422,6 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
     <h2 className="font-display text-xl font-medium mb-4" style={{ color: C.ink }}>
       {children}
     </h2>
-  );
-}
-
-function AdSlot({ label, className = "" }: { label: string; className?: string }) {
-  return (
-    <div
-      className={`flex items-center justify-center rounded-2xl border border-dashed font-body text-[13px] uppercase tracking-[0.14em] ${className}`}
-      style={{ color: C.inkFaint, borderColor: C.line, background: C.cardSoft }}
-    >
-      {label}
-    </div>
   );
 }
 
@@ -1125,7 +1115,7 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
       </div>
 
       <main className="max-w-2xl mx-auto px-6 pb-20 space-y-6">
-        <AdSlot label={tt.adSlot} className="w-full h-12" />
+        <AffiliateBanner variant={0} />
 
         {/* Price board */}
         <section className="p-5" style={cardStyle}>
@@ -1427,7 +1417,7 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
           )}
         </section>
 
-        <AdSlot label={tt.adSlot} className="w-full h-16" />
+        <AffiliateBanner variant={1} />
 
         <section className="p-5" style={cardStyle}>
           <SectionHeading>{tt.chartHeading}</SectionHeading>
@@ -1536,7 +1526,7 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
           <ShareButtons url={SITE_URL} title={tt.title} />
         </section>
 
-        <AdSlot label={tt.adSlot} className="w-full h-14" />
+        <AffiliateBanner variant={0} />
       </main>
     </div>
   );
