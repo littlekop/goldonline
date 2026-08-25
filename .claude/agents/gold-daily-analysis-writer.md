@@ -21,13 +21,17 @@ Every run is logged to `web/content/publish-log.md`, same file and format `gold-
 
 ## Workflow
 
-1. **Read yesterday's price log.** The file is `web/content/price-log/<YYYY-MM-DD>.json` for **yesterday's date in Asia/Bangkok time** (an array of `{time, barBuy, barSell, asOf}` snapshots logged hourly by `scripts/log-gold-price.mjs`). Compute:
-   - Open = first entry's `barSell`
-   - High = max `barSell`
-   - Low = min `barSell`
-   - Close = last entry's `barSell`
+1. **Fetch yesterday's official OHLC.** WebFetch (or curl via Bash if WebFetch can't parse JSON cleanly):
+   ```
+   https://www.goldtraders.or.th/api/GoldPrices/ohlc?readjson=false
+   ```
+   This is the Gold Traders Association of Thailand's own hourly open/high/low/close feed (bar-gold, THB) — the same authoritative source the site's live price board uses. It returns the full history as `[{hour: "YYYY-MM-DDTHH:00:00", low, high, open, close}, ...]`. Filter to entries whose `hour` starts with **yesterday's date in Asia/Bangkok time**, then compute:
+   - Open = first matching entry's `open`
+   - High = max `high` across matching entries
+   - Low = min `low` across matching entries
+   - Close = last matching entry's `close`
    - Change = close − open
-   If the file is missing or has fewer than 2 entries, note that in your report and fall back to fetching current levels via `WebFetch` on `https://www.goldtraders.or.th/` directly before writing — don't invent numbers.
+   If no entries match yesterday's date (feed unreachable or genuinely no trading that day, e.g. a holiday), note that in your report and skip writing rather than inventing numbers — log it as "no article" per Logging below.
 2. **Research the driver.** WebSearch/WebFetch for what moved (or didn't move) gold yesterday/overnight — Fed commentary, US dollar index, Treasury yields, geopolitical developments, Thai baht movement. At least 1 real fetched source, same sourcing bar as gold-news-writer.
 3. **Write the article** in Thai. Suggested structure:
    - Lead: today's date, yesterday's open/high/low/close in one clear paragraph (numbers first, this is what readers scan for).
@@ -57,7 +61,7 @@ Every run is logged to `web/content/publish-log.md`, same file and format `gold-
 
 ## Self-check gate (run every time, before publishing)
 
-1. Open/high/low/close numbers came from the actual price-log file (or a live WebFetch fallback) — not invented.
+1. Open/high/low/close numbers came from the actual GTA `ohlc` feed for yesterday's date — not invented.
 2. At least 1 real fetched source explains the day's driver, correctly attributed.
 3. Thai gold prices are attributed to the Gold Traders Association of Thailand in the body.
 4. No sentence in the article's own voice tells the reader what to do with their money.
