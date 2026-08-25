@@ -1231,28 +1231,30 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
               <Bell size={14} style={{ color: C.gold }} /> {tt.alertHeading}
             </span>
           </SectionHeading>
-          <div className="flex gap-2">
-            <select
-              value={alertDirection}
-              onChange={(e) => setAlertDirection(e.target.value as "above" | "below")}
-              className={`${inputClass} font-body text-sm w-auto`}
-              style={inputStyle}
-            >
-              <option value="above">{tt.alertAbove}</option>
-              <option value="below">{tt.alertBelow}</option>
-            </select>
-            <input
-              type="number"
-              placeholder={tt.alertPlaceholder}
-              value={alertTarget}
-              onChange={(e) => setAlertTarget(e.target.value)}
-              className={`${inputClass} flex-1 text-base`}
-              style={inputStyle}
-            />
+          <div className="flex flex-col sm:flex-row gap-2">
+            <div className="flex gap-2">
+              <select
+                value={alertDirection}
+                onChange={(e) => setAlertDirection(e.target.value as "above" | "below")}
+                className={`${inputClass} font-body text-sm shrink-0`}
+                style={{ ...inputStyle, width: "auto" }}
+              >
+                <option value="above">{tt.alertAbove}</option>
+                <option value="below">{tt.alertBelow}</option>
+              </select>
+              <input
+                type="number"
+                placeholder={tt.alertPlaceholder}
+                value={alertTarget}
+                onChange={(e) => setAlertTarget(e.target.value)}
+                className={`${inputClass} flex-1 min-w-0 text-base`}
+                style={inputStyle}
+              />
+            </div>
             <button
               onClick={armAlert}
               disabled={alertArmed}
-              className={`${pillPrimary} px-4`}
+              className={`${pillPrimary} px-4 w-full sm:w-auto shrink-0`}
               style={
                 alertArmed
                   ? { background: C.cardSoft, color: C.inkFaint }
