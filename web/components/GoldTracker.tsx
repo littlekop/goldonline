@@ -196,8 +196,7 @@ const translations = {
     alertNotifyTitle: "ราคาทองถึงเป้าหมายแล้ว",
     alertNotifyBody: (sell: string, dir: string, target: string) =>
       `ทองแท่งขายออก ${sell} บาท (เป้าหมาย ${dir} ${target})`,
-    alertNote:
-      "แจ้งเตือนแบบนี้ทำงานเฉพาะตอนเปิดหน้านี้ค้างไว้เท่านั้น ถ้าต้องการแจ้งเตือนแม้ปิดแอป ต้องมี push notification server (backend) เพิ่ม",
+    alertNote: "แจ้งเตือนแบบนี้ทำงานเฉพาะตอนเปิดหน้านี้ค้างไว้เท่านั้น",
     portfolioHeading: "รายการซื้อทองของฉัน",
     addEntry: "เพิ่มรายการ",
     removeEntryAria: "ลบรายการ",
@@ -315,7 +314,7 @@ const translations = {
     alertNotifyTitle: "Gold price target reached",
     alertNotifyBody: (sell: string, dir: string, target: string) =>
       `Gold bar sell ${sell} THB (target ${dir} ${target})`,
-    alertNote: "This alert only fires while this tab stays open. Alerts that work with the app closed need a push-notification backend.",
+    alertNote: "This alert only fires while this tab stays open.",
     portfolioHeading: "My gold purchases",
     addEntry: "Add entry",
     removeEntryAria: "Remove entry",
