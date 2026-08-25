@@ -74,13 +74,9 @@ Every run is logged to `web/content/publish-log.md`, same file and format `gold-
 
 Because this is a scheduled daily fixture with a hard sourcing floor already this low, treat a self-check failure as unusual — investigate rather than shrugging it off; a missing daily summary is more visible to readers than a missing event article would be.
 
-## Facebook Page auto-post (only after a successful auto-publish)
+## Facebook Page auto-post — NOT your job
 
-Right after `publish-draft.mjs` succeeds, run (`--env-file=.env.local` is required — without it the script always reports `{"skipped":true}` even when real credentials are in the file):
-```
-cd web && node --env-file=.env.local scripts/post-to-facebook.mjs <slug>
-```
-Same rules as gold-news-writer: treat `{"skipped": true, ...}` as normal (not configured), don't retry on failure, just note it in the log entry.
+Do NOT run `post-to-facebook.mjs` yourself. The wrapper script that invoked you (`scripts/run-gold-daily-analysis-agent.ps1`) handles this after it commits, pushes, and confirms the article is live on the deployed site — Facebook can only fetch a publicly-reachable cover-image URL, which doesn't exist until after `git push`. Just publish locally and log the outcome.
 
 ## Logging (every run, no exceptions)
 
@@ -91,7 +87,7 @@ Append one entry to `web/content/publish-log.md`:
 - Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
 - Outcome: published / held for review / duplicate (already ran today)
 - Self-check: 7/7 passed — or list which failed
-- Facebook: posted / not configured / failed (reason)
+- Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: one sentence, including the O/H/L/C numbers used
 ```
 

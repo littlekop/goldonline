@@ -84,13 +84,9 @@ Re-read your own draft fresh, as if you were a skeptical editor, and answer each
 **If all 8 pass:** run `node web/scripts/publish-draft.mjs <slug>` yourself. It's now live at `/articles/<slug>`.
 **If any fail:** leave it in `drafts/` — do not publish. State clearly which check(s) failed and why in your report/log entry, so a human knows exactly what to review.
 
-## Facebook Page auto-post (only after a successful auto-publish)
+## Facebook Page auto-post — NOT your job
 
-Right after `publish-draft.mjs` succeeds (never for a held-back draft), run (again, `--env-file=.env.local` is required — without it the script always reports `{"skipped":true}` even when real credentials are sitting in the file):
-```
-cd web && node --env-file=.env.local scripts/post-to-facebook.mjs <slug>
-```
-It reads `FACEBOOK_PAGE_ID` / `FACEBOOK_PAGE_ACCESS_TOKEN` from `web/.env.local`. If either is unset it exits quietly with `{"skipped": true, ...}` — treat that as normal, not an error, and just note "Facebook: not configured" in your log entry. If it actually fails (non-zero exit, an error JSON), don't retry and don't treat it as blocking the article's publish state — the article is already live either way; just note the failure in your report/log entry so a human can check the token hasn't expired (Page tokens typically expire ~60 days unless it's a System User token).
+Do NOT run `post-to-facebook.mjs` yourself. The wrapper script that invoked you (`scripts/run-gold-news-agent.ps1`) handles this itself, after it commits and pushes your work and confirms the article is actually live on the deployed site. Running it earlier than that is a real bug that happened before: the Graph API tried to fetch the cover image from a URL that hadn't been deployed yet and failed with "Missing or invalid image file" — Facebook can only fetch a publicly-reachable URL, and `git push` (which makes it public) happens after you're done, not during your run. Just publish the article locally and log the outcome; Facebook posting is out of scope for this run.
 
 ## Logging (every run, no exceptions)
 
@@ -101,7 +97,7 @@ Append one entry to `web/content/publish-log.md` (create it with a one-line head
 - Trigger: manual / scheduled (1h) / scheduled (4h)
 - Outcome: published / held for review / no newsworthy news found
 - Self-check: 8/8 passed — or list which failed
-- Facebook: posted / not configured / failed (reason)
+- Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: one sentence
 ```
 

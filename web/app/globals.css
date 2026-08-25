@@ -78,22 +78,36 @@ body {
   }
 }
 
+.article-body {
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
 .article-body h2 {
   font-family: "Noto Serif Thai", serif;
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold-strong);
+  line-height: 1.4;
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+.article-body h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
 }
 .article-body h3 {
   font-family: "Noto Serif Thai", serif;
-  font-size: 1.05rem;
-  font-weight: 500;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 1.75rem;
+  margin-bottom: 0.6rem;
 }
 .article-body p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.35rem;
 }
 .article-body ul,
 .article-body ol {
