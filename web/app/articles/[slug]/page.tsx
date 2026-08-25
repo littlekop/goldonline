@@ -19,7 +19,7 @@ export async function generateMetadata({
   const article = getArticle(slug);
   if (!article) return {};
   return {
-    title: `${article.title} | ราคาทองวันนี้`,
+    title: article.title,
     description: article.excerpt,
     openGraph: article.coverImage ? { images: [article.coverImage] } : undefined,
   };

@@ -8,6 +8,9 @@
 // Usage: node scripts/fetch-pexels-image.mjs "<search query>" <slug>
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const webRoot = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 
 const [, , query, slug] = process.argv;
 if (!query || !slug) {
@@ -38,7 +41,7 @@ if (!photo) {
 
 const imageUrl = photo.src.large;
 const ext = path.extname(new URL(imageUrl).pathname) || ".jpg";
-const outDir = path.join(process.cwd(), "public", "images", "articles");
+const outDir = path.join(webRoot, "public", "images", "articles");
 fs.mkdirSync(outDir, { recursive: true });
 const outPath = path.join(outDir, `${slug}${ext}`);
 

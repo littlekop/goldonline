@@ -4,7 +4,7 @@ import { getAllArticles } from "@/lib/articles";
 import { C } from "@/lib/theme";
 
 export const metadata: Metadata = {
-  title: "บทความข่าวทองคำ | ราคาทองวันนี้",
+  title: "บทความข่าวทองคำ",
   description: "บทวิเคราะห์และข่าวสถานการณ์ทองคำโลก อัปเดตสำหรับนักลงทุนทองคำชาวไทย",
 };
 

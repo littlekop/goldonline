@@ -3,6 +3,7 @@
 // Does not edit content — the human review already happened before running this.
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const slug = process.argv[2];
 if (!slug) {
@@ -10,7 +11,7 @@ if (!slug) {
   process.exit(1);
 }
 
-const root = process.cwd();
+const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const src = path.join(root, "content", "drafts", `${slug}.md`);
 const dest = path.join(root, "content", "published", `${slug}.md`);
 
