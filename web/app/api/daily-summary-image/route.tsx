@@ -108,7 +108,7 @@ export async function GET(req: NextRequest) {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={logo} width={40} height={40} alt="" />
             </div>
-            <div style={{ fontSize: 20, fontWeight: 600, letterSpacing: 3, textTransform: "uppercase", color: "#c9b183", display: "flex" }}>
+            <div style={{ fontSize: 26, fontWeight: 700, color: "#c9b183", display: "flex" }}>
               ทองวันนี้ราคา.com
             </div>
           </div>
