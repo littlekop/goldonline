@@ -112,7 +112,7 @@ export async function GET(req: NextRequest) {
               ทองวันนี้ราคา.com
             </div>
           </div>
-          <div style={{ fontSize: 20, color: "#8c7950", display: "flex" }}>{date}</div>
+          <div style={{ fontSize: 26, fontWeight: 700, color: "#fbf1de", display: "flex" }}>{date}</div>
         </div>
 
         {/* body: price + chart side by side */}
@@ -168,7 +168,7 @@ export async function GET(req: NextRequest) {
         {/* footer */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <div style={{ display: "flex", width: 90, height: 5, borderRadius: 3, background: `linear-gradient(90deg, ${accent} 0%, #b87d0a 100%)` }} />
-          <div style={{ fontSize: 18, color: "#8c7950", display: "flex" }}>อัปเดตราคาทองคำทุกวัน · goldtraders.or.th</div>
+          <div style={{ fontSize: 18, color: "#8c7950", display: "flex" }}>อัปเดตราคาทองคำทุกวัน · ทองวันนี้ราคา.com</div>
         </div>
       </div>
     ),
