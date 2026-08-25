@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllArticles } from "@/lib/articles";
 import { C } from "@/lib/theme";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "บทความข่าวทองคำ",
@@ -15,6 +16,7 @@ export default function ArticlesPage() {
   return (
     <div className="min-h-screen w-full" style={{ background: C.paper }}>
       <header className="max-w-2xl mx-auto px-6 pt-10 pb-5" style={{ borderBottom: `2px solid ${C.ink}` }}>
+        <Breadcrumb items={[{ name: "หน้าแรก", href: "/" }, { name: "บทความ" }]} />
         <div
           className="font-body text-[13px] font-semibold uppercase tracking-[0.16em] mb-2"
           style={{ color: C.inkSoft }}

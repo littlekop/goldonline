@@ -7,6 +7,7 @@ import { getAllArticles, getArticle } from "@/lib/articles";
 import { C } from "@/lib/theme";
 import { SITE_URL } from "@/lib/site";
 import ShareButtons from "@/components/ShareButtons";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export function generateStaticParams() {
   return getAllArticles().map((a) => ({ slug: a.slug }));
@@ -58,6 +59,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     <div className="min-h-screen w-full" style={{ background: C.paper }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <header className="max-w-2xl mx-auto px-6 pt-10 pb-5" style={{ borderBottom: `2px solid ${C.ink}` }}>
+        <Breadcrumb
+          items={[
+            { name: "หน้าแรก", href: "/" },
+            { name: "บทความ", href: "/articles" },
+            { name: article.title },
+          ]}
+        />
         <Link href="/articles" className="font-body text-sm underline" style={{ color: C.gold }}>
           ← บทความทั้งหมด
         </Link>
