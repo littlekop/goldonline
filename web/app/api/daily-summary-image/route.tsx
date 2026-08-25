@@ -1,11 +1,20 @@
 import { ImageResponse } from "next/og";
 import { NextRequest } from "next/server";
+import fs from "node:fs";
+import path from "node:path";
 
 export const runtime = "nodejs";
 
 const fmt = (n: string | null) => (n ? Number(n).toLocaleString("th-TH") : "-");
 
+function logoDataUri() {
+  const filePath = path.join(process.cwd(), "public", "images", "logo-badge.png");
+  const bytes = fs.readFileSync(filePath);
+  return `data:image/png;base64,${bytes.toString("base64")}`;
+}
+
 export async function GET(req: NextRequest) {
+  const logo = logoDataUri();
   const { searchParams } = new URL(req.url);
   const open = fmt(searchParams.get("open"));
   const high = fmt(searchParams.get("high"));
@@ -37,19 +46,17 @@ export async function GET(req: NextRequest) {
         <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
           <div
             style={{
-              width: 60,
-              height: 60,
+              width: 66,
+              height: 66,
               borderRadius: "50%",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              background: "linear-gradient(135deg, #f0b429 0%, #b87d0a 100%)",
+              background: "#fdeec2",
             }}
           >
-            <svg width="70%" height="70%" viewBox="0 0 100 100">
-              <polygon points="15,78 25,42 75,42 85,78" fill="#8a5a06" stroke="#4a3005" strokeWidth="2" />
-              <polygon points="25,42 35,26 65,26 75,42" fill="#fbdb84" stroke="#4a3005" strokeWidth="2" />
-            </svg>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={logo} width={54} height={54} alt="" />
           </div>
           <div style={{ fontSize: 24, fontWeight: 600, letterSpacing: 3, textTransform: "uppercase", color: "#6b5a2e", display: "flex" }}>
             ทองวันนี้ราคา.com
