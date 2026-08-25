@@ -1043,13 +1043,20 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
     }
   }
 
-  function downloadImage(url: string) {
+  // A raw `data:` URI in an <a download> silently fails to save on iOS
+  // Safari (and can hit URL-length limits elsewhere). A blob: object URL
+  // downloads reliably on desktop/Android, and on iOS Safari (which never
+  // honors the `download` attribute) it at least opens the image so the
+  // user can long-press → save — either way this beats a dead click.
+  function downloadImage(blob: Blob, filename: string) {
+    const objectUrl = URL.createObjectURL(blob);
     const a = document.createElement("a");
-    a.href = url;
-    a.download = `gold-summary-${Date.now()}.png`;
+    a.href = objectUrl;
+    a.download = filename;
     document.body.appendChild(a);
     a.click();
     a.remove();
+    setTimeout(() => URL.revokeObjectURL(objectUrl), 30000);
   }
 
   async function handleShare() {
@@ -1067,11 +1074,10 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
         await nav.share({ files: [file], title: tt.infographicTitle });
         setShareNote("");
       } else {
-        downloadImage(url);
+        downloadImage(blob, `gold-summary-${Date.now()}.png`);
         setShareNote(tt.shareUnsupported);
       }
     } catch {
-      downloadImage(url);
       setShareNote(tt.shareFailed);
     }
   }
@@ -1248,11 +1254,10 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
         await nav.share({ files: [file], title: tt.priceCardTitle });
         setCardShareNote("");
       } else {
-        downloadImage(url);
+        downloadImage(blob, `gold-price-today-${Date.now()}.png`);
         setCardShareNote(tt.shareUnsupported);
       }
     } catch {
-      downloadImage(url);
       setCardShareNote(tt.shareFailed);
     }
   }
@@ -1675,7 +1680,12 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
           </p>
           <div className="flex gap-2">
             <button
-              onClick={async () => downloadImage(previewUrl || (await generateInfographic()))}
+              onClick={async () => {
+                const url = previewUrl || (await generateInfographic());
+                if (!url) return;
+                const blob = await (await fetch(url)).blob();
+                downloadImage(blob, `gold-summary-${Date.now()}.png`);
+              }}
               disabled={generating}
               className={`${pillPrimary} flex-1 py-2.5`}
               style={{ ...accentButtonStyle, opacity: generating ? 0.6 : 1 }}
