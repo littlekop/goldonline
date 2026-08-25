@@ -11,13 +11,31 @@ const BANNERS = [
     href: "https://s.shopee.co.th/4AzQSGpAjK",
     alt: "Aurora Gold ทองคำแท่ง 1 บาท 96.5% การันตีรับซื้อคืนราคาสูงสุด",
   },
+  {
+    src: "/images/affiliate/gold-ring-half-salung.png",
+    href: "https://s.shopee.co.th/3LQJadODad?share_channel_code=6",
+    alt: "แหวนทอง 1/2 สลึง ผ่อน SPayLater ได้ ทองแท้ 96.5%",
+  },
+  {
+    src: "/images/affiliate/gold-necklace-2salung.png",
+    href: "https://s.shopee.co.th/BTHorLrY4?share_channel_code=6",
+    alt: "สร้อยคอทอง น้ำหนัก 2 สลึง ผ่อน SPayLater ได้ รับซื้อคืนทุกชิ้น",
+  },
+  {
+    src: "/images/affiliate/gold-necklace-nopakao.png",
+    href: "https://s.shopee.co.th/9V0ww4OEfh?share_channel_code=6",
+    alt: "ร้านทองนพเก้า สร้อยคอ 2 สลึง เลือกลายฟรีทั้งร้าน",
+  },
 ];
 
-// Affiliate ad slot: both Aurora Gold banners shown side by side, small.
-export default function AffiliateBanner({ className = "" }: { className?: string }) {
+// Affiliate ad slot: two banners shown side by side, small. `startIndex`
+// picks which pair from the pool (wraps around), so multiple slots on the
+// same page rotate through different products instead of repeating.
+export default function AffiliateBanner({ startIndex = 0, className = "" }: { startIndex?: number; className?: string }) {
+  const pair = [BANNERS[startIndex % BANNERS.length], BANNERS[(startIndex + 1) % BANNERS.length]];
   return (
     <div className={`grid grid-cols-2 gap-2 max-w-xs mx-auto ${className}`}>
-      {BANNERS.map((banner) => (
+      {pair.map((banner) => (
         <a
           key={banner.href}
           href={banner.href}
