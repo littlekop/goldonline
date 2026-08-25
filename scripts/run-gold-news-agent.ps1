@@ -18,9 +18,21 @@ For this run specifically:
 2. If nothing newsworthy turns up in that window, stop after research and log a "no newsworthy news found" entry to web/content/publish-log.md (trigger: "scheduled (1h, local)") — mandatory even when no article is written. Do not force an article when there is no real news; thin/repetitive content actively hurts SEO.
 3. If there is something worth writing about: WebFetch and actually read the full source articles (this should work fine here, unlike the cloud routine), synthesize, write the Thai article per the ground rules, and get a cover image via node web/scripts/fetch-pexels-image.mjs "<query>" <slug> (PEXELS_API_KEY is available in web/.env.local on this machine).
 4. Run the 8-point self-check gate. If it passes, publish it yourself (node web/scripts/publish-draft.mjs <slug>). If any check fails, leave it in web/content/drafts/ for human review.
-5. Log the outcome to web/content/publish-log.md either way, then git add/commit/push whatever changed (published article, draft, image, and/or the log entry) to the main branch, same as the cloud routine does.
+5. Log the outcome to web/content/publish-log.md either way.
+
+Do NOT run git commands yourself — the wrapper script running you handles committing and pushing automatically after you finish, regardless of what changed.
 
 End with a short report: what you found, what you wrote (if anything), the self-check result, and the outcome.
 '@
 
 & claude -p $prompt --dangerously-skip-permissions --allowed-tools "Bash,Read,Write,WebFetch,WebSearch,Glob,Grep"
+
+# Deterministic commit/push — never rely on the agent remembering this step.
+# (A run on 2026-08-25 wrote and self-check-passed an article but never
+# pushed it, leaving it 404ing on the live site until caught manually.)
+git add -A
+git diff --cached --quiet
+if ($LASTEXITCODE -ne 0) {
+  git commit -m "gold-news-writer: automated hourly run"
+  git push
+}
