@@ -30,6 +30,8 @@ import {
 import { isGoogleSyncConfigured, requestDriveAccessToken, revokeDriveAccessToken } from "@/lib/googleAuth";
 import { readSyncedData, writeSyncedData } from "@/lib/driveSync";
 import TradingViewGoldWidget from "@/components/TradingViewGoldWidget";
+import ShareButtons from "@/components/ShareButtons";
+import { SITE_URL } from "@/lib/site";
 import type { ArticleMeta } from "@/lib/articles";
 
 const GRAM_PER_BAHT = 15.244;
@@ -1529,6 +1531,10 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
             </a>
           </section>
         )}
+
+        <section className="p-5" style={cardStyle}>
+          <ShareButtons url={SITE_URL} title={tt.title} />
+        </section>
 
         <AdSlot label={tt.adSlot} className="w-full h-14" />
       </main>

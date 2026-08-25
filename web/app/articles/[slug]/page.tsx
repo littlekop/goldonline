@@ -6,6 +6,7 @@ import remarkGfm from "remark-gfm";
 import { getAllArticles, getArticle } from "@/lib/articles";
 import { C } from "@/lib/theme";
 import { SITE_URL } from "@/lib/site";
+import ShareButtons from "@/components/ShareButtons";
 
 export function generateStaticParams() {
   return getAllArticles().map((a) => ({ slug: a.slug }));
@@ -88,6 +89,10 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         >
           <ReactMarkdown remarkPlugins={[remarkGfm]}>{article.content}</ReactMarkdown>
         </article>
+
+        <div className="mt-8 pt-6" style={{ borderTop: `1px solid ${C.line}` }}>
+          <ShareButtons url={`${SITE_URL}/articles/${slug}`} title={article.title} />
+        </div>
 
         {article.sources.length > 0 && (
           <div className="mt-10 pt-6" style={{ borderTop: `1px solid ${C.line}` }}>
