@@ -8,3 +8,7 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://your-domai
 // site-verification/auto-ads script in app/layout.tsx and for any manual
 // <ins class="adsbygoogle"> ad units placed in individual pages.
 export const ADSENSE_CLIENT_ID = "ca-pub-8127478011085658";
+
+// Google Analytics 4 Measurement ID (G-XXXXXXXXXX). Unset in local dev by
+// default — the gtag.js snippet in app/layout.tsx is skipped when empty.
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "";
