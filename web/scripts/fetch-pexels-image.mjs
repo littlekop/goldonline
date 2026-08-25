@@ -34,8 +34,14 @@ if (!apiKey) {
   process.exit(1);
 }
 
+// Track which Pexels photo IDs this site has already used as a cover image,
+// so a repeated/similar query (e.g. the daily-summary agent's fixed "gold
+// bars price chart") doesn't keep reusing the same top result.
+const usedImagesPath = path.join(webRoot, "content", "used-images.json");
+const usedIds = fs.existsSync(usedImagesPath) ? JSON.parse(fs.readFileSync(usedImagesPath, "utf-8")) : [];
+
 const searchRes = await fetch(
-  `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape`,
+  `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=15&orientation=landscape`,
   { headers: { Authorization: apiKey } }
 );
 if (!searchRes.ok) {
@@ -43,11 +49,16 @@ if (!searchRes.ok) {
   process.exit(1);
 }
 const searchData = await searchRes.json();
-const photo = searchData?.photos?.[0];
-if (!photo) {
+const photos = searchData?.photos ?? [];
+if (photos.length === 0) {
   console.error(`No Pexels results for query: ${query}`);
   process.exit(1);
 }
+const photo = photos.find((p) => !usedIds.includes(p.id)) ?? photos[0];
+
+usedIds.push(photo.id);
+fs.mkdirSync(path.dirname(usedImagesPath), { recursive: true });
+fs.writeFileSync(usedImagesPath, JSON.stringify(usedIds.slice(-200), null, 2));
 
 const imageUrl = photo.src.large;
 const ext = path.extname(new URL(imageUrl).pathname) || ".jpg";
