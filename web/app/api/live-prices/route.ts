@@ -18,6 +18,8 @@ type GtaLatest = {
   goldSpot: number;
   bahtPerUSD: number;
   asTime: string;
+  priceSeq: number;
+  priceChangeFromPrevDayLast: number;
 };
 
 // Primary source: the Gold Traders Association of Thailand's own public price feed
@@ -47,11 +49,16 @@ async function fetchFromGta() {
     throw new Error("GTA feed returned incomplete data");
   }
 
+  const priceSeq = Number(data.priceSeq);
+  const changeToday = Number(data.priceChangeFromPrevDayLast);
+
   return {
     market: { barBuy, barSell, jewelryBuy, jewelrySell },
     exchangeRate: Number.isFinite(exchangeRate) && exchangeRate > 0 ? Number(exchangeRate.toFixed(2)) : null,
     spotUsdPerOz: Number.isFinite(spotUsdPerOz) && spotUsdPerOz > 0 ? spotUsdPerOz : null,
     asOf: data.asTime ?? null,
+    priceSeq: Number.isFinite(priceSeq) ? priceSeq : null,
+    changeToday: Number.isFinite(changeToday) ? changeToday : null,
   };
 }
 

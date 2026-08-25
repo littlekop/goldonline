@@ -165,6 +165,15 @@ const translations = {
     priceLoading: "กำลังดึงราคา...",
     priceFailed: "ดึงราคาสดไม่สำเร็จ ลองกดรีเฟรชอีกครั้ง",
     updatedAt: (t: string) => ` · อัปเดต ${t}`,
+    updatedAgoJustNow: "เพิ่งอัปเดต",
+    updatedAgoMinutes: (n: number) => `อัปเดตเมื่อ ${n} นาทีที่แล้ว`,
+    seqLabel: (n: number) => `ประกาศครั้งที่ ${n} วันนี้`,
+    todayChangeUp: (n: string) => `วันนี้ ▲ ${n}`,
+    todayChangeDown: (n: string) => `วันนี้ ▼ ${n}`,
+    todayChangeFlat: "วันนี้ราคาคงที่",
+    sharePriceCard: "แชร์ราคานี้",
+    priceCardTitle: "ราคาทองคำวันนี้",
+    priceCardCredit: "ราคาตามประกาศสมาคมค้าทองคำแห่งประเทศไทย",
     barLabel: "ทองคำแท่ง 96.5%",
     jewelryLabel: "ทองรูปพรรณ 96.5%",
     ozLabel: "ราคาต่อออนซ์ (คำนวณ)",
@@ -283,6 +292,15 @@ const translations = {
     priceLoading: "Fetching price...",
     priceFailed: "Live fetch failed, try refreshing",
     updatedAt: (t: string) => ` · updated ${t}`,
+    updatedAgoJustNow: "Just updated",
+    updatedAgoMinutes: (n: number) => `Updated ${n} min ago`,
+    seqLabel: (n: number) => `Update #${n} today`,
+    todayChangeUp: (n: string) => `Today ▲ ${n}`,
+    todayChangeDown: (n: string) => `Today ▼ ${n}`,
+    todayChangeFlat: "No change today",
+    sharePriceCard: "Share this price",
+    priceCardTitle: "Gold Price Today",
+    priceCardCredit: "Per the Gold Traders Association of Thailand",
     barLabel: "Gold bar 96.5%",
     jewelryLabel: "Gold jewelry 96.5%",
     ozLabel: "Price per ounce (calculated)",
@@ -601,10 +619,14 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [generating, setGenerating] = useState(false);
   const [shareNote, setShareNote] = useState("");
+  const [generatingCard, setGeneratingCard] = useState(false);
+  const [cardShareNote, setCardShareNote] = useState("");
 
   const [rateStatus, setRateStatus] = useState<"loading" | "live" | "manual">("loading");
   const [priceStatus, setPriceStatus] = useState<"loading" | "live" | "estimated" | "manual">("loading");
   const [priceUpdatedAt, setPriceUpdatedAt] = useState<Date | null>(null);
+  const [priceSeq, setPriceSeq] = useState<number | null>(null);
+  const [changeToday, setChangeToday] = useState<number | null>(null);
   const [now, setNow] = useState(new Date());
 
   const [driveToken, setDriveToken] = useState<string | null>(null);
@@ -739,6 +761,8 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
         setMarket(data.market as Market);
         setPriceStatus(data.source === "gta" ? "live" : "estimated");
         setPriceUpdatedAt(new Date());
+        setPriceSeq(Number.isFinite(data?.priceSeq) ? data.priceSeq : null);
+        setChangeToday(Number.isFinite(data?.changeToday) ? data.changeToday : null);
       } else {
         setPriceStatus("manual");
       }
@@ -1052,6 +1076,187 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
     }
   }
 
+  // Compact, screenshot-ready price card — just the board (no portfolio),
+  // styled to be instantly legible at a glance so it works as a share
+  // image on its own, with our logo/branding baked in.
+  async function generatePriceCard() {
+    setGeneratingCard(true);
+    setCardShareNote("");
+    const P = CANVAS_PALETTE[theme];
+    try {
+      if (document.fonts && document.fonts.ready) {
+        await document.fonts.load("700 30px 'Noto Serif Thai'");
+        await document.fonts.load("400 16px 'IBM Plex Sans Thai'");
+        await document.fonts.load("700 16px 'Space Mono'");
+        await document.fonts.ready;
+      }
+      const logo = await new Promise<HTMLImageElement | null>((resolve) => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.onerror = () => resolve(null);
+        img.src = "/images/logo-badge.png";
+      });
+
+      const w = 720;
+      const bandH = 128;
+      const h = 560;
+      const canvas = document.createElement("canvas");
+      canvas.width = w;
+      canvas.height = h;
+      const ctx = canvas.getContext("2d")!;
+
+      ctx.fillStyle = P.paper;
+      ctx.fillRect(0, 0, w, h);
+
+      const grad = ctx.createLinearGradient(0, 0, w, 0);
+      grad.addColorStop(0, "#f0b429");
+      grad.addColorStop(1, "#b87d0a");
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, w, bandH);
+
+      if (logo) {
+        const r = 34;
+        const cx = 74;
+        const cy = bandH / 2;
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(cx, cy, r, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.fillStyle = "#fdeec2";
+        ctx.fill();
+        ctx.clip();
+        ctx.drawImage(logo, cx - r + 6, cy - r + 6, (r - 6) * 2, (r - 6) * 2);
+        ctx.restore();
+      }
+
+      ctx.fillStyle = "#211a0e";
+      ctx.font = "700 30px 'Noto Serif Thai'";
+      ctx.fillText(tt.priceCardTitle, 128, bandH / 2 - 4);
+      ctx.font = "500 15px 'IBM Plex Sans Thai'";
+      ctx.fillStyle = "#4a3005";
+      ctx.fillText("ทองวันนี้ราคา.com", 128, bandH / 2 + 22);
+
+      const dateStr = now.toLocaleDateString(dateLocale, { day: "numeric", month: "long", year: "numeric" });
+      const timeStr = now.toLocaleTimeString(dateLocale, { hour: "2-digit", minute: "2-digit" });
+      ctx.textAlign = "right";
+      ctx.fillStyle = "#211a0e";
+      ctx.font = "600 14px 'IBM Plex Sans Thai'";
+      ctx.fillText(`${dateStr} · ${timeStr}`, w - 32, bandH / 2 - 6);
+      if (priceSeq != null) {
+        ctx.fillStyle = "#4a3005";
+        ctx.font = "500 13px 'IBM Plex Sans Thai'";
+        ctx.fillText(tt.seqLabel(priceSeq), w - 32, bandH / 2 + 16);
+      }
+      ctx.textAlign = "left";
+
+      let y = bandH + 44;
+      const rows: [string, number, number][] = [
+        [tt.barLabel, toDisplay(market.barBuy), toDisplay(market.barSell)],
+        [tt.jewelryLabel, toDisplay(market.jewelryBuy), toDisplay(market.jewelrySell)],
+      ];
+
+      ctx.fillStyle = P.inkFaint;
+      ctx.font = "600 13px 'IBM Plex Sans Thai'";
+      ctx.fillText("96.5%", 44, y);
+      ctx.textAlign = "right";
+      ctx.fillText(tt.buyLabel, w - 250, y);
+      ctx.fillText(tt.sellLabel, w - 60, y);
+      ctx.textAlign = "left";
+      y += 20;
+      ctx.strokeStyle = P.line;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(44, y);
+      ctx.lineTo(w - 44, y);
+      ctx.stroke();
+
+      rows.forEach(([label, buy, sell]) => {
+        y += 78;
+        ctx.fillStyle = P.ink;
+        ctx.font = "600 20px 'IBM Plex Sans Thai'";
+        ctx.fillText(label, 44, y);
+
+        ctx.textAlign = "right";
+        ctx.fillStyle = P.profit;
+        ctx.font = "700 34px 'Space Mono'";
+        ctx.fillText(fmt(buy, digits), w - 250, y + 6);
+        ctx.fillText(fmt(sell, digits), w - 60, y + 6);
+        ctx.textAlign = "left";
+
+        y += 24;
+        ctx.strokeStyle = P.line;
+        ctx.beginPath();
+        ctx.moveTo(44, y);
+        ctx.lineTo(w - 44, y);
+        ctx.stroke();
+      });
+
+      y += 56;
+      if (changeToday != null && changeToday !== 0) {
+        const up = changeToday > 0;
+        ctx.fillStyle = up ? "rgba(18,168,84,0.14)" : "rgba(225,61,43,0.14)";
+        const label = up ? tt.todayChangeUp(fmt(changeToday, 0)) : tt.todayChangeDown(fmt(Math.abs(changeToday), 0));
+        ctx.font = "700 20px 'IBM Plex Sans Thai'";
+        const textW = ctx.measureText(label).width;
+        const padX = 20;
+        const pillW = textW + padX * 2;
+        const pillH = 44;
+        const pillX = w / 2 - pillW / 2;
+        ctx.beginPath();
+        ctx.roundRect(pillX, y - pillH / 2, pillW, pillH, 999);
+        ctx.fill();
+        ctx.fillStyle = up ? P.profit : P.red;
+        ctx.textAlign = "center";
+        ctx.fillText(label, w / 2, y + 7);
+        ctx.textAlign = "left";
+      } else if (changeToday === 0) {
+        ctx.fillStyle = P.inkFaint;
+        ctx.font = "600 18px 'IBM Plex Sans Thai'";
+        ctx.textAlign = "center";
+        ctx.fillText(tt.todayChangeFlat, w / 2, y + 7);
+        ctx.textAlign = "left";
+      }
+
+      y = h - 40;
+      ctx.strokeStyle = P.line;
+      ctx.beginPath();
+      ctx.moveTo(44, y - 24);
+      ctx.lineTo(w - 44, y - 24);
+      ctx.stroke();
+      ctx.fillStyle = P.inkFaint;
+      ctx.font = "400 12px 'IBM Plex Sans Thai'";
+      ctx.fillText(tt.priceCardCredit, 44, y);
+
+      return canvas.toDataURL("image/png");
+    } finally {
+      setGeneratingCard(false);
+    }
+  }
+
+  async function handleSharePriceCard() {
+    const url = await generatePriceCard();
+    if (!url) return;
+    try {
+      const res = await fetch(url);
+      const blob = await res.blob();
+      const file = new File([blob], "gold-price-today.png", { type: "image/png" });
+      const nav = navigator as Navigator & {
+        canShare?: (data: { files: File[] }) => boolean;
+        share?: (data: { files: File[]; title: string }) => Promise<void>;
+      };
+      if (nav.canShare && nav.canShare({ files: [file] }) && nav.share) {
+        await nav.share({ files: [file], title: tt.priceCardTitle });
+        setCardShareNote("");
+      } else {
+        downloadImage(url);
+        setCardShareNote(tt.shareUnsupported);
+      }
+    } catch {
+      downloadImage(url);
+      setCardShareNote(tt.shareFailed);
+    }
+  }
+
   return (
     <div className="min-h-screen w-full" style={{ background: C.paper }}>
       <div style={{ background: "var(--hero-gradient)" }}>
@@ -1163,7 +1368,15 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
         <section className="p-5" style={cardStyle}>
           <div className="flex items-center justify-between mb-1">
             <SectionHeading>{tt.priceBoardHeading}</SectionHeading>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-1 mb-4">
+              <button
+                onClick={handleSharePriceCard}
+                disabled={generatingCard}
+                className={`${pillGhost} px-3 py-1.5 text-[13px]`}
+                style={{ color: C.gold }}
+              >
+                <Share2 size={13} /> {tt.sharePriceCard}
+              </button>
               <button
                 onClick={refreshLivePrices}
                 aria-label={tt.refreshAria}
@@ -1177,7 +1390,7 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
               </button>
             </div>
           </div>
-          <div className="flex items-center gap-1.5 mb-3">
+          <div className="flex items-center gap-1.5 mb-2">
             <span
               className="w-1.5 h-1.5 rounded-full shrink-0"
               style={{ background: priceStatus === "live" ? C.profit : priceStatus === "estimated" ? C.gold : C.inkFaint }}
@@ -1192,6 +1405,46 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
                     : tt.priceFailed}
             </p>
           </div>
+          {(priceSeq != null || changeToday != null || priceUpdatedAt) && (
+            <div className="flex items-center gap-1.5 mb-3 flex-wrap">
+              {priceSeq != null && (
+                <span
+                  className="font-body text-[11px] font-semibold px-2 py-1 rounded-full"
+                  style={{ background: C.cardSoft, color: C.inkSoft }}
+                >
+                  {tt.seqLabel(priceSeq)}
+                </span>
+              )}
+              {changeToday != null && (
+                <span
+                  className="font-body text-[11px] font-semibold px-2 py-1 rounded-full"
+                  style={{
+                    background: changeToday > 0 ? "rgba(18,168,84,0.14)" : changeToday < 0 ? "rgba(225,61,43,0.14)" : C.cardSoft,
+                    color: changeToday > 0 ? C.profit : changeToday < 0 ? C.red : C.inkSoft,
+                  }}
+                >
+                  {changeToday > 0
+                    ? tt.todayChangeUp(fmt(changeToday, 0))
+                    : changeToday < 0
+                      ? tt.todayChangeDown(fmt(Math.abs(changeToday), 0))
+                      : tt.todayChangeFlat}
+                </span>
+              )}
+              {priceUpdatedAt && (
+                <span className="font-body text-[11px] px-2 py-1 rounded-full" style={{ background: C.cardSoft, color: C.inkFaint }}>
+                  {(() => {
+                    const mins = Math.max(0, Math.floor((now.getTime() - priceUpdatedAt.getTime()) / 60000));
+                    return mins < 1 ? tt.updatedAgoJustNow : tt.updatedAgoMinutes(mins);
+                  })()}
+                </span>
+              )}
+            </div>
+          )}
+          {cardShareNote && (
+            <p className="font-body text-[12px] mb-3" style={{ color: C.inkFaint }}>
+              {cardShareNote}
+            </p>
+          )}
           <PriceRow
             label={tt.barLabel}
             buy={toDisplay(market.barBuy)}
