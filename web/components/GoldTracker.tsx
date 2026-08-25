@@ -425,6 +425,47 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
   );
 }
 
+// Flashes green/red and pulses briefly whenever `value` changes — mirrors
+// the "เด้ง" live-ticker effect on Thai gold-price sites (goldtraders.or.th
+// et al.), so users get a visual cue on every price update, not just a
+// silent number swap.
+function FlashValue({
+  value,
+  digits = 0,
+  className = "",
+  baseColor,
+}: {
+  value: number;
+  digits?: number;
+  className?: string;
+  baseColor: string;
+}) {
+  const prevRef = useRef(value);
+  const [state, setState] = useState<{ dir: "up" | "down" | null; key: number }>({ dir: null, key: 0 });
+
+  useEffect(() => {
+    if (prevRef.current !== value) {
+      const dir = value > prevRef.current ? "up" : "down";
+      prevRef.current = value;
+      setState((s) => ({ dir, key: s.key + 1 }));
+      const t = setTimeout(() => setState((s) => ({ ...s, dir: null })), 1400);
+      return () => clearTimeout(t);
+    }
+  }, [value]);
+
+  const color = state.dir === "up" ? C.profit : state.dir === "down" ? C.red : baseColor;
+
+  return (
+    <span
+      key={state.key}
+      className={`${className} ${state.dir ? "price-flash" : ""}`}
+      style={{ color, transition: "color 0.6s ease" }}
+    >
+      {fmt(value, digits)}
+    </span>
+  );
+}
+
 function PriceRow({
   label,
   buy,
@@ -449,16 +490,16 @@ function PriceRow({
         <div className="font-body text-[13px] uppercase tracking-wide" style={{ color: C.inkFaint }}>
           {buyLabel}
         </div>
-        <div className="font-mono-led text-lg whitespace-nowrap" style={{ color: C.ink }}>
-          {fmt(buy, digits)}
+        <div className="font-mono-led text-lg whitespace-nowrap">
+          <FlashValue value={buy} digits={digits} baseColor={C.ink} />
         </div>
       </div>
       <div className="text-right" style={{ minWidth: 84 }}>
         <div className="font-body text-[13px] uppercase tracking-wide" style={{ color: C.inkFaint }}>
           {sellLabel}
         </div>
-        <div className="font-mono-led text-lg font-bold whitespace-nowrap" style={{ color: C.red }}>
-          {fmt(sell, digits)}
+        <div className="font-mono-led text-lg font-bold whitespace-nowrap">
+          <FlashValue value={sell} digits={digits} baseColor={C.red} />
         </div>
       </div>
     </div>
