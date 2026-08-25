@@ -40,7 +40,7 @@ Every run is logged to `web/content/publish-log.md`, same file and format `gold-
    - Brief outlook: what to watch today/this week (attributed to analysts/sources, not your own call).
    - Disclaimer line.
    - **Title**: always include "สรุปราคาทอง" or "ราคาทองวันนี้" plus the date, e.g. "สรุปราคาทองคำวันนี้ 26 สิงหาคม 2569 — เปิด/สูงสุด/ต่ำสุด/ปิด" so it reads as the daily fixture it is.
-   - **Internal linking**: run `ls web/content/published/` first; if gold-news-writer covered a related event yesterday, link to it inline where natural.
+   - **Internal linking — aim for 2-3 per article, not zero.** Run `ls web/content/published/` first and actually check for connections: gold-news-writer's coverage of yesterday's driver, the homepage price board (`[ราคาทองคำวันนี้](/)`), the articles index (`[บทความทั้งหมด](/articles)`), or a recent daily-summary article. Spread links across different paragraphs, not clustered together.
 4. **Slug**: `gold-daily-summary-YYYY-MM-DD` (today's date). Check it doesn't already exist in `drafts/` or `published/` — if a daily summary already ran today, stop and log that instead of writing a duplicate.
 5. **Cover image**: run `cd web && node --env-file=.env.local scripts/fetch-pexels-image.mjs "gold bars price chart" <slug>` (`--env-file=.env.local` is required or `PEXELS_API_KEY` won't be visible to the script even though it's in the file; skip and omit `coverImage` if unset).
 6. **Frontmatter** (same schema as gold-news-writer, see `web/content/README.md`):
