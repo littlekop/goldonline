@@ -49,6 +49,7 @@ const changeThai = change > 0 ? `เพิ่มขึ้น ${change.toLocaleSt
 const thaiDate = new Date().toLocaleDateString("th-TH", { timeZone: "Asia/Bangkok", day: "numeric", month: "long", year: "numeric" });
 
 const fmtBaht = (n) => n.toLocaleString("th-TH");
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://xn--42cf1cja4dza0cybnb6a3v.com").replace(/\/$/, "");
 
 const message = [
   `📊 สรุปราคาทองคำวันนี้ (ทองคำแท่ง 96.5%) — ${thaiDate}`,
@@ -60,15 +61,25 @@ const message = [
   "",
   `วันนี้ราคาทอง${changeThai}`,
   "",
-  `เช็คราคาทองคำเรียลไทม์ + คำนวณกำไรขาดทุน: ${process.env.NEXT_PUBLIC_SITE_URL || "https://xn--42cf1cja4dza0cybnb6a3v.com"}`,
+  `เช็คราคาทองคำ ได้ทุกวันที่นี่ : ${siteUrl}`,
   "",
   "#ทอง #ทองคำ #ราคาทอง #ราคาทองคำ #ราคาทองวันนี้ #ลงทุนทอง #ออมทอง #ทองคำแท่ง",
 ].join("\n");
 
-const res = await fetch(`https://graph.facebook.com/v19.0/${pageId}/feed`, {
+const imageUrl = `${siteUrl}/api/daily-summary-image?${new URLSearchParams({
+  open: String(open),
+  high: String(high),
+  low: String(low),
+  close: String(close),
+  date: thaiDate,
+  changeLabel: `วันนี้ราคาทอง${changeThai.replace(/[📈📉➡️]/g, "").trim()}`,
+  changeUp: change >= 0 ? "1" : "0",
+}).toString()}`;
+
+const res = await fetch(`https://graph.facebook.com/v19.0/${pageId}/photos`, {
   method: "POST",
   headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ message, access_token: pageToken }),
+  body: JSON.stringify({ url: imageUrl, caption: message, access_token: pageToken }),
 });
 const data = await res.json();
 
