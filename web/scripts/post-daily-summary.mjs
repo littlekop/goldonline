@@ -61,7 +61,7 @@ const message = [
   `เปิดตลาด: ${fmtBaht(open)} บาท`,
   `สูงสุด: ${fmtBaht(high)} บาท`,
   `ต่ำสุด: ${fmtBaht(low)} บาท`,
-  `ล่าสุด/ปิดตลาด: ${fmtBaht(close)} บาท`,
+  `ปิดตลาด: ${fmtBaht(close)} บาท`,
   "",
   `วันนี้ราคาทอง${changeThai}`,
   "",

@@ -75,7 +75,7 @@ export async function GET(req: NextRequest) {
         </div>
         <div style={{ display: "flex", gap: 24 }}>
           <Stat label="ต่ำสุด" value={low} />
-          <Stat label="ล่าสุด" value={close} />
+          <Stat label="ปิดตลาด" value={close} />
         </div>
 
         {changeLabel && (
