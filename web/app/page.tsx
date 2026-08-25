@@ -1,4 +1,5 @@
 import GoldTracker from "@/components/GoldTracker";
+import { getAllArticles } from "@/lib/articles";
 
 const faq = [
   {
@@ -26,10 +27,11 @@ const faqJsonLd = {
 };
 
 export default function Home() {
+  const latestArticles = getAllArticles().slice(0, 5);
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <GoldTracker />
+      <GoldTracker latestArticles={latestArticles} />
     </>
   );
 }

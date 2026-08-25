@@ -30,6 +30,7 @@ import {
 import { isGoogleSyncConfigured, requestDriveAccessToken, revokeDriveAccessToken } from "@/lib/googleAuth";
 import { readSyncedData, writeSyncedData } from "@/lib/driveSync";
 import TradingViewGoldWidget from "@/components/TradingViewGoldWidget";
+import type { ArticleMeta } from "@/lib/articles";
 
 const GRAM_PER_BAHT = 15.244;
 const GRAM_PER_OZ = 31.1034768;
@@ -238,6 +239,8 @@ const translations = {
     faq3A: "1 บาททอง = 4 สลึง = 15.244 กรัม ตามมาตรฐานหน่วยชั่งทองคำของไทย",
     articlesPrompt: "อยากอ่านข่าวและบทความเกี่ยวกับสถานการณ์ทองคำโลก?",
     articlesCta: "ดูบทความ →",
+    newsHeading: "ข่าวและบทความล่าสุด",
+    newsViewAll: "ดูทั้งหมด →",
     adSlot: "พื้นที่โฆษณา",
     syncLocalOnly: "ข้อมูลเก็บในเครื่องนี้เท่านั้น",
     syncSigningIn: "กำลังเข้าสู่ระบบ...",
@@ -354,6 +357,8 @@ const translations = {
     faq3A: "1 baht weight = 4 salung = 15.244 grams, per Thailand's traditional gold-weight standard.",
     articlesPrompt: "Want to read news and articles on the world gold market?",
     articlesCta: "Read articles →",
+    newsHeading: "Latest news & articles",
+    newsViewAll: "View all →",
     adSlot: "Ad space",
     syncLocalOnly: "Data stored on this device only.",
     syncSigningIn: "Signing in...",
@@ -508,7 +513,7 @@ function SummaryCard({
   );
 }
 
-export default function GoldTracker() {
+export default function GoldTracker({ latestArticles = [] }: { latestArticles?: ArticleMeta[] }) {
   const [theme, setTheme] = useState<Theme>("light");
   const [locale, setLocale] = useState<Locale>("th");
   const tt = translations[locale];
@@ -1483,14 +1488,47 @@ export default function GoldTracker() {
           </details>
         </section>
 
-        <section className="p-5 flex items-center justify-between" style={cardStyle}>
-          <span className="font-body text-sm" style={{ color: C.inkSoft }}>
-            {tt.articlesPrompt}
-          </span>
-          <a href="/articles" className={`${pillGhost} px-4 py-2 shrink-0`} style={{ color: C.gold }}>
-            {tt.articlesCta}
-          </a>
-        </section>
+        {latestArticles.length > 0 ? (
+          <section className="p-5" style={cardStyle}>
+            <div className="flex items-center justify-between mb-4">
+              <SectionHeading>{tt.newsHeading}</SectionHeading>
+              <a href="/articles" className="font-body text-sm font-semibold" style={{ color: C.gold }}>
+                {tt.newsViewAll}
+              </a>
+            </div>
+            <div className="space-y-3">
+              {latestArticles.map((a) => (
+                <a
+                  key={a.slug}
+                  href={`/articles/${a.slug}`}
+                  className="block rounded-xl p-4 transition hover:brightness-[0.98]"
+                  style={{ background: C.cardSoft }}
+                >
+                  <div className="font-body text-[12px]" style={{ color: C.inkFaint }}>
+                    {a.date}
+                  </div>
+                  <div className="font-display text-base font-medium mt-1" style={{ color: C.ink }}>
+                    {a.title}
+                  </div>
+                  {a.excerpt && (
+                    <p className="font-body text-sm mt-1.5 leading-relaxed line-clamp-2" style={{ color: C.inkSoft }}>
+                      {a.excerpt}
+                    </p>
+                  )}
+                </a>
+              ))}
+            </div>
+          </section>
+        ) : (
+          <section className="p-5 flex items-center justify-between" style={cardStyle}>
+            <span className="font-body text-sm" style={{ color: C.inkSoft }}>
+              {tt.articlesPrompt}
+            </span>
+            <a href="/articles" className={`${pillGhost} px-4 py-2 shrink-0`} style={{ color: C.gold }}>
+              {tt.articlesCta}
+            </a>
+          </section>
+        )}
 
         <AdSlot label={tt.adSlot} className="w-full h-14" />
       </main>
