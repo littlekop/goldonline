@@ -1,0 +1,41 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import { SITE_URL } from "@/lib/site";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "ราคาทองคำ วันนี้ | เช็ค ราคาทอง ออนไลน์ เรียลไทม์ คำนวณ กำไร ขาดทุน",
+    template: "%s | ราคาทองคำวันนี้",
+  },
+  description:
+    "เช็คราคาทองคำแท่งและทองรูปพรรณวันนี้ อ้างอิงจากสมาคมค้าทองคำแห่งประเทศไทย คำนวณต้นทุน กำไรขาดทุนจากการซื้อทอง พร้อมแชร์ผลลัพธ์เป็นภาพ",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "th_TH",
+    siteName: "ราคาทองคำวันนี้",
+  },
+};
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
+  return (
+    <html lang="th" className="h-full antialiased" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+        {/* set data-theme before first paint to avoid a light/dark flash */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('gold-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t;}catch(e){}})();`,
+          }}
+        />
+      </head>
+      <body className="min-h-full flex flex-col">{children}</body>
+    </html>
+  );
+}
