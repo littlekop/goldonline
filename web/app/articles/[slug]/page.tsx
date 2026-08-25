@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getAllArticles, getArticle } from "@/lib/articles";
 import { C } from "@/lib/theme";
+import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return getAllArticles().map((a) => ({ slug: a.slug }));
@@ -21,7 +22,12 @@ export async function generateMetadata({
   return {
     title: article.title,
     description: article.excerpt,
-    openGraph: article.coverImage ? { images: [article.coverImage] } : undefined,
+    alternates: { canonical: `/articles/${slug}` },
+    openGraph: {
+      type: "article",
+      publishedTime: article.date,
+      images: article.coverImage ? [article.coverImage] : undefined,
+    },
   };
 }
 
@@ -30,8 +36,26 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const article = getArticle(slug);
   if (!article) notFound();
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    headline: article.title,
+    description: article.excerpt,
+    datePublished: article.date,
+    dateModified: article.date,
+    image: article.coverImage ? [`${SITE_URL}${article.coverImage}`] : undefined,
+    author: { "@type": "Organization", name: "ราคาทองคำวันนี้" },
+    publisher: {
+      "@type": "Organization",
+      name: "ราคาทองคำวันนี้",
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/opengraph-image` },
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/articles/${slug}` },
+  };
+
   return (
     <div className="min-h-screen w-full" style={{ background: C.paper }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <header className="max-w-2xl mx-auto px-6 pt-10 pb-5" style={{ borderBottom: `2px solid ${C.ink}` }}>
         <Link href="/articles" className="font-body text-sm underline" style={{ color: C.gold }}>
           ← บทความทั้งหมด

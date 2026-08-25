@@ -6,6 +6,7 @@ import { C } from "@/lib/theme";
 export const metadata: Metadata = {
   title: "บทความข่าวทองคำ",
   description: "บทวิเคราะห์และข่าวสถานการณ์ทองคำโลก อัปเดตสำหรับนักลงทุนทองคำชาวไทย",
+  alternates: { canonical: "/articles" },
 };
 
 export default function ArticlesPage() {
