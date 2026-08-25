@@ -12,6 +12,16 @@ import { fileURLToPath } from "node:url";
 
 const webRoot = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 
+// Self-load web/.env.local so this works whether or not the caller
+// remembered `node --env-file=.env.local`.
+const envPath = path.join(webRoot, ".env.local");
+if (fs.existsSync(envPath)) {
+  for (const line of fs.readFileSync(envPath, "utf-8").split("\n")) {
+    const m = line.match(/^([A-Z0-9_]+)=(.*)$/);
+    if (m && !(m[1] in process.env)) process.env[m[1]] = m[2];
+  }
+}
+
 const [, , query, slug] = process.argv;
 if (!query || !slug) {
   console.error("Usage: node scripts/fetch-pexels-image.mjs \"<search query>\" <slug>");

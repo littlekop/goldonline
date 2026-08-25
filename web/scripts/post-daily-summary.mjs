@@ -9,6 +9,21 @@
 //
 // Usage: node scripts/post-daily-summary.mjs
 
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+// Self-load web/.env.local so this works whether or not the caller
+// remembered `node --env-file=.env.local`.
+const webRoot = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const envPath = path.join(webRoot, ".env.local");
+if (fs.existsSync(envPath)) {
+  for (const line of fs.readFileSync(envPath, "utf-8").split("\n")) {
+    const m = line.match(/^([A-Z0-9_]+)=(.*)$/);
+    if (m && !(m[1] in process.env)) process.env[m[1]] = m[2];
+  }
+}
+
 function bangkokDateStr(date) {
   const fmt = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Bangkok", year: "numeric", month: "2-digit", day: "2-digit" });
   return fmt.format(date);

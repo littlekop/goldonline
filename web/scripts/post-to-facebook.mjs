@@ -14,6 +14,18 @@ import matter from "gray-matter";
 
 const webRoot = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 
+// Self-load web/.env.local so this works whether or not the caller
+// remembered `node --env-file=.env.local` — a missing flag here has
+// silently no-op'd Facebook posting before (agent docs said "not
+// configured" even with real credentials in the file).
+const envPath = path.join(webRoot, ".env.local");
+if (fs.existsSync(envPath)) {
+  for (const line of fs.readFileSync(envPath, "utf-8").split("\n")) {
+    const m = line.match(/^([A-Z0-9_]+)=(.*)$/);
+    if (m && !(m[1] in process.env)) process.env[m[1]] = m[2];
+  }
+}
+
 const slug = process.argv[2];
 if (!slug) {
   console.error("Usage: node scripts/post-to-facebook.mjs <slug>");
@@ -40,7 +52,7 @@ const excerpt = data.excerpt || "";
 const coverImage = data.coverImage ? `${siteUrl}${data.coverImage}` : null;
 const articleUrl = `${siteUrl}/articles/${slug}`;
 
-const message = [title, "", excerpt, "", `อ่านเต็ม: ${articleUrl}`, "", "#ราคาทอง #ข่าวทองคำ"].join("\n");
+const message = [title, "", excerpt, "", `อ่านต่อได้ที่: ${articleUrl}`, "", "#ราคาทอง #ข่าวทองคำ"].join("\n");
 
 const GRAPH_API = "https://graph.facebook.com/v19.0";
 
