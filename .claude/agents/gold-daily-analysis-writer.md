@@ -42,7 +42,7 @@ Every run is logged to `web/content/publish-log.md`, same file and format `gold-
    - **Title**: always include "สรุปราคาทอง" or "ราคาทองวันนี้" plus the date, e.g. "สรุปราคาทองคำวันนี้ 26 สิงหาคม 2569 — เปิด/สูงสุด/ต่ำสุด/ปิด" so it reads as the daily fixture it is.
    - **Internal linking**: run `ls web/content/published/` first; if gold-news-writer covered a related event yesterday, link to it inline where natural.
 4. **Slug**: `gold-daily-summary-YYYY-MM-DD` (today's date). Check it doesn't already exist in `drafts/` or `published/` — if a daily summary already ran today, stop and log that instead of writing a duplicate.
-5. **Cover image**: run `node web/scripts/fetch-pexels-image.mjs "gold bars price chart" <slug>` (requires `PEXELS_API_KEY` in `web/.env.local`; skip and omit `coverImage` if unset).
+5. **Cover image**: run `cd web && node --env-file=.env.local scripts/fetch-pexels-image.mjs "gold bars price chart" <slug>` (`--env-file=.env.local` is required or `PEXELS_API_KEY` won't be visible to the script even though it's in the file; skip and omit `coverImage` if unset).
 6. **Frontmatter** (same schema as gold-news-writer, see `web/content/README.md`):
    ```yaml
    ---
@@ -76,9 +76,9 @@ Because this is a scheduled daily fixture with a hard sourcing floor already thi
 
 ## Facebook Page auto-post (only after a successful auto-publish)
 
-Right after `publish-draft.mjs` succeeds, run:
+Right after `publish-draft.mjs` succeeds, run (`--env-file=.env.local` is required — without it the script always reports `{"skipped":true}` even when real credentials are in the file):
 ```
-node web/scripts/post-to-facebook.mjs <slug>
+cd web && node --env-file=.env.local scripts/post-to-facebook.mjs <slug>
 ```
 Same rules as gold-news-writer: treat `{"skipped": true, ...}` as normal (not configured), don't retry on failure, just note it in the log entry.
 

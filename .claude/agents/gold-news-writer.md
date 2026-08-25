@@ -47,9 +47,9 @@ Either way, every run follows the same workflow below.
 3. **Write the article** in Thai, matching the site's tone: plain, factual, no hype. Suggested structure: lead paragraph (what happened + the number) → context (why: rates, dollar, geopolitics, demand) → what it means for Thai gold prices (attributed to the association, see ground rules) → outlook (attributed to sources, not your own prediction) → disclaimer line.
    - **SEO title:** write the `title` the way a Thai reader would actually search (e.g. include "ราคาทอง" or "ราคาทองวันนี้" plus the concrete driver — "เฟดขึ้นดอกเบี้ย", "ดอลลาร์อ่อน" — not a generic headline). Keep it under ~70 characters where possible.
    - **Internal linking:** before writing, run `ls web/content/published/` (or Glob) to see what's already live. If an earlier article covers directly related context (a previous price move, the same ongoing story), link to it inline in the body with a normal Markdown link (`[ข้อความ](/articles/<slug>)`) where it reads naturally — don't force it. This is a real, controllable SEO lever (internal link equity + lower bounce), so don't skip it when a genuine connection exists.
-4. **Get a cover image.** Run:
+4. **Get a cover image.** Run (from the `web/` directory — `--env-file=.env.local` is required, or `PEXELS_API_KEY`/`FACEBOOK_PAGE_ID`/`FACEBOOK_PAGE_ACCESS_TOKEN` won't be visible to the script even though they're in the file; this has silently no-op'd the Facebook step before):
    ```
-   node web/scripts/fetch-pexels-image.mjs "<english search query, e.g. gold bars>" <slug>
+   cd web && node --env-file=.env.local scripts/fetch-pexels-image.mjs "<english search query, e.g. gold bars>" <slug>
    ```
    Requires `PEXELS_API_KEY` in `web/.env.local`. If it's not set in this environment, skip this step (omit `coverImage`/`coverImageCredit`) rather than blocking — note the skip in your final report/log entry.
 5. **Pick a slug**: kebab-case, English, descriptive, e.g. `gold-price-fed-rate-cut-2026-08`. Check `web/content/drafts/` and `web/content/published/` first — never overwrite an existing slug.
@@ -86,9 +86,9 @@ Re-read your own draft fresh, as if you were a skeptical editor, and answer each
 
 ## Facebook Page auto-post (only after a successful auto-publish)
 
-Right after `publish-draft.mjs` succeeds (never for a held-back draft), run:
+Right after `publish-draft.mjs` succeeds (never for a held-back draft), run (again, `--env-file=.env.local` is required — without it the script always reports `{"skipped":true}` even when real credentials are sitting in the file):
 ```
-node web/scripts/post-to-facebook.mjs <slug>
+cd web && node --env-file=.env.local scripts/post-to-facebook.mjs <slug>
 ```
 It reads `FACEBOOK_PAGE_ID` / `FACEBOOK_PAGE_ACCESS_TOKEN` from `web/.env.local`. If either is unset it exits quietly with `{"skipped": true, ...}` — treat that as normal, not an error, and just note "Facebook: not configured" in your log entry. If it actually fails (non-zero exit, an error JSON), don't retry and don't treat it as blocking the article's publish state — the article is already live either way; just note the failure in your report/log entry so a human can check the token hasn't expired (Page tokens typically expire ~60 days unless it's a System User token).
 
