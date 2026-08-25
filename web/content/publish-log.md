@@ -21,3 +21,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: not run (no draft produced)
 - Facebook: not applicable (no publish)
 - Summary: RSS pull (1h window) returned only routine daily rate listings (Bangladesh, Vietnam, India) and a minor pullback (gold below $4,650 vs. the $4,677 3-month high) of the exact Fed Jackson Hole/dollar-weakness story already published at 04:50 UTC today, plus an unrelated China consumer-trend piece (IP Gold jewelry demand) that isn't a price-move event — nothing cleared the bar for a fresh article.
+
+## 2026-08-25 08:02 UTC — no article
+- Trigger: scheduled (1h)
+- Outcome: no newsworthy news found
+- Self-check: not run (no draft produced)
+- Facebook: not applicable (no publish)
+- Summary: RSS pull (1h window) returned only 3 items: a speculative technical-analysis piece ("Square of 9"/VC PMI targeting $4,800+, not a verifiable factual claim suitable for YMYL sourcing), a UAE local gold/silver price dip, and a Bangladesh local gold price rise. WebSearch verification confirmed the Thai Gold Traders Association's price move referenced this morning (200 THB increase, bar sell 72,050/jewelry sell 72,850, announced 9:09 AM) and the underlying global driver (spot gold breaking above $4,700, Fed policy/Treasury bond buyback/Middle East tensions per Yahoo Finance) are the same event already covered by the 04:50 UTC published article today (gold-price-3-month-high-fed-jackson-hole-2026-08). No second Thai price announcement had posted yet, and no distinct new macro/geopolitical/price-move event cleared the bar for a fresh article this hour.

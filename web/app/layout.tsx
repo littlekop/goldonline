@@ -12,7 +12,10 @@ export const metadata: Metadata = {
   description:
     "เช็คราคาทองคำแท่งและทองรูปพรรณวันนี้ อ้างอิงจากสมาคมค้าทองคำแห่งประเทศไทย คำนวณต้นทุน กำไรขาดทุนจากการซื้อทอง พร้อมแชร์ผลลัพธ์เป็นภาพ",
   alternates: { canonical: "/" },
-  verification: { google: "8pC34lHX2GwccaOKK7-vAWZWR9ObOHPOqvJhC2MDaQU" },
+  verification: {
+    google: "8pC34lHX2GwccaOKK7-vAWZWR9ObOHPOqvJhC2MDaQU",
+    other: { "msvalidate.01": "15D9B0AEEF72E7E47A85FA32BFF4A829" },
+  },
   openGraph: {
     type: "website",
     locale: "th_TH",
