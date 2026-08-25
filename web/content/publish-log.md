@@ -14,3 +14,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Outcome: no article written — technical research failure (not "no news")
 - Self-check: not run (no draft produced)
 - Summary: `node web/scripts/fetch-gold-news-rss.mjs 1` failed for all 3 feeds — confirmed via proxy status that news.google.com:443 is being rejected at the egress policy layer (connect_rejected, 403 to CONNECT), not a code bug. Fell back to WebSearch per the workflow's "supplement with WebSearch" allowance, which did surface a plausible lead (Thai gold bar/jewelry prices reportedly up 200 THB at this morning's open per สมาคมค้าทองคำ, world spot gold quoted near $4,660-4,712/oz). However, every subsequent WebFetch attempt to open and verify the underlying articles (thansettakij.com, thairath.co.th, infoquest.co.th, forbes.com, finance.yahoo.com, thethaiger.com, kitco.com, bangkokpost.com) returned EGRESS_BLOCKED from the network egress proxy — a session-wide block, not domain-specific. Since the workflow requires WebFetching and reading full source articles before writing (never citing a headline/snippet you haven't opened), and that step is technically unavailable this run, no draft was written rather than publishing on WebSearch-snippet-only sourcing for a YMYL topic. Flagging for human attention: WebFetch appears broadly blocked for external news domains in this environment as of this run.
+
+## 2026-08-25 07:00 UTC — no article
+- Trigger: scheduled (1h)
+- Outcome: no newsworthy news found
+- Self-check: not run (no draft produced)
+- Facebook: not applicable (no publish)
+- Summary: RSS pull (1h window) returned only routine daily rate listings (Bangladesh, Vietnam, India) and a minor pullback (gold below $4,650 vs. the $4,677 3-month high) of the exact Fed Jackson Hole/dollar-weakness story already published at 04:50 UTC today, plus an unrelated China consumer-trend piece (IP Gold jewelry demand) that isn't a price-move event — nothing cleared the bar for a fresh article.
