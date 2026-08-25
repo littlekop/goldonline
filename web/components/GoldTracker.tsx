@@ -1026,10 +1026,10 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
     <div className="min-h-screen w-full" style={{ background: C.paper }}>
       <div style={{ background: "var(--hero-gradient)" }}>
       <header className="max-w-2xl mx-auto px-6 pt-10 pb-6">
-        <div className="flex items-end justify-between">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-0">
           <div>
             <Eyebrow className="mb-2">{tt.eyebrow}</Eyebrow>
-            <h1 className="font-display text-4xl font-medium tracking-tight" style={{ color: C.ink }}>
+            <h1 className="font-display text-3xl sm:text-4xl font-medium tracking-tight" style={{ color: C.ink }}>
               {tt.title}
             </h1>
           </div>
