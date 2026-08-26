@@ -52,7 +52,15 @@ const excerpt = data.excerpt || "";
 const coverImage = data.coverImage ? `${siteUrl}${data.coverImage}` : null;
 const articleUrl = `${siteUrl}/articles/${slug}`;
 
-const message = [title, "", excerpt, "", `อ่านต่อได้ที่: ${articleUrl}`, "", "#ราคาทอง #ข่าวทองคำ"].join("\n");
+const message = [
+  title,
+  "",
+  excerpt,
+  "",
+  `อ่านต่อได้ที่: ${articleUrl}`,
+  "",
+  "#ทอง #ทองคำ #ราคาทอง #ราคาทองคำ #ราคาทองวันนี้ #ลงทุนทอง #ออมทอง #ทองคำแท่ง",
+].join("\n");
 
 const GRAPH_API = "https://graph.facebook.com/v19.0";
 
