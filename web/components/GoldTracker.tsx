@@ -172,6 +172,7 @@ const translations = {
     todayChangeDown: (n: string) => `วันนี้ ▼ ${n}`,
     todayChangeFlat: "วันนี้ราคาคงที่",
     sharePriceCard: "แชร์ราคานี้",
+    savePriceCard: "บันทึกรูปภาพราคาลงเครื่อง",
     widgetCta: "ฝังราคาทองในเว็บคุณ (ฟรี) →",
     priceCardTitle: "ราคาทองคำวันนี้",
     priceCardCredit: "ราคาตามประกาศสมาคมค้าทองคำแห่งประเทศไทย",
@@ -300,6 +301,7 @@ const translations = {
     todayChangeDown: (n: string) => `Today ▼ ${n}`,
     todayChangeFlat: "No change today",
     sharePriceCard: "Share this price",
+    savePriceCard: "Save price image to device",
     widgetCta: "Embed this on your site (free) →",
     priceCardTitle: "Gold Price Today",
     priceCardCredit: "Per the Gold Traders Association of Thailand",
@@ -1264,6 +1266,23 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
     }
   }
 
+  // A dedicated save-to-device button, separate from handleSharePriceCard's
+  // OS share sheet — some mobile browsers' native share sheet only offers
+  // "copy image" for this kind of share, with no visible save/download
+  // option, leaving users with no way to actually save the file.
+  async function handleSavePriceCard() {
+    const url = await generatePriceCard();
+    if (!url) return;
+    try {
+      const res = await fetch(url);
+      const blob = await res.blob();
+      downloadImage(blob, `gold-price-today-${Date.now()}.png`);
+      setCardShareNote("");
+    } catch {
+      setCardShareNote(tt.shareFailed);
+    }
+  }
+
   return (
     <div className="min-h-screen w-full" style={{ background: C.paper }}>
       <div style={{ background: "var(--hero-gradient)" }}>
@@ -1376,6 +1395,16 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
           <div className="flex items-center justify-between mb-1">
             <SectionHeading>{tt.priceBoardHeading}</SectionHeading>
             <div className="flex items-center gap-1 mb-4">
+              <button
+                onClick={handleSavePriceCard}
+                disabled={generatingCard}
+                aria-label={tt.savePriceCard}
+                title={tt.savePriceCard}
+                className="flex items-center justify-center rounded-full p-1.5 transition hover:bg-black/[0.04]"
+                style={{ color: C.gold }}
+              >
+                <Download size={14} />
+              </button>
               <button
                 onClick={handleSharePriceCard}
                 disabled={generatingCard}
