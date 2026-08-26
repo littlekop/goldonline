@@ -223,3 +223,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: RSS (1h window) surfaced a LINE TODAY headline ("ทองคำปิดร่วง! ...ลบ 150 บาท") whose Google News redirect link failed to load as usual; verified the underlying move directly via the Thai price mirror site (xn--42cah7d0cxcvbbb9x.com, latest 16:51 announcement): bar sell had fallen further to 71,700 THB / jewelry sell 72,500 THB, a net -150 THB day — a genuine continuation beyond the already-published 15:43 UTC article's -50 THB (71,800) figure, not a rehash. Backed by FXStreet (fetched directly): spot gold pulled back ~0.75% to ~$4,620 ahead of the US core PCE print (due 12:30 GMT, consensus 3.3% YoY) and Fed Chair Warsh's Friday Jackson Hole speech, with a DBS analyst quote on Warsh's "credibility event" framing and named technical levels. 4 internal links used (volatile-reversal, 3-month-high, PCE/Jackson Hole articles, homepage board). Cover image: Pexels (Rafael Minguet Delgado, red decline chart, down direction).
+
+## 2026-08-26 13:07 UTC — gold-price-pce-gdp-durable-goods-drop-2026-08-26
+- Trigger: scheduled (1h)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: US Q2 GDP (1.5%), PCE inflation (headline 3.7% YoY vs 3.6% forecast, core 3.3% in line), and durable goods orders (+1.1% vs +0.5% forecast) all released together, triggering profit-taking that sent world gold to a session low of $4,612/oz after an earlier intraday high above $4,700 — new post-data development beyond the two PCE-anticipation articles already published today, with an added angle that the reaction landed after Thailand's 71,700-baht close so it may carry into tomorrow's Thai open.
