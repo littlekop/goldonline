@@ -127,10 +127,21 @@ body {
   text-decoration: underline;
 }
 .article-body blockquote {
-  border-left: 2px solid var(--line);
-  padding-left: 1rem;
-  color: var(--ink-soft);
-  margin: 1rem 0;
+  border-left: 4px solid var(--gold);
+  background: var(--card-soft);
+  border-radius: 0 14px 14px 0;
+  padding: 1.1rem 1.4rem;
+  color: var(--ink);
+  margin: 1.75rem 0;
+}
+.article-body blockquote p {
+  margin-bottom: 0.5rem;
+}
+.article-body blockquote p:last-child {
+  margin-bottom: 0;
+}
+.article-body blockquote strong {
+  color: var(--gold-strong);
 }
 .article-body table {
   width: 100%;

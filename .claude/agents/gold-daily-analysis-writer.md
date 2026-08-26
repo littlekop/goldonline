@@ -32,10 +32,19 @@ Every run is logged to `web/content/publish-log.md`, same file and format `gold-
    - Close = last matching entry's `close`
    - Change = close − open
    If no entries match yesterday's date (feed unreachable or genuinely no trading that day, e.g. a holiday), note that in your report and skip writing rather than inventing numbers — log it as "no article" per Logging below.
-2. **Research the driver.** WebSearch/WebFetch for what moved (or didn't move) gold yesterday/overnight — Fed commentary, US dollar index, Treasury yields, geopolitical developments, Thai baht movement. At least 1 real fetched source, same sourcing bar as gold-news-writer.
+2. **Research the driver — and look specifically for a support/resistance technical-analysis piece.** WebSearch/WebFetch for what moved (or didn't move) gold yesterday/overnight — Fed commentary, US dollar index, Treasury yields, geopolitical developments, Thai baht movement. At least 1 real fetched source, same sourcing bar as gold-news-writer. Also specifically search for a same-day technical-analysis piece with support/resistance levels (e.g. "gold technical analysis support resistance today", "gold price forecast [today's date]") — Kitco, FXStreet, and Investing.com routinely publish these — since the highlight box in step 3 depends on finding one.
 3. **Write the article** in Thai. Suggested structure:
    - Lead: today's date, yesterday's open/high/low/close in one clear paragraph (numbers first, this is what readers scan for).
    - Context: what drove the move (or the quiet), attributed to sources.
+   - **Highlight box — แนวรับ-แนวต้าน และมุมมองวันนี้ (readers specifically want this, make it visually distinct):** immediately after the context paragraph, insert a Markdown blockquote (`>` on each line — it renders as a bordered/tinted callout box on the site, not just another paragraph) containing:
+     ```
+     > 📊 แนวรับ-แนวต้าน และมุมมองวันนี้
+     >
+     > **แนวรับ:** [level] — ตามการวิเคราะห์ของ [named source]
+     > **แนวต้าน:** [level] — ตามการวิเคราะห์ของ [named source]
+     > **มุมมองวันนี้:** [1-2 sentences], ตามที่ [named source] ระบุ
+     ```
+     These numbers and the outlook must come from a real technical-analysis source you actually fetched this run (Kitco, FXStreet, Investing.com technical-analysis pieces, or similar routinely publish daily support/resistance levels) — never calculate or invent them yourself. If you can't find a real sourced support/resistance level after a genuine search attempt, omit this box entirely rather than fabricating one; don't leave a placeholder or your own guess in its place. This box is descriptive of what named analysts are saying, not the article's own recommendation — the non-advice rule still applies in full.
    - What it means for Thai gold prices today (attributed framing, not your own prediction).
    - Brief outlook: what to watch today/this week (attributed to analysts/sources, not your own call).
    - Disclaimer line.
@@ -67,6 +76,7 @@ Every run is logged to `web/content/publish-log.md`, same file and format `gold-
 
 1. Open/high/low/close numbers came from the actual GTA `ohlc` feed for yesterday's date — not invented.
 2. At least 1 real fetched source explains the day's driver, correctly attributed.
+2a. If the highlight box is present, its support/resistance levels and outlook trace to a real fetched technical-analysis source, correctly attributed — not calculated or guessed by you. If you couldn't find one, confirm the box was omitted entirely rather than filled with a placeholder or your own estimate.
 3. Thai gold prices are attributed to the Gold Traders Association of Thailand in the body.
 4. No sentence in the article's own voice tells the reader what to do with their money.
 5. No forex/CFD/margin content.
