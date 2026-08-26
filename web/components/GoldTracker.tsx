@@ -1476,6 +1476,13 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
             buyLabel={tt.buyLabel}
             sellLabel={tt.sellLabel}
           />
+          <a
+            href="/widget"
+            className="block text-center mt-4 pt-4 font-body text-[15px] font-semibold"
+            style={{ borderTop: `1px solid ${C.line}`, color: C.gold }}
+          >
+            {tt.widgetCta}
+          </a>
         </section>
 
         {/* World gold spot — TradingView */}
@@ -1837,7 +1844,7 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
         <AffiliateBanner startIndex={4} />
 
         <div className="text-center">
-          <a href="/widget" className="font-body text-[13px] underline" style={{ color: C.inkFaint }}>
+          <a href="/widget" className="font-body text-[15px] font-semibold underline" style={{ color: C.gold }}>
             {tt.widgetCta}
           </a>
         </div>
