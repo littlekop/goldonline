@@ -244,3 +244,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: not run (no draft produced)
 - Facebook: not applicable (no publish)
 - Summary: `fetch-gold-news-rss.mjs 1` returned 4 items: a 24/7 Wall St. gold-miners-fund piece (evergreen investment angle, not fresh news, and its $4,270 figure didn't match the day's actual price action), a Centerra Gold company-earnings story (not Thai-audience relevant), and two Google-News redirect links (Crux Investor "Treasury Buyback Supports Gold Above $4,600 Despite Fed Tightening Risk", FXEmpire "Gold Price Pullback Puts $4,500 Support in Focus") that failed to resolve directly as usual — verified via WebSearch instead. The Treasury-buyback narrative is the same story running since Aug 21-25, already covered in this pipeline's earlier articles; the pullback/support piece matches the pullback to a $4,612 session low already published in today's 13:07 UTC article (gold-price-pce-gdp-durable-goods-drop-2026-08-26), with CNBC confirming spot still ~$4,614 and no new data release since. Nothing new to report this hour.
+
+## 2026-08-26 16:01 UTC — no article
+- Trigger: scheduled (1h)
+- Outcome: no newsworthy news found
+- Self-check: n/a (no draft written)
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: 1-hour RSS pull (fetch-gold-news-rss.mjs 1) returned only a mining-ETF performance piece (Pluang), Gold Fields quarterly earnings (WSJ), a Bitcoin/gold ETF exposure piece (MarketBeat), and a Thomas Kaplan "$50,000 gold" forecast (Times of India) that traces back to a Kitco interview from 2026-08-20 — none are fresh price moves, macro/policy events, geopolitical developments, or central bank activity, and all overlap with or are staler than the 11 articles already published today covering PCE, GDP, durable goods, Jackson Hole, US debt/Treasury buybacks, and multiple bank price targets; nothing cleared the "new information to report" bar, so no draft was written.
