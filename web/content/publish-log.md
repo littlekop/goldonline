@@ -251,3 +251,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: n/a (no draft written)
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: 1-hour RSS pull (fetch-gold-news-rss.mjs 1) returned only a mining-ETF performance piece (Pluang), Gold Fields quarterly earnings (WSJ), a Bitcoin/gold ETF exposure piece (MarketBeat), and a Thomas Kaplan "$50,000 gold" forecast (Times of India) that traces back to a Kitco interview from 2026-08-20 — none are fresh price moves, macro/policy events, geopolitical developments, or central bank activity, and all overlap with or are staler than the 11 articles already published today covering PCE, GDP, durable goods, Jackson Hole, US debt/Treasury buybacks, and multiple bank price targets; nothing cleared the "new information to report" bar, so no draft was written.
+
+## 2026-08-26 17:01 UTC — no article
+- Trigger: scheduled (1h)
+- Outcome: no newsworthy news found
+- Self-check: n/a (no draft written)
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: RSS pull (last 1h) surfaced 2 items — an FXStreet piece ("XAU/USD corrects to near $4,620") already cited as a source in today's gold-price-close-down-150-baht-pce-2026-08-26.md, and a USA Today "Gold Falls 1.85%" piece that appears to be a syndicated rehash of the same Yahoo Finance "Gold price today, Wed Aug 26" daily roundup already cited in gold-price-pce-gdp-durable-goods-drop-2026-08-26.md; no new figures or angles found via WebSearch beyond what's already published today, so no new article was written per the rehash-skip rule.
