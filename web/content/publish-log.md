@@ -265,3 +265,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Gold extended its slide to $4,596.87 (-1.25%) as CME FedWatch swung to 54.7% odds of an October Fed rate hike after hotter-than-expected July PCE; Thai board closed earlier at 71,700 baht (-150) before this deeper leg down, so the effect will likely show at tomorrow's Thai open.
+
+## 2026-08-26 19:01 UTC — no article
+- Trigger: manual (local run, 1h RSS window per task instructions)
+- Outcome: no newsworthy news found
+- Self-check: n/a (no draft produced)
+- Facebook: not applicable (no publish)
+- Summary: `fetch-gold-news-rss.mjs 1` returned 2 items — a Lundin Gold (TSX:LUG) stock-specific earnings-beat piece (simplywall.st, +23% after strong Fruta del Norte results) that isn't gold-market/Thai-audience news, and a Mining.com "Gold price retreats from three-month high as inflation US gauge runs warm" headline; WebSearch on the latter (Mining.com itself returned 403) surfaced only pre-PCE-release framing (spot ~$4,626.79, "awaiting" the PCE print) already superseded by today's 18:03 UTC article (gold-price-drop-4600-fed-hike-bets-2026-08-26.md), which already has the actual PCE print (3.7% headline), the post-data price ($4,596.87, -1.25%), FedWatch October-hike odds (54.7%), and technical levels. Nothing cleared the new-information bar this hour.
