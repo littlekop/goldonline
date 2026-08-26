@@ -258,3 +258,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: n/a (no draft written)
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: RSS pull (last 1h) surfaced 2 items — an FXStreet piece ("XAU/USD corrects to near $4,620") already cited as a source in today's gold-price-close-down-150-baht-pce-2026-08-26.md, and a USA Today "Gold Falls 1.85%" piece that appears to be a syndicated rehash of the same Yahoo Finance "Gold price today, Wed Aug 26" daily roundup already cited in gold-price-pce-gdp-durable-goods-drop-2026-08-26.md; no new figures or angles found via WebSearch beyond what's already published today, so no new article was written per the rehash-skip rule.
+
+## 2026-08-26 18:03 UTC — gold-price-drop-4600-fed-hike-bets-2026-08-26
+- Trigger: scheduled (1h)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Gold extended its slide to $4,596.87 (-1.25%) as CME FedWatch swung to 54.7% odds of an October Fed rate hike after hotter-than-expected July PCE; Thai board closed earlier at 71,700 baht (-150) before this deeper leg down, so the effect will likely show at tomorrow's Thai open.
