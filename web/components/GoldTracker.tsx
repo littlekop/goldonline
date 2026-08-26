@@ -172,6 +172,7 @@ const translations = {
     todayChangeDown: (n: string) => `วันนี้ ▼ ${n}`,
     todayChangeFlat: "วันนี้ราคาคงที่",
     sharePriceCard: "แชร์ราคานี้",
+    widgetCta: "ฝังราคาทองในเว็บคุณ (ฟรี) →",
     priceCardTitle: "ราคาทองคำวันนี้",
     priceCardCredit: "ราคาตามประกาศสมาคมค้าทองคำแห่งประเทศไทย",
     barLabel: "ทองคำแท่ง 96.5%",
@@ -299,6 +300,7 @@ const translations = {
     todayChangeDown: (n: string) => `Today ▼ ${n}`,
     todayChangeFlat: "No change today",
     sharePriceCard: "Share this price",
+    widgetCta: "Embed this on your site (free) →",
     priceCardTitle: "Gold Price Today",
     priceCardCredit: "Per the Gold Traders Association of Thailand",
     barLabel: "Gold bar 96.5%",
@@ -1833,6 +1835,12 @@ export default function GoldTracker({ latestArticles = [] }: { latestArticles?: 
         </section>
 
         <AffiliateBanner startIndex={4} />
+
+        <div className="text-center">
+          <a href="/widget" className="font-body text-[13px] underline" style={{ color: C.inkFaint }}>
+            {tt.widgetCta}
+          </a>
+        </div>
       </main>
     </div>
   );
