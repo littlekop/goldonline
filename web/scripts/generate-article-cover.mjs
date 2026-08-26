@@ -206,7 +206,7 @@ const el = h(
         fontSize: 54,
         fontWeight: 800,
         color: "#fbf1de",
-        lineHeight: 1.35,
+        lineHeight: 1.6,
         maxWidth: 780,
       },
     },
