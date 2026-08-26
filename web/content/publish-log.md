@@ -29,6 +29,13 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Facebook: not applicable (no publish)
 - Summary: RSS pull (1h window) returned only routine daily rate listings (Bangladesh, Vietnam, India) and a minor pullback (gold below $4,650 vs. the $4,677 3-month high) of the exact Fed Jackson Hole/dollar-weakness story already published at 04:50 UTC today, plus an unrelated China consumer-trend piece (IP Gold jewelry demand) that isn't a price-move event — nothing cleared the bar for a fresh article.
 
+## 2026-08-26 22:00 UTC — no article
+- Trigger: scheduled (1h)
+- Outcome: no newsworthy news found
+- Self-check: not run (no draft produced)
+- Facebook: not applicable (no publish)
+- Summary: `node web/scripts/fetch-gold-news-rss.mjs 1` returned exactly one item — a WSJ piece on Gold Fields Ltd (mining company) raising shareholder returns after an earnings jump tied to higher gold prices. This is a lagging corporate-earnings/equity story about one miner, not a gold price move, macro/policy event, geopolitical development, central bank activity, or Thai-market angle per the newsworthy criteria — doesn't clear the bar for a fresh article.
+
 ## 2026-08-25 08:02 UTC — no article
 - Trigger: scheduled (1h)
 - Outcome: no newsworthy news found
