@@ -216,3 +216,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: N/A (no draft written)
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: RSS pull (1h window) returned only a rehash of today's already-published volatility/PCE story (LINE TODAY, "ปรับแล้ว 16 ครั้ง" vs. the 17-times figure already reported) and an unrelated Sprott PHYS trust valuation piece (ChartMill) that isn't Thai-audience news; nothing new to report.
+
+## 2026-08-26 11:xx UTC — gold-price-close-down-150-baht-pce-2026-08-26
+- Trigger: manual (local run, 1h RSS window per task instructions)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: RSS (1h window) surfaced a LINE TODAY headline ("ทองคำปิดร่วง! ...ลบ 150 บาท") whose Google News redirect link failed to load as usual; verified the underlying move directly via the Thai price mirror site (xn--42cah7d0cxcvbbb9x.com, latest 16:51 announcement): bar sell had fallen further to 71,700 THB / jewelry sell 72,500 THB, a net -150 THB day — a genuine continuation beyond the already-published 15:43 UTC article's -50 THB (71,800) figure, not a rehash. Backed by FXStreet (fetched directly): spot gold pulled back ~0.75% to ~$4,620 ahead of the US core PCE print (due 12:30 GMT, consensus 3.3% YoY) and Fed Chair Warsh's Friday Jackson Hole speech, with a DBS analyst quote on Warsh's "credibility event" framing and named technical levels. 4 internal links used (volatile-reversal, 3-month-high, PCE/Jackson Hole articles, homepage board). Cover image: Pexels (Rafael Minguet Delgado, red decline chart, down direction).
