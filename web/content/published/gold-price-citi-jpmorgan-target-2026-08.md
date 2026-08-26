@@ -1,17 +1,30 @@
 ---
-title: "ราคาทองคำ: Citi ปรับเป้าขึ้น 4,800 ดอลลาร์ JPMorgan มอง 5,000 ดอลลาร์ได้"
-excerpt: "Citi ปรับเป้าราคาทองคำระยะสั้นขึ้นเป็น 4,800 ดอลลาร์ต่อออนซ์ ส่วน JPMorgan มองกรอบ 4,500-5,000 ดอลลาร์ ขณะทองคำแทบไม่ตอบสนองต่อยอดขายบ้านใหม่สหรัฐฯ ที่ร่วงหนักในเดือนกรกฎาคม"
-date: "2026-08-25"
-coverImage: "/images/articles/gold-price-citi-jpmorgan-target-2026-08.jpeg"
-coverImageCredit: "Photo by Michael Steinberg on Pexels"
+title: 'ราคาทองคำ: Citi ปรับเป้าขึ้น 4,800 ดอลลาร์ JPMorgan มอง 5,000 ดอลลาร์ได้'
+excerpt: >-
+  Citi ปรับเป้าราคาทองคำระยะสั้นขึ้นเป็น 4,800 ดอลลาร์ต่อออนซ์ ส่วน JPMorgan
+  มองกรอบ 4,500-5,000 ดอลลาร์ ขณะทองคำแทบไม่ตอบสนองต่อยอดขายบ้านใหม่สหรัฐฯ
+  ที่ร่วงหนักในเดือนกรกฎาคม
+date: '2026-08-25'
+coverImage: /images/articles/gold-price-citi-jpmorgan-target-2026-08.jpeg
+coverImageCredit: Photo by Michael Steinberg on Pexels
 sources:
-  - title: "InvestingLive - Citi lifts near-term gold target to $4,800, JPMorgan flags $5k"
-    url: "https://investinglive.com/commodities/citi-lifts-near-term-gold-target-to-4-800-jpmorgan-flags-5k/"
-  - title: "KITCO - Gold price remains under pressure as U.S. new home sales fall 10.5% in July"
-    url: "https://www.kitco.com/news/article/2026-08-25/gold-price-remains-under-pressure-us-new-home-sales-fall-105-july"
-  - title: "มุมข่าว (mumkhao.com) - ปรับอีก! ราคาทองรอบบ่ายวันนี้ 25 ส.ค. 69"
-    url: "https://www.mumkhao.com/news/economy/25713"
-tags: ["ข่าวทองคำ", "ราคาทองโลก", "ราคาทองไทย"]
+  - title: >-
+      InvestingLive - Citi lifts near-term gold target to $4,800, JPMorgan flags
+      $5k
+    url: >-
+      https://investinglive.com/commodities/citi-lifts-near-term-gold-target-to-4-800-jpmorgan-flags-5k/
+  - title: >-
+      KITCO - Gold price remains under pressure as U.S. new home sales fall
+      10.5% in July
+    url: >-
+      https://www.kitco.com/news/article/2026-08-25/gold-price-remains-under-pressure-us-new-home-sales-fall-105-july
+  - title: มุมข่าว (mumkhao.com) - ปรับอีก! ราคาทองรอบบ่ายวันนี้ 25 ส.ค. 69
+    url: 'https://www.mumkhao.com/news/economy/25713'
+tags:
+  - ข่าวทองคำ
+  - ราคาทองโลก
+  - ราคาทองไทย
+publishedAt: '2026-08-25T15:08:56.000Z'
 ---
 
 ธนาคาร Citi ปรับเป้าราคาทองคำระยะ 0-3 เดือนขึ้นเป็น 4,800 ดอลลาร์สหรัฐต่อออนซ์ พร้อมคงเป้าระยะ 6-12 เดือนไว้ที่ 5,000 ดอลลาร์ต่อออนซ์ ขณะที่ JPMorgan มองว่าทองคำมีโอกาสเคลื่อนไหวอยู่ในกรอบ 4,500-5,000 ดอลลาร์ต่อออนซ์ในช่วงนี้ ท่ามกลางบรรยากาศตลาดที่ยังผันผวนจากทั้งปัจจัยภูมิรัฐศาสตร์และตัวเลขเศรษฐกิจสหรัฐฯ ที่ทยอยประกาศออกมา

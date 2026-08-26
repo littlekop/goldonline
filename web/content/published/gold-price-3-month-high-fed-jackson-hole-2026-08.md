@@ -1,17 +1,31 @@
 ---
-title: "ราคาทองคำโลกพุ่งแตะจุดสูงสุดรอบ 3 เดือน จับตาเงินเฟ้อสหรัฐฯ และเวที Jackson Hole"
-excerpt: "ราคาทองคำโลกทะยานขึ้นแตะระดับสูงสุดในรอบกว่า 3 เดือนที่ 4,677 ดอลลาร์ต่อออนซ์ จากแรงหนุนเงินดอลลาร์อ่อนค่าและแผนซื้อคืนพันธบัตรของกระทรวงการคลังสหรัฐฯ ขณะทองไทยปรับขึ้น 200 บาท ตามประกาศสมาคมค้าทองคำแห่งประเทศไทย"
-date: "2026-08-25"
-coverImage: "/images/articles/gold-price-3-month-high-fed-jackson-hole-2026-08.jpeg"
-coverImageCredit: "Photo by Zlaťáky.cz on Pexels"
+title: >-
+  ราคาทองคำโลกพุ่งแตะจุดสูงสุดรอบ 3 เดือน จับตาเงินเฟ้อสหรัฐฯ และเวที Jackson
+  Hole
+excerpt: >-
+  ราคาทองคำโลกทะยานขึ้นแตะระดับสูงสุดในรอบกว่า 3 เดือนที่ 4,677 ดอลลาร์ต่อออนซ์
+  จากแรงหนุนเงินดอลลาร์อ่อนค่าและแผนซื้อคืนพันธบัตรของกระทรวงการคลังสหรัฐฯ
+  ขณะทองไทยปรับขึ้น 200 บาท ตามประกาศสมาคมค้าทองคำแห่งประเทศไทย
+date: '2026-08-25'
+coverImage: /images/articles/gold-price-3-month-high-fed-jackson-hole-2026-08.jpeg
+coverImageCredit: Photo by Zlaťáky.cz on Pexels
 sources:
-  - title: "Kitco News (Reuters wire) - Gold rally gains momentum ahead of US inflation, Jackson Hole event"
-    url: "https://www.kitco.com/news/off-the-wire/2026-08-24/gold-rally-gains-momentum-ahead-us-inflation-jackson-hole-event"
-  - title: "TNN Thailand - นายกสมาคมค้าทองคำ ชี้เป้าสิ้นปี 5,500 ดอลลาร์ แนะนักลงทุนรอซื้อตอนย่อ"
-    url: "https://news.trueid.net/detail/jnqERxVo6wNn"
-  - title: "Thairath - เช็คราคาทองวันนี้ 25 สิงหาคม 2569 ล่าสุด ราคาปรับเพิ่ม 200 บาท"
-    url: "https://www.thairath.co.th/money/investment/gold/2955026"
-tags: ["ข่าวทองคำ", "ราคาทองโลก", "ราคาทองไทย"]
+  - title: >-
+      Kitco News (Reuters wire) - Gold rally gains momentum ahead of US
+      inflation, Jackson Hole event
+    url: >-
+      https://www.kitco.com/news/off-the-wire/2026-08-24/gold-rally-gains-momentum-ahead-us-inflation-jackson-hole-event
+  - title: >-
+      TNN Thailand - นายกสมาคมค้าทองคำ ชี้เป้าสิ้นปี 5,500 ดอลลาร์
+      แนะนักลงทุนรอซื้อตอนย่อ
+    url: 'https://news.trueid.net/detail/jnqERxVo6wNn'
+  - title: Thairath - เช็คราคาทองวันนี้ 25 สิงหาคม 2569 ล่าสุด ราคาปรับเพิ่ม 200 บาท
+    url: 'https://www.thairath.co.th/money/investment/gold/2955026'
+tags:
+  - ข่าวทองคำ
+  - ราคาทองโลก
+  - ราคาทองไทย
+publishedAt: '2026-08-25T05:00:39.000Z'
 ---
 
 ราคาทองคำในตลาดโลกพุ่งขึ้นแตะระดับสูงสุดในรอบกว่า 3 เดือน โดยราคาทองคำสปอต (Spot Gold) ปรับขึ้น 1.6% มาอยู่ที่ 4,677.14 ดอลลาร์สหรัฐต่อออนซ์ ซึ่งเป็นระดับสูงสุดนับตั้งแต่กลางเดือนพฤษภาคมที่ผ่านมา ส่วนราคาทองคำล่วงหน้าส่งมอบเดือนธันวาคมปรับขึ้น 1.2% อยู่ที่ 4,734.70 ดอลลาร์ต่อออนซ์ ตามรายงานของ Kitco News ที่อ้างอิงข่าวจากสำนักข่าวรอยเตอร์

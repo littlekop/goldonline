@@ -1,15 +1,25 @@
 ---
-title: "ราคาทอง: Natixis ปรับเป้าปีนี้พุ่งเป็น 5,000 ดอลลาร์ หวั่นหนี้สหรัฐฯ-พันธบัตรผันผวน"
-excerpt: "นักวิเคราะห์ Natixis ปรับเป้าราคาทองคำสิ้นปีขึ้นจาก 4,600 เป็น 5,000 ดอลลาร์ต่อออนซ์ หลังหนี้สหรัฐฯ ทะลุ 40 ล้านล้านดอลลาร์ และคลังต้องเพิ่มวงเงินซื้อคืนพันธบัตรรับมือผลตอบแทนพุ่งสูงสุดในรอบ 20 ปี"
-date: "2026-08-25"
-coverImage: "/images/articles/gold-price-natixis-target-5000-debt-fears-2026-08.jpeg"
-coverImageCredit: "Photo by Pixabay on Pexels"
+title: >-
+  ราคาทอง: Natixis ปรับเป้าปีนี้พุ่งเป็น 5,000 ดอลลาร์
+  หวั่นหนี้สหรัฐฯ-พันธบัตรผันผวน
+excerpt: >-
+  นักวิเคราะห์ Natixis ปรับเป้าราคาทองคำสิ้นปีขึ้นจาก 4,600 เป็น 5,000
+  ดอลลาร์ต่อออนซ์ หลังหนี้สหรัฐฯ ทะลุ 40 ล้านล้านดอลลาร์
+  และคลังต้องเพิ่มวงเงินซื้อคืนพันธบัตรรับมือผลตอบแทนพุ่งสูงสุดในรอบ 20 ปี
+date: '2026-08-25'
+coverImage: /images/articles/gold-price-natixis-target-5000-debt-fears-2026-08.jpeg
+coverImageCredit: Photo by Pixabay on Pexels
 sources:
-  - title: "Kitco News - Natixis Raises Gold Price Target to $5,000"
-    url: "https://www.kitco.com/news/article/2026-08-25/natixis-raises-gold-price-target-5000-us-debt-and-bond-market-fears-mount"
-  - title: "มุมข่าว (mumkhao.com) - ราคาทองคำวันนี้ 25 ส.ค. 2569"
-    url: "https://xn--42cah7d0cxcvbbb9x.com/"
-tags: ["ข่าวทองคำ", "ราคาทองโลก", "ราคาทองไทย"]
+  - title: 'Kitco News - Natixis Raises Gold Price Target to $5,000'
+    url: >-
+      https://www.kitco.com/news/article/2026-08-25/natixis-raises-gold-price-target-5000-us-debt-and-bond-market-fears-mount
+  - title: มุมข่าว (mumkhao.com) - ราคาทองคำวันนี้ 25 ส.ค. 2569
+    url: 'https://xn--42cah7d0cxcvbbb9x.com/'
+tags:
+  - ข่าวทองคำ
+  - ราคาทองโลก
+  - ราคาทองไทย
+publishedAt: '2026-08-25T19:06:01.000Z'
 ---
 
 Bernard Dahdah นักวิเคราะห์โลหะมีค่าจากธนาคาร Natixis ปรับเพิ่มเป้าราคาทองคำสิ้นปีนี้จากเดิม 4,600 ดอลลาร์สหรัฐต่อออนซ์ เป็น 5,000 ดอลลาร์ต่อออนซ์ พร้อมคาดการณ์ว่าราคาเฉลี่ยในปี 2570 จะยืนอยู่ที่ระดับ 5,000 ดอลลาร์เช่นกัน ตามรายงานของ Kitco News โดยให้เหตุผลหลักมาจากความกังวลเรื่องเสถียรภาพทางการคลังของสหรัฐฯ และความผันผวนในตลาดพันธบัตร ไม่ใช่จากปัจจัยภูมิรัฐศาสตร์เพียงอย่างเดียวเหมือนที่ผ่านมา

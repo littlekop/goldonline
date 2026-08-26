@@ -63,6 +63,7 @@ Either way, every run follows the same workflow below.
    title: "..."
    excerpt: "..."
    date: "YYYY-MM-DD"
+   publishedAt: "YYYY-MM-DDTHH:MM:SS.000Z"  # exact UTC instant — run `date -u +%Y-%m-%dT%H:%M:%S.000Z`. Required: the site sorts articles by this, not `date`, so same-day articles (common with hourly publishing) order correctly newest-first.
    coverImage: "/images/articles/<slug>.jpg"
    coverImageCredit: "Photo by ... on Pexels"
    sources:
@@ -83,7 +84,7 @@ Re-read your own draft fresh, as if you were a skeptical editor, and answer each
 5. No sentence in the article's own voice tells the reader what to do with their money (quoted attributed advice from a named source is fine; the article's narration recommending action is not).
 6. No forex/CFD/margin-trading content.
 7. The exact disclaimer line is present, verbatim.
-8. Frontmatter is well-formed (valid YAML, slug doesn't collide with an existing draft or published article).
+8. Frontmatter is well-formed (valid YAML, `publishedAt` set to the actual current UTC time, slug doesn't collide with an existing draft or published article).
 
 **If all 8 pass:** run `node web/scripts/publish-draft.mjs <slug>` yourself. It's now live at `/articles/<slug>`.
 **If any fail:** leave it in `drafts/` — do not publish. State clearly which check(s) failed and why in your report/log entry, so a human knows exactly what to review.

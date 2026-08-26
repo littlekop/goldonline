@@ -1,17 +1,30 @@
 ---
-title: "ราคาทองพุ่งแรงสุดรอบเดือน ใกล้ 4,700 ดอลลาร์ จากสงครามเศรษฐกิจสหรัฐฯ-อิหร่าน"
-excerpt: "ทองคำโลกทะยานขึ้นกว่า 14.6% ในเดือนสิงหาคม แรงที่สุดนับตั้งแต่เดือนมกราคม หลังสหรัฐฯ ประกาศ 'Operation Economic Outcast' ปิดล้อมเศรษฐกิจอิหร่านรอบใหม่ โดยระบุทองคำเป็นหนึ่งในเป้าหมายคว่ำบาตรโดยตรง"
-date: "2026-08-25"
-coverImage: "/images/articles/gold-price-historic-monthly-jump-iran-2026-08.jpeg"
-coverImageCredit: "Photo by Robert Lens on Pexels"
+title: 'ราคาทองพุ่งแรงสุดรอบเดือน ใกล้ 4,700 ดอลลาร์ จากสงครามเศรษฐกิจสหรัฐฯ-อิหร่าน'
+excerpt: >-
+  ทองคำโลกทะยานขึ้นกว่า 14.6% ในเดือนสิงหาคม แรงที่สุดนับตั้งแต่เดือนมกราคม
+  หลังสหรัฐฯ ประกาศ 'Operation Economic Outcast' ปิดล้อมเศรษฐกิจอิหร่านรอบใหม่
+  โดยระบุทองคำเป็นหนึ่งในเป้าหมายคว่ำบาตรโดยตรง
+date: '2026-08-25'
+coverImage: /images/articles/gold-price-historic-monthly-jump-iran-2026-08.jpeg
+coverImageCredit: Photo by Robert Lens on Pexels
 sources:
-  - title: "BullionVault - Gold Heads for Historic Monthly Jump Near $4700 on US-Iran 'Economic War'"
-    url: "https://www.bullionvault.com/gold-news/gold-price-news/gold-price-4700-iran-082520261"
-  - title: "Al Jazeera - US launches 'Operation Economic Outcast' to cut Iran's economic lifeline"
-    url: "https://www.aljazeera.com/news/2026/8/24/trump-administration-announces-global-economic-war-on-iran"
-  - title: "มุมข่าว (mumkhao.com) - ราคาทองคำวันนี้ 25 ส.ค. 2569"
-    url: "https://xn--42cah7d0cxcvbbb9x.com/"
-tags: ["ข่าวทองคำ", "ราคาทองโลก", "ราคาทองไทย"]
+  - title: >-
+      BullionVault - Gold Heads for Historic Monthly Jump Near $4700 on US-Iran
+      'Economic War'
+    url: >-
+      https://www.bullionvault.com/gold-news/gold-price-news/gold-price-4700-iran-082520261
+  - title: >-
+      Al Jazeera - US launches 'Operation Economic Outcast' to cut Iran's
+      economic lifeline
+    url: >-
+      https://www.aljazeera.com/news/2026/8/24/trump-administration-announces-global-economic-war-on-iran
+  - title: มุมข่าว (mumkhao.com) - ราคาทองคำวันนี้ 25 ส.ค. 2569
+    url: 'https://xn--42cah7d0cxcvbbb9x.com/'
+tags:
+  - ข่าวทองคำ
+  - ราคาทองโลก
+  - ราคาทองไทย
+publishedAt: '2026-08-25T16:04:20.000Z'
 ---
 
 ราคาทองคำในตลาดโลกกำลังมุ่งหน้าสู่เดือนที่ปรับตัวขึ้นแรงที่สุดครั้งหนึ่งในประวัติศาสตร์ หลังราคาทองคำแตะระดับใกล้ 4,700 ดอลลาร์สหรัฐต่อออนซ์ในสัปดาห์นี้ ก่อนย่อตัวลงราว 90 ดอลลาร์จากจุดสูงสุดของคืนที่ผ่านมา ตามรายงานของ BullionVault โดยนับตั้งแต่ต้นเดือนสิงหาคม ราคาทองคำปรับขึ้นแล้วประมาณ 14.6% และขึ้นมาแล้ว 7.0% นับจากสิ้นปีที่ผ่านมา แรงหนุนสำคัญมาจากความตึงเครียดที่ทวีความรุนแรงขึ้นระหว่างสหรัฐฯ กับอิหร่าน ซึ่งบางฝ่ายเริ่มเรียกว่าเป็น "สงครามเศรษฐกิจ" เต็มรูปแบบ

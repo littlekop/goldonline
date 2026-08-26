@@ -25,6 +25,7 @@ Agent (`gold-news-writer`, ดู `.claude/agents/gold-news-writer.md`) จะ�
 title: "หัวข้อบทความ"
 excerpt: "สรุปสั้น 1-2 ประโยคสำหรับหน้ารายการบทความและ meta description"
 date: "2026-08-25" # YYYY-MM-DD วันที่เขียน
+publishedAt: "2026-08-25T14:44:00.000Z" # เวลาจริงแบบ ISO UTC — ใช้เรียงลำดับบทความบนเว็บ (ล่าสุดอยู่บนสุด) เพราะวันเดียวกันมีได้หลายบทความ ต้องแยกด้วยเวลาไม่ใช่แค่วันที่ — หาได้จาก `date -u +%Y-%m-%dT%H:%M:%S.000Z`
 coverImage: "/images/articles/<slug>.jpg" # path relative to /public
 coverImageCredit: "Photo by X on Pexels" # ต้องมี attribution ตามเงื่อนไข license
 sources:

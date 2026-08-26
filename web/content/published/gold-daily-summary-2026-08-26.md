@@ -1,15 +1,28 @@
 ---
-title: "สรุปราคาทองคำวันนี้ 26 สิงหาคม 2569 — ย้อนดูราคาทองเมื่อวาน เปิด 72,050 พุ่งแตะ 72,200 ก่อนย่อปิด 71,850 บาท"
-excerpt: "สรุปราคาทองคำแท่งไทยประจำวันที่ 25 สิงหาคม 2569 เปิดตลาด 72,050 บาท ขึ้นไปแตะจุดสูงสุด 72,200 บาท ก่อนย่อตัวปิดที่ 71,850 บาท ตามจังหวะทองคำโลกที่แตะจุดสูงสุดรอบ 3 เดือนช่วงเช้าแล้วพักตัวลงช่วงบ่าย"
-date: "2026-08-26"
-coverImage: "/images/articles/gold-daily-summary-2026-08-26.png"
-coverImageCredit: "Background photo by John Guccione www.advergroup.com on Pexels"
+title: >-
+  สรุปราคาทองคำวันนี้ 26 สิงหาคม 2569 — ย้อนดูราคาทองเมื่อวาน เปิด 72,050
+  พุ่งแตะ 72,200 ก่อนย่อปิด 71,850 บาท
+excerpt: >-
+  สรุปราคาทองคำแท่งไทยประจำวันที่ 25 สิงหาคม 2569 เปิดตลาด 72,050 บาท
+  ขึ้นไปแตะจุดสูงสุด 72,200 บาท ก่อนย่อตัวปิดที่ 71,850 บาท
+  ตามจังหวะทองคำโลกที่แตะจุดสูงสุดรอบ 3 เดือนช่วงเช้าแล้วพักตัวลงช่วงบ่าย
+date: '2026-08-26'
+coverImage: /images/articles/gold-daily-summary-2026-08-26.png
+coverImageCredit: Background photo by John Guccione www.advergroup.com on Pexels
 sources:
-  - title: "Thai PBS - สรุปราคาทองคำ 25 ส.ค.2569 ปิดตลาด ไม่เปลี่ยนแปลง ผันผวน 35 ครั้ง"
-    url: "https://www.thaipbs.or.th/news/content/509885"
-  - title: "Yahoo Finance - Gold prices today, Tuesday, August 25, 2026: Gold hits 3-month high this morning"
-    url: "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-tuesday-august-25-2026-gold-hits-3-month-high-this-morning-120736963.html"
-tags: ["สรุปราคาทองประจำวัน", "วิเคราะห์ราคาทอง"]
+  - title: >-
+      Thai PBS - สรุปราคาทองคำ 25 ส.ค.2569 ปิดตลาด ไม่เปลี่ยนแปลง ผันผวน 35
+      ครั้ง
+    url: 'https://www.thaipbs.or.th/news/content/509885'
+  - title: >-
+      Yahoo Finance - Gold prices today, Tuesday, August 25, 2026: Gold hits
+      3-month high this morning
+    url: >-
+      https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-tuesday-august-25-2026-gold-hits-3-month-high-this-morning-120736963.html
+tags:
+  - สรุปราคาทองประจำวัน
+  - วิเคราะห์ราคาทอง
+publishedAt: '2026-08-26T00:34:20.000Z'
 ---
 
 ราคาทองคำแท่งในประเทศไทยเมื่อวันที่ 25 สิงหาคม 2569 เปิดตลาดที่บาทละ 72,050 บาท ปรับขึ้นไปแตะจุดสูงสุดของวันที่ 72,200 บาท ก่อนย่อตัวลงมาต่ำสุดที่ 71,750 บาท และปิดตลาดที่ 71,850 บาท ลดลงสุทธิ 200 บาทจากราคาเปิด ตามข้อมูลราคารายชั่วโมงของสมาคมค้าทองคำแห่งประเทศไทย ทั้งนี้ราคาปิดของวันดังกล่าวเท่ากับราคาปิดของวันก่อนหน้า (24 สิงหาคม) พอดี ทำให้ภาพรวมทั้งวันจัดเป็นวันที่ราคาแกว่งตัวในกรอบแคบมากกว่าจะมีทิศทางชัดเจน แม้ระหว่างวันจะมีการประกาศเปลี่ยนแปลงราคาถึง 35 ครั้งตามรายงานของไทยพีบีเอส

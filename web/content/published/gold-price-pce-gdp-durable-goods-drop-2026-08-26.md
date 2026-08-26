@@ -1,19 +1,38 @@
 ---
-title: "ราคาทองวันนี้ร่วงแตะจุดต่ำสุดรอบวัน หลังตัวเลขเศรษฐกิจสหรัฐฯ แข็งแกร่ง"
-excerpt: "ราคาทองคำโลกร่วงลงมาแตะจุดต่ำสุดของวันที่ระดับ 4,612 ดอลลาร์ต่อออนซ์ หลังสหรัฐฯ ทยอยประกาศตัวเลข GDP ไตรมาส 2 โต 1.5% เงินเฟ้อ PCE ทั่วไปสูงกว่าคาดที่ 3.7% ต่อปี และคำสั่งซื้อสินค้าคงทนเดือนกรกฎาคมโต 1.1% เกินคาดการณ์ กดดันให้นักลงทุนขายทำกำไรหลังราคาเพิ่งทำจุดสูงสุดรอบ 3 เดือน"
-date: "2026-08-26"
-coverImage: "/images/articles/gold-price-pce-gdp-durable-goods-drop-2026-08-26.png"
-coverImageCredit: "Background photo by Pixabay on Pexels"
+title: ราคาทองวันนี้ร่วงแตะจุดต่ำสุดรอบวัน หลังตัวเลขเศรษฐกิจสหรัฐฯ แข็งแกร่ง
+excerpt: >-
+  ราคาทองคำโลกร่วงลงมาแตะจุดต่ำสุดของวันที่ระดับ 4,612 ดอลลาร์ต่อออนซ์
+  หลังสหรัฐฯ ทยอยประกาศตัวเลข GDP ไตรมาส 2 โต 1.5% เงินเฟ้อ PCE
+  ทั่วไปสูงกว่าคาดที่ 3.7% ต่อปี และคำสั่งซื้อสินค้าคงทนเดือนกรกฎาคมโต 1.1%
+  เกินคาดการณ์ กดดันให้นักลงทุนขายทำกำไรหลังราคาเพิ่งทำจุดสูงสุดรอบ 3 เดือน
+date: '2026-08-26'
+coverImage: /images/articles/gold-price-pce-gdp-durable-goods-drop-2026-08-26.png
+coverImageCredit: Background photo by Pixabay on Pexels
 sources:
-  - title: "KITCO - Gold prices see some profit taking as US economy rises 1.5% in Q2, PCE inflation rises 0.2%"
-    url: "https://www.kitco.com/news/article/2026-08-26/gold-prices-see-some-profit-taking-us-economy-rises-15-q2-pce-inflation"
-  - title: "KITCO - Gold price falls to session low $4,612/oz after U.S. durable goods rise 1.1% in July"
-    url: "https://www.kitco.com/news/article/2026-08-26/gold-price-falls-session-low-4612oz-after-us-durable-goods-rise-11-july"
-  - title: "Yahoo Finance - Gold price today, Wednesday, August 26, 2026: Gold pulls back from morning's high over $4,700"
-    url: "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-wednesday-august-26-2026-gold-pulls-back-from-mornings-high-over-4700-120804724.html"
-  - title: "FXStreet - Gold Price Forecast: XAU/USD corrects to near $4,620 in countdown to US PCE Inflation data"
-    url: "https://www.fxstreet.com/news/gold-price-forecast-xau-usd-corrects-to-near-4-620-in-countdown-to-us-pce-inflation-data-202608261012"
-tags: ["ข่าวทองคำ", "ราคาทองไทย"]
+  - title: >-
+      KITCO - Gold prices see some profit taking as US economy rises 1.5% in Q2,
+      PCE inflation rises 0.2%
+    url: >-
+      https://www.kitco.com/news/article/2026-08-26/gold-prices-see-some-profit-taking-us-economy-rises-15-q2-pce-inflation
+  - title: >-
+      KITCO - Gold price falls to session low $4,612/oz after U.S. durable goods
+      rise 1.1% in July
+    url: >-
+      https://www.kitco.com/news/article/2026-08-26/gold-price-falls-session-low-4612oz-after-us-durable-goods-rise-11-july
+  - title: >-
+      Yahoo Finance - Gold price today, Wednesday, August 26, 2026: Gold pulls
+      back from morning's high over $4,700
+    url: >-
+      https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-wednesday-august-26-2026-gold-pulls-back-from-mornings-high-over-4700-120804724.html
+  - title: >-
+      FXStreet - Gold Price Forecast: XAU/USD corrects to near $4,620 in
+      countdown to US PCE Inflation data
+    url: >-
+      https://www.fxstreet.com/news/gold-price-forecast-xau-usd-corrects-to-near-4-620-in-countdown-to-us-pce-inflation-data-202608261012
+tags:
+  - ข่าวทองคำ
+  - ราคาทองไทย
+publishedAt: '2026-08-26T13:07:42.000Z'
 ---
 
 ราคาทองคำในตลาดโลก (XAU/USD) ร่วงลงมาแตะจุดต่ำสุดของวันที่ระดับ 4,612 ดอลลาร์ต่อออนซ์ ในช่วงการซื้อขายวันพุธที่ 26 สิงหาคม 2569 หลังสหรัฐฯ ทยอยประกาศตัวเลขเศรษฐกิจสำคัญพร้อมกันหลายรายการในเวลา 8.30 น. ตามเวลาสหรัฐฝั่งตะวันออก ได้แก่ ผลิตภัณฑ์มวลรวมในประเทศ (GDP) ไตรมาส 2 ที่ขยายตัว 1.5% ตรงตามคาดการณ์ ดัชนีเงินเฟ้อรายจ่ายเพื่อการบริโภคส่วนบุคคล (PCE) เดือนกรกฎาคม ซึ่งตัวเลขทั่วไป (Headline) เพิ่มขึ้น 3.7% เมื่อเทียบรายปี สูงกว่าที่ตลาดคาดไว้ที่ 3.6% ขณะที่ตัวเลขพื้นฐาน (Core PCE) ทรงตัวที่ 3.3% ตรงตามคาด และคำสั่งซื้อสินค้าคงทน (Durable Goods Orders) เดือนกรกฎาคมที่เพิ่มขึ้นถึง 1.1% สูงกว่าที่ตลาดคาดการณ์ไว้เพียง 0.5% ตามรายงานของ KITCO ซึ่งระบุว่าตัวเลขชุดนี้กระตุ้นให้นักลงทุนเทขายทำกำไรทองคำและเงิน หลังราคาเพิ่งพุ่งขึ้นแรงในช่วงก่อนหน้า

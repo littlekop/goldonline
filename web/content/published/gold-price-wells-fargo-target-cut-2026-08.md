@@ -1,17 +1,32 @@
 ---
-title: "ราคาทอง: Wells Fargo หั่นเป้าปี 2026 เหลือ 4,900-5,100 ดอลลาร์ อ้างเฟดยังเข้ม"
-excerpt: "Wells Fargo ปรับลดเป้าราคาทองคำสิ้นปี 2026 ลงเป็นครั้งที่ 3 ของปี เหลือ 4,900-5,100 ดอลลาร์ต่อออนซ์ จากเดิม 5,300-5,500 ดอลลาร์ โดยชี้ว่าอัตราผลตอบแทนพันธบัตรที่แท้จริงในสหรัฐฯ ที่ยังสูงคือแรงกดดันหลัก แม้ยังเชื่อว่าทองคำอยู่ในขาขึ้นระยะยาว"
-date: "2026-08-26"
-coverImage: "/images/articles/gold-price-wells-fargo-target-cut-2026-08.jpeg"
-coverImageCredit: "Photo by Pixabay on Pexels"
+title: 'ราคาทอง: Wells Fargo หั่นเป้าปี 2026 เหลือ 4,900-5,100 ดอลลาร์ อ้างเฟดยังเข้ม'
+excerpt: >-
+  Wells Fargo ปรับลดเป้าราคาทองคำสิ้นปี 2026 ลงเป็นครั้งที่ 3 ของปี เหลือ
+  4,900-5,100 ดอลลาร์ต่อออนซ์ จากเดิม 5,300-5,500 ดอลลาร์
+  โดยชี้ว่าอัตราผลตอบแทนพันธบัตรที่แท้จริงในสหรัฐฯ ที่ยังสูงคือแรงกดดันหลัก
+  แม้ยังเชื่อว่าทองคำอยู่ในขาขึ้นระยะยาว
+date: '2026-08-26'
+coverImage: /images/articles/gold-price-wells-fargo-target-cut-2026-08.jpeg
+coverImageCredit: Photo by Pixabay on Pexels
 sources:
-  - title: "InvestingLive - ICYMI: Wells Fargo cuts 2026 gold target to $4,900-5,100, still bullish overall"
-    url: "https://investinglive.com/commodities/icymi-wells-fargo-cuts-2026-gold-target-to-4-900-5-100-still-bullish-overall/"
-  - title: "BigGo Finance - Wells Fargo Cuts Gold Target for Third Time in 2026 as Fed Stays Hawkish"
-    url: "https://finance.biggo.com/news/21a553d3-4851-4d61-aa4e-fdbe555ec7f1"
-  - title: "Businesstoday - ราคาทองคำวันนี้ (25 ส.ค. 69) บวก 200 บาท รูปพรรณขายออก 72,850 บาท"
-    url: "https://www.businesstoday.co/money-to-know/25/08/2026/130737/"
-tags: ["ข่าวทองคำ", "ราคาทองโลก", "ราคาทองไทย"]
+  - title: >-
+      InvestingLive - ICYMI: Wells Fargo cuts 2026 gold target to $4,900-5,100,
+      still bullish overall
+    url: >-
+      https://investinglive.com/commodities/icymi-wells-fargo-cuts-2026-gold-target-to-4-900-5-100-still-bullish-overall/
+  - title: >-
+      BigGo Finance - Wells Fargo Cuts Gold Target for Third Time in 2026 as Fed
+      Stays Hawkish
+    url: 'https://finance.biggo.com/news/21a553d3-4851-4d61-aa4e-fdbe555ec7f1'
+  - title: >-
+      Businesstoday - ราคาทองคำวันนี้ (25 ส.ค. 69) บวก 200 บาท รูปพรรณขายออก
+      72,850 บาท
+    url: 'https://www.businesstoday.co/money-to-know/25/08/2026/130737/'
+tags:
+  - ข่าวทองคำ
+  - ราคาทองโลก
+  - ราคาทองไทย
+publishedAt: '2026-08-25T20:03:55.000Z'
 ---
 
 Wells Fargo ปรับลดเป้าราคาทองคำสิ้นปี 2026 ลงเป็นครั้งที่ 3 ในรอบปีนี้ จากเดิมที่เคยตั้งไว้ 5,300-5,500 ดอลลาร์ต่อออนซ์ เหลือ 4,900-5,100 ดอลลาร์ต่อออนซ์ และปรับลดเป้าปี 2027 จาก 5,800-6,000 ดอลลาร์ ลงมาอยู่ที่ 5,400-5,600 ดอลลาร์ ตามรายงานของ InvestingLive และ BigGo Finance โดยนับเป็นการปรับเป้าลงครั้งที่สามของธนาคารในปีนี้ หลังจากเคยปรับเพิ่มเป้าขึ้นไปสูงถึง 6,100-6,300 ดอลลาร์ในเดือนกุมภาพันธ์ที่ผ่านมา เท่ากับตัวเลขกลางของเป้าหมายปรับลดลงกว่า 1,200 ดอลลาร์นับตั้งแต่ต้นปี

@@ -1,15 +1,30 @@
 ---
-title: "ทองคำโลกดีดตัวใกล้แตะ 4,700 ดอลลาร์ หลังคลายกังวลช่องแคบฮอร์มุซ จับตาเงินเฟ้อ PCE เที่ยงนี้"
-excerpt: "ราคาทองคำโลกฟื้นตัวกลับขึ้นใกล้ระดับสูงสุดในรอบ 15 สัปดาห์ที่ราว 4,697 ดอลลาร์ต่อออนซ์ หลังตลาดคลายกังวลจากข่าวเปิดช่องแคบฮอร์มุซอีกครั้งและดอลลาร์สหรัฐอ่อนค่า ขณะตลาดจับตาตัวเลขเงินเฟ้อ PCE ที่จะประกาศเที่ยงวันนี้ตามเวลาไทย"
-date: "2026-08-26"
-coverImage: "/images/articles/gold-price-4700-hormuz-pce-2026-08.png"
-coverImageCredit: "Background photo by İrfan Simsar on Pexels"
+title: >-
+  ทองคำโลกดีดตัวใกล้แตะ 4,700 ดอลลาร์ หลังคลายกังวลช่องแคบฮอร์มุซ จับตาเงินเฟ้อ
+  PCE เที่ยงนี้
+excerpt: >-
+  ราคาทองคำโลกฟื้นตัวกลับขึ้นใกล้ระดับสูงสุดในรอบ 15 สัปดาห์ที่ราว 4,697
+  ดอลลาร์ต่อออนซ์
+  หลังตลาดคลายกังวลจากข่าวเปิดช่องแคบฮอร์มุซอีกครั้งและดอลลาร์สหรัฐอ่อนค่า
+  ขณะตลาดจับตาตัวเลขเงินเฟ้อ PCE ที่จะประกาศเที่ยงวันนี้ตามเวลาไทย
+date: '2026-08-26'
+coverImage: /images/articles/gold-price-4700-hormuz-pce-2026-08.png
+coverImageCredit: Background photo by İrfan Simsar on Pexels
 sources:
-  - title: "FXStreet - $4700 back on Gold buyers' radar as US core PCE inflation data looms"
-    url: "https://www.fxstreet.com/analysis/4700-back-on-gold-buyers-radar-as-us-core-pce-inflation-data-looms-202608260332"
-  - title: "FXStreet - Gold advances above $4,650 on US Dollar weakness, Treasury bond buyback plans"
-    url: "https://www.fxstreet.com/news/gold-advances-above-4-650-on-us-dollar-weakness-treasury-bond-buyback-plans-202608252327"
-tags: ["ข่าวทองคำ", "ราคาทองโลก"]
+  - title: >-
+      FXStreet - $4700 back on Gold buyers' radar as US core PCE inflation data
+      looms
+    url: >-
+      https://www.fxstreet.com/analysis/4700-back-on-gold-buyers-radar-as-us-core-pce-inflation-data-looms-202608260332
+  - title: >-
+      FXStreet - Gold advances above $4,650 on US Dollar weakness, Treasury bond
+      buyback plans
+    url: >-
+      https://www.fxstreet.com/news/gold-advances-above-4-650-on-us-dollar-weakness-treasury-bond-buyback-plans-202608252327
+tags:
+  - ข่าวทองคำ
+  - ราคาทองโลก
+publishedAt: '2026-08-26T04:04:28.000Z'
 ---
 
 ราคาทองคำโลก (Spot Gold) กลับมาไต่ระดับใกล้แตะจุดสูงสุดในรอบ 15 สัปดาห์ที่ราว 4,697 ดอลลาร์สหรัฐต่อออนซ์ในการซื้อขายช่วงเช้าตลาดเอเชียวันนี้ หลังจากล่าสุดเคลื่อนไหวอยู่ที่ 4,648.57 ดอลลาร์ต่อออนซ์ ตามรายงานของ FXStreet โดยแรงหนุนหลักมาจากข่าวความคืบหน้าในการเปิดช่องแคบฮอร์มุซอีกครั้ง ซึ่งช่วยคลายความกังวลด้านอุปทานน้ำมันและเงินเฟ้อ ประกอบกับเงินดอลลาร์สหรัฐที่ยังคงอ่อนค่า ขณะที่ตลาดกำลังจับตาตัวเลขเงินเฟ้อ PCE ที่จะประกาศเที่ยงวันนี้ตามเวลาไทย

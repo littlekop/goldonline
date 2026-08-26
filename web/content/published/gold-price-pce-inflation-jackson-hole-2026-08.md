@@ -1,15 +1,30 @@
 ---
-title: "ราคาทองคำวันนี้ขึ้น 250 บาท จับตาเงินเฟ้อ PCE เที่ยงนี้ ก่อนสุนทรพจน์ประธานเฟดที่ Jackson Hole"
-excerpt: "ทองคำแท่งไทยเปิดตลาดเช้านี้ปรับขึ้น 250 บาท มาอยู่ที่บาทละ 72,100 บาท ขณะทองคำโลกย่อตัวจากจุดสูงสุดรอบ 3 เดือนเล็กน้อย ก่อนตลาดจะรู้ผลตัวเลขเงินเฟ้อ PCE เที่ยงวันนี้ตามเวลาไทย และสุนทรพจน์ประธานเฟด เควิน วอร์ช ที่ Jackson Hole ในวันศุกร์"
-date: "2026-08-26"
-coverImage: "/images/articles/gold-price-pce-inflation-jackson-hole-2026-08.png"
-coverImageCredit: "Background photo by K on Pexels"
+title: >-
+  ราคาทองคำวันนี้ขึ้น 250 บาท จับตาเงินเฟ้อ PCE เที่ยงนี้
+  ก่อนสุนทรพจน์ประธานเฟดที่ Jackson Hole
+excerpt: >-
+  ทองคำแท่งไทยเปิดตลาดเช้านี้ปรับขึ้น 250 บาท มาอยู่ที่บาทละ 72,100 บาท
+  ขณะทองคำโลกย่อตัวจากจุดสูงสุดรอบ 3 เดือนเล็กน้อย ก่อนตลาดจะรู้ผลตัวเลขเงินเฟ้อ
+  PCE เที่ยงวันนี้ตามเวลาไทย และสุนทรพจน์ประธานเฟด เควิน วอร์ช ที่ Jackson Hole
+  ในวันศุกร์
+date: '2026-08-26'
+coverImage: /images/articles/gold-price-pce-inflation-jackson-hole-2026-08.png
+coverImageCredit: Background photo by K on Pexels
 sources:
-  - title: "Yahoo Finance - Gold Pulls Back From Three-Month High Ahead of U.S. Inflation Data and Warsh Speech"
-    url: "https://finance.yahoo.com/markets/commodities/articles/gold-pulls-back-three-month-093355050.html"
-  - title: "ราคาทองคําวันนี้ - ทองคําทรงตัวระดับสูงท่ามกลางการจับตาเงินเฟ้อ-สุนทรพจน์ประธานเฟด"
-    url: "https://xn--42cah7d0cxcvbbb9x.com/%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8D%E0%B8%B2%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%87%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%A1%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B1%E0%B8%9A%E0%B8%95%E0%B8%B2%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%9F%E0%B9%89%E0%B8%AD-%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%9E%E0%B8%88%E0%B8%99%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%9F%E0%B8%94/"
-tags: ["ข่าวทองคำ", "ราคาทองไทย"]
+  - title: >-
+      Yahoo Finance - Gold Pulls Back From Three-Month High Ahead of U.S.
+      Inflation Data and Warsh Speech
+    url: >-
+      https://finance.yahoo.com/markets/commodities/articles/gold-pulls-back-three-month-093355050.html
+  - title: >-
+      ราคาทองคําวันนี้ -
+      ทองคําทรงตัวระดับสูงท่ามกลางการจับตาเงินเฟ้อ-สุนทรพจน์ประธานเฟด
+    url: >-
+      https://xn--42cah7d0cxcvbbb9x.com/%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8D%E0%B8%B2%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%87%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%A1%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B1%E0%B8%9A%E0%B8%95%E0%B8%B2%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%9F%E0%B9%89%E0%B8%AD-%E0%B8%AA%E0%B8%B8%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%9E%E0%B8%88%E0%B8%99%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%9F%E0%B8%94/
+tags:
+  - ข่าวทองคำ
+  - ราคาทองไทย
+publishedAt: '2026-08-26T02:04:57.000Z'
 ---
 
 ราคาทองคำแท่งในประเทศไทยเช้านี้ (26 สิงหาคม 2569) เปิดตลาดปรับขึ้น 250 บาทจากวันก่อนหน้า มาอยู่ที่บาทละ 72,100 บาท (ราคาขายออก) ตามประกาศของสมาคมค้าทองคำแห่งประเทศไทย ณ เวลา 9:00 น. ขณะที่ทองรูปพรรณขายออกอยู่ที่บาทละ 72,900 บาท ส่วนราคาทองคำโลก (Spot Gold) ล่าสุดเคลื่อนไหวอยู่ที่ราว 4,657 ดอลลาร์สหรัฐต่อออนซ์

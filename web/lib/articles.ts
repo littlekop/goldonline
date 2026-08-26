@@ -11,6 +11,11 @@ export type ArticleMeta = {
   title: string;
   excerpt: string;
   date: string;
+  // Exact publish instant (ISO 8601, UTC) — used for sort order so multiple
+  // articles published the same day (common with hourly auto-publishing)
+  // show newest-first instead of falling back to file order. Optional only
+  // for articles published before this field existed.
+  publishedAt?: string;
   coverImage?: string;
   coverImageCredit?: string;
   sources: ArticleSource[];
@@ -32,7 +37,11 @@ export function getAllArticles(): ArticleMeta[] {
     .map((slug) => getArticle(slug))
     .filter((a): a is Article => a !== null)
     .map(({ content: _content, ...meta }) => meta)
-    .sort((a, b) => (a.date < b.date ? 1 : -1));
+    .sort((a, b) => {
+      const aKey = a.publishedAt ?? a.date;
+      const bKey = b.publishedAt ?? b.date;
+      return aKey < bKey ? 1 : aKey > bKey ? -1 : 0;
+    });
 }
 
 export function getArticle(slug: string): Article | null {
@@ -45,6 +54,7 @@ export function getArticle(slug: string): Article | null {
     title: data.title ?? slug,
     excerpt: data.excerpt ?? "",
     date: data.date ?? "",
+    publishedAt: data.publishedAt,
     coverImage: data.coverImage,
     coverImageCredit: data.coverImageCredit,
     sources: Array.isArray(data.sources) ? data.sources : [],

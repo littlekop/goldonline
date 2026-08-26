@@ -1,21 +1,37 @@
 ---
-title: "ราคาทองวันนี้ผันผวนหนัก เปิดพุ่ง 250 บาท ก่อนร่วงติดลบ จับตา PCE-Jackson Hole"
-excerpt: "ราคาทองคำแท่งไทยวันที่ 26 สิงหาคม 2569 เปิดตลาดเช้าปรับขึ้น 250 บาท แตะ 72,100 บาท ก่อนราคาโลกพลิกอ่อนตัวช่วงบ่าย ทำให้ราคาทองไทยถูกปรับเปลี่ยนกว่า 17 ครั้งภายในวันเดียว จนกลับมาต่ำกว่าราคาปิดเมื่อวานสุทธิ 50 บาท ขณะตลาดยังรอตัวเลขเงินเฟ้อ PCE และสุนทรพจน์ Jackson Hole"
-date: "2026-08-26"
-coverImage: "/images/articles/gold-price-volatile-reversal-2026-08-26.png"
-coverImageCredit: "Background photo by Rafael Minguet Delgado on Pexels"
+title: ราคาทองวันนี้ผันผวนหนัก เปิดพุ่ง 250 บาท ก่อนร่วงติดลบ จับตา PCE-Jackson Hole
+excerpt: >-
+  ราคาทองคำแท่งไทยวันที่ 26 สิงหาคม 2569 เปิดตลาดเช้าปรับขึ้น 250 บาท แตะ 72,100
+  บาท ก่อนราคาโลกพลิกอ่อนตัวช่วงบ่าย ทำให้ราคาทองไทยถูกปรับเปลี่ยนกว่า 17
+  ครั้งภายในวันเดียว จนกลับมาต่ำกว่าราคาปิดเมื่อวานสุทธิ 50 บาท
+  ขณะตลาดยังรอตัวเลขเงินเฟ้อ PCE และสุนทรพจน์ Jackson Hole
+date: '2026-08-26'
+coverImage: /images/articles/gold-price-volatile-reversal-2026-08-26.png
+coverImageCredit: Background photo by Rafael Minguet Delgado on Pexels
 sources:
-  - title: "สมาคมค้าทองคำแห่งประเทศไทย - Gold Traders Association of Thailand (ราคาล่าสุดรายวัน)"
-    url: "https://www.goldtraders.or.th/"
-  - title: "Thairath - เช็คราคาทองวันนี้ 26 สิงหาคม 2569 ล่าสุด ราคาปรับเพิ่ม 250 บาท"
-    url: "https://www.thairath.co.th/money/investment/gold/2955278"
-  - title: "Sanook - ราคาทองวันนี้ 26 ส.ค. 69 เปิดพุ่ง 250 บาท ทองรูปพรรณขายออก 72,900 บาท"
-    url: "https://www.sanook.com/money/955983/"
-  - title: "Markets.com - Gold Price Today, August 26: XAU/USD Holds Near $4,650 Before US PCE Test"
-    url: "https://www.markets.com/news/gold-price-today-august-26-2026"
-  - title: "FXStreet - Gold remains firm as PCE data and Fed signals set the next direction"
-    url: "https://www.fxstreet.com/analysis/gold-remains-firm-as-pce-data-and-fed-signals-set-the-next-direction-202608260602"
-tags: ["ข่าวทองคำ", "ราคาทองไทย"]
+  - title: >-
+      สมาคมค้าทองคำแห่งประเทศไทย - Gold Traders Association of Thailand
+      (ราคาล่าสุดรายวัน)
+    url: 'https://www.goldtraders.or.th/'
+  - title: Thairath - เช็คราคาทองวันนี้ 26 สิงหาคม 2569 ล่าสุด ราคาปรับเพิ่ม 250 บาท
+    url: 'https://www.thairath.co.th/money/investment/gold/2955278'
+  - title: >-
+      Sanook - ราคาทองวันนี้ 26 ส.ค. 69 เปิดพุ่ง 250 บาท ทองรูปพรรณขายออก 72,900
+      บาท
+    url: 'https://www.sanook.com/money/955983/'
+  - title: >-
+      Markets.com - Gold Price Today, August 26: XAU/USD Holds Near $4,650
+      Before US PCE Test
+    url: 'https://www.markets.com/news/gold-price-today-august-26-2026'
+  - title: >-
+      FXStreet - Gold remains firm as PCE data and Fed signals set the next
+      direction
+    url: >-
+      https://www.fxstreet.com/analysis/gold-remains-firm-as-pce-data-and-fed-signals-set-the-next-direction-202608260602
+tags:
+  - ข่าวทองคำ
+  - ราคาทองไทย
+publishedAt: '2026-08-26T09:05:09.000Z'
 ---
 
 ราคาทองคำแท่งในประเทศไทยวันที่ 26 สิงหาคม 2569 เปิดตลาดเวลา 09.00 น. ด้วยการปรับขึ้นทันที 250 บาท มาอยู่ที่บาทละ 72,100 บาท (รับซื้อ 71,900 บาท) ส่วนทองรูปพรรณขายออกที่บาทละ 72,899.76 บาท ตามประกาศของสมาคมค้าทองคำแห่งประเทศไทย ตามรายงานของไทยรัฐและสนุกดอทคอม แต่หลังจากนั้นราคาทองคำโลกพลิกอ่อนตัวลงในช่วงบ่าย ทำให้สมาคมค้าทองคำแห่งประเทศไทยต้องประกาศเปลี่ยนแปลงราคาต่อเนื่อง โดยข้อมูลจากระบบราคาของสมาคมฯ ณ เวลา 15.43 น. แสดงให้เห็นว่าเป็นการเปลี่ยนแปลงราคาครั้งที่ 17 ของวัน และราคาทองคำแท่งขายออกล่าสุดลดลงมาอยู่ที่ 71,800 บาท ต่ำกว่าราคาปิดของเมื่อวานสุทธิ 50 บาท สะท้อนภาพรวมวันนี้ที่ผันผวนหนักกว่าปกติ

@@ -53,6 +53,7 @@ Every run is logged to `web/content/publish-log.md`, same file and format `gold-
    title: "..."
    excerpt: "..."
    date: "YYYY-MM-DD"
+   publishedAt: "YYYY-MM-DDTHH:MM:SS.000Z"  # exact UTC instant — run `date -u +%Y-%m-%dT%H:%M:%S.000Z`. Required for correct newest-first sort order on the site.
    coverImage: "/images/articles/<slug>.jpg"
    coverImageCredit: "Photo by ... on Pexels"
    sources:
@@ -71,7 +72,7 @@ Every run is logged to `web/content/publish-log.md`, same file and format `gold-
 4. No sentence in the article's own voice tells the reader what to do with their money.
 5. No forex/CFD/margin content.
 6. The exact disclaimer line is present, verbatim.
-7. Frontmatter is well-formed and the slug doesn't collide with an existing draft/published article.
+7. Frontmatter is well-formed (`publishedAt` set to the actual current UTC time) and the slug doesn't collide with an existing draft/published article.
 
 **If all 7 pass:** run `node web/scripts/publish-draft.mjs <slug>` yourself.
 **If any fail:** leave it in `drafts/` for human review — state which check(s) failed.

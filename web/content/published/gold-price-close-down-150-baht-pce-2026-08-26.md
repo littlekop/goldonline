@@ -1,15 +1,24 @@
 ---
-title: "ราคาทองวันนี้ปิดลบ 150 บาท ทองรูปพรรณขายออก 72,500 รอลุ้นทิศทางเฟด"
-excerpt: "ราคาทองคำแท่งไทยวันที่ 26 สิงหาคม 2569 ปิดตลาดที่บาทละ 71,700 บาท ลดลงสุทธิ 150 บาทจากวันก่อนหน้า หลังราคาทองคำโลกร่วงจากจุดสูงสุดรอบ 3 เดือน ระหว่างรอตัวเลขเงินเฟ้อ PCE และสุนทรพจน์ Jackson Hole ของประธานเฟด"
-date: "2026-08-26"
-coverImage: "/images/articles/gold-price-close-down-150-baht-pce-2026-08-26.png"
-coverImageCredit: "Background photo by Rafael Minguet Delgado on Pexels"
+title: 'ราคาทองวันนี้ปิดลบ 150 บาท ทองรูปพรรณขายออก 72,500 รอลุ้นทิศทางเฟด'
+excerpt: >-
+  ราคาทองคำแท่งไทยวันที่ 26 สิงหาคม 2569 ปิดตลาดที่บาทละ 71,700 บาท ลดลงสุทธิ
+  150 บาทจากวันก่อนหน้า หลังราคาทองคำโลกร่วงจากจุดสูงสุดรอบ 3 เดือน
+  ระหว่างรอตัวเลขเงินเฟ้อ PCE และสุนทรพจน์ Jackson Hole ของประธานเฟด
+date: '2026-08-26'
+coverImage: /images/articles/gold-price-close-down-150-baht-pce-2026-08-26.png
+coverImageCredit: Background photo by Rafael Minguet Delgado on Pexels
 sources:
-  - title: "ราคาทองคำวันนี้ (xn--42cah7d0cxcvbbb9x.com)"
-    url: "https://xn--42cah7d0cxcvbbb9x.com/"
-  - title: "FXStreet - Gold Price Forecast: XAU/USD corrects to near $4,620 in countdown to US PCE Inflation data"
-    url: "https://www.fxstreet.com/news/gold-price-forecast-xau-usd-corrects-to-near-4-620-in-countdown-to-us-pce-inflation-data-202608261012"
-tags: ["ข่าวทองคำ", "ราคาทองไทย"]
+  - title: ราคาทองคำวันนี้ (xn--42cah7d0cxcvbbb9x.com)
+    url: 'https://xn--42cah7d0cxcvbbb9x.com/'
+  - title: >-
+      FXStreet - Gold Price Forecast: XAU/USD corrects to near $4,620 in
+      countdown to US PCE Inflation data
+    url: >-
+      https://www.fxstreet.com/news/gold-price-forecast-xau-usd-corrects-to-near-4-620-in-countdown-to-us-pce-inflation-data-202608261012
+tags:
+  - ข่าวทองคำ
+  - ราคาทองไทย
+publishedAt: '2026-08-26T12:03:28.000Z'
 ---
 
 ราคาทองคำแท่งในประเทศไทยวันที่ 26 สิงหาคม 2569 ปิดตลาดช่วงเย็นด้วยการปรับตัวลดลงต่อเนื่อง ล่าสุดตามประกาศเวลา 16.51 น. ราคาทองคำแท่งอยู่ที่บาทละ 71,700 บาท (รับซื้อ 71,500 บาท) ส่วนทองรูปพรรณขายออกอยู่ที่บาทละ 72,500 บาท ลดลงสุทธิ 150 บาทจากราคาปิดของวันก่อนหน้า ตามประกาศของสมาคมค้าทองคำแห่งประเทศไทย ซึ่งเป็นการปรับลดลงต่อเนื่องจากช่วงบ่ายที่เคยรายงานไปแล้วว่าราคาทองคำแท่งขายออกลดลงมาอยู่ที่ 71,800 บาท หรือติดลบสุทธิ 50 บาท (อ่านเพิ่มเติม: [ราคาทองวันนี้ผันผวนหนัก เปิดพุ่ง 250 บาท ก่อนร่วงติดลบ](/articles/gold-price-volatile-reversal-2026-08-26)) สะท้อนว่าแรงขายทองคำยังคงกดดันราคาต่อเนื่องจนถึงช่วงเย็น
