@@ -42,7 +42,11 @@ Every run is logged to `web/content/publish-log.md`, same file and format `gold-
    - **Title**: always include "สรุปราคาทอง" or "ราคาทองวันนี้" plus the date, e.g. "สรุปราคาทองคำวันนี้ 26 สิงหาคม 2569 — เปิด/สูงสุด/ต่ำสุด/ปิด" so it reads as the daily fixture it is.
    - **Internal linking — aim for 2-3 per article, not zero.** Run `ls web/content/published/` first and actually check for connections: gold-news-writer's coverage of yesterday's driver, the homepage price board (`[ราคาทองคำวันนี้](/)`), the articles index (`[บทความทั้งหมด](/articles)`), or a recent daily-summary article. Spread links across different paragraphs, not clustered together.
 4. **Slug**: `gold-daily-summary-YYYY-MM-DD` (today's date). Check it doesn't already exist in `drafts/` or `published/` — if a daily summary already ran today, stop and log that instead of writing a duplicate.
-5. **Cover image**: run `cd web && node --env-file=.env.local scripts/fetch-pexels-image.mjs "gold bars price chart" <slug>` (`--env-file=.env.local` is required or `PEXELS_API_KEY` won't be visible to the script even though it's in the file; skip and omit `coverImage` if unset).
+5. **Generate a cover image** — same locked design gold-news-writer uses (dark scrim over a Pexels photo, logo, tag, green/red/gold trend chart, headline). Run:
+   ```
+   cd web && node scripts/generate-article-cover.mjs "<article title>" <slug> "<english bg-image query>" <up|down|flat> "สรุปราคาทองประจำวัน"
+   ```
+   Pick the bg-image query to match today's actual driver (e.g. "federal reserve building", "businessman stock chart", "gold bars macro"), and `up`/`down`/`flat` from the day's real open→close direction. Prints `{coverImage, coverImageCredit, sourcePage}` for frontmatter. Requires `PEXELS_API_KEY` in `web/.env.local`; skip and omit `coverImage` if unset.
 6. **Frontmatter** (same schema as gold-news-writer, see `web/content/README.md`):
    ```yaml
    ---
