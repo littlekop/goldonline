@@ -175,3 +175,9 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Spot gold rebounded toward a 15-week high near $4,697/oz (from $4,648.57) on Strait of Hormuz reopening optimism easing oil/inflation fears and continued USD weakness plus expanded US Treasury bond buybacks; TD Securities cautioned the rally may be premature; markets awaiting the core PCE release at 12:30 GMT today. Thai gold prices unchanged from this morning's already-published +250 THB move (72,100 THB bar sell / 72,900 THB jewelry sell per the Gold Traders Association of Thailand) — new angle was the global spot reversal and its drivers, not a new Thai price level.
+
+## 2026-08-26 05:01 UTC — no article
+- Trigger: scheduled (1h)
+- Outcome: no newsworthy news found
+- Self-check: not run (no draft produced)
+- Summary: RSS pull (last 1h) surfaced only routine daily price-report items (Bangkokbiznews Globlex futures snapshot ~$4,640/oz, goldaround.com MTS Gold daily note, Thairath's recurring quarter-baht price template, an India retail gold/silver price roundup not relevant to Thai audience, and a Laopu Gold jewelry-retailer business story) — all either non-substantive routine reposts or a rehash of the PCE/Jackson Hole/Treasury-buyback story already covered in today's earlier published article (gold-price-pce-inflation-jackson-hole-2026-08, same date). WebSearch confirmed spot gold still hovering ~$4,650-4,662/oz with no new PCE print or Warsh speech content yet. Nothing new to report; skipped per the "no genuine new information" rule.
