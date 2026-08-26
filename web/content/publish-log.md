@@ -293,3 +293,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: not run (no draft produced)
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: `fetch-gold-news-rss.mjs 1` returned zero items across all three queries (English "gold price", Thai "ราคาทอง", "gold market analysis") in the last 1 hour — no research material to work from, so no article was written.
+
+## 2026-08-26 23:01 UTC — no article
+- Trigger: manual (local run, 1h RSS window per task instructions)
+- Outcome: no newsworthy news found
+- Self-check: n/a (no draft produced)
+- Facebook: not applicable (no publish)
+- Summary: `fetch-gold-news-rss.mjs 1` returned only 1 item, a generic Vietnam.vn daily SJC/world-gold price roundup (Google News redirect unresolvable, no real content to fetch). Supplemented with WebSearch, which surfaced a Yahoo Finance "gold pulls back from $4,700" piece (spot ~$4,674.60, Treasury debt-buyback support, Iran-Oman Hormuz de-escalation, Fed Chair Kevin Warsh's Jackson Hole speech Friday) — but every driver in it (the $4,700 pullback, Hormuz easing, PCE, Warsh/Jackson Hole) is already covered across today's existing published articles (gold-price-pullback-investor-demand-resilient-2026-08-26.md published just ~1h prior, gold-price-drop-4600-fed-hike-bets-2026-08-26.md, gold-price-4700-hormuz-pce-2026-08.md, gold-price-3-month-high-fed-jackson-hole-2026-08.md). The only new elements (APMEX's Brett Elliott and Midas Funds' Thomas Winmill discussing counterparty risk/storage fees of physical gold vs. mining-stock risk) are generic how-to-invest commentary, not market-moving news. Nothing cleared the new-information bar this hour.
