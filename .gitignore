@@ -8,3 +8,7 @@ Thumbs.db
 
 # local Claude Code settings (personal, not shared)
 .claude/settings.local.json
+
+# Google service account key (Search Console API) — never commit
+gold-price-seo-*.json
+
