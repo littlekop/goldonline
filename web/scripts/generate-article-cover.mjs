@@ -121,7 +121,7 @@ const el = h(
       left: 0,
       width: 1200,
       height: 630,
-      background: "rgba(15,10,4,0.82)",
+      background: "rgba(15,10,4,0.66)",
       display: "flex",
     },
   }),
