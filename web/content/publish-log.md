@@ -202,3 +202,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: not run (no draft produced)
 - Facebook: not applicable (no publish)
 - Summary: `node web/scripts/fetch-gold-news-rss.mjs 1` returned exactly one item — an FXEmpire "Gold (XAU/USD) & Silver Price Forecast" piece ("Lower Yields Support Metals Before PCE"). WebSearch/WebFetch to verify it turned up FXEmpire's recurring daily forecast column, and every angle it covers (Treasury buyback plans lowering yields/weakening the dollar, gold-backed ETF inflows of ~46.7-47 tonnes / $6.4bn — largest in ~10 months, expanded US sanctions on Iran, Fed Chair Kevin Warsh's Jackson Hole speech, market awaiting today's US PCE print, ~42% odds of a September rate move) is a word-for-word rehash of sources already used in this pipeline's own published articles from the last 24h (gold-price-3-month-high-fed-jackson-hole-2026-08 and gold-price-4700-hormuz-pce-2026-08, both citing the same ETF/Iran/Warsh/PCE facts). No new price level, no new data release (PCE hadn't printed yet), no new quote — nothing to add, so per the workflow's rehash rule this run stops after research with no draft written.
+
+## 2026-08-26 15:43 UTC — gold-price-volatile-reversal-2026-08-26
+- Trigger: scheduled (1h)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: RSS (1h window) surfaced a LINE Today headline about the Thai gold price being adjusted 16+ times today; verified via Thairath/Sanook/Markets.com/FXStreet and a direct check of the GTA live price feed that the morning's +250 baht open (72,100) had reversed by afternoon into a net -50 baht day (71,800, 17th price change), amid pre-PCE/Jackson Hole positioning — wrote a fresh article on the reversal since it added new information beyond this morning's already-published +250 baht piece.
