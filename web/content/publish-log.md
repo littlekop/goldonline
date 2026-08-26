@@ -140,3 +140,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: not run (no draft produced)
 - Facebook: not applicable (no publish)
 - Summary: `node web/scripts/fetch-gold-news-rss.mjs 1` returned zero items across all feeds in the 1-hour window — genuinely quiet news cycle, nothing to research or write.
+
+## 2026-08-26 01:00 UTC — gold-daily-summary-2026-08-26
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai gold bar price on 2026-08-25 (per Gold Traders Association of Thailand hourly feed) opened 72,050, hit a high of 72,200, low of 71,750, and closed 71,850 THB (net -200), round-tripping back to the prior day's close after global spot gold touched a 3+ month high (~$4,710 futures) on dollar weakness/Treasury buyback support before paring gains in the afternoon as the dollar index showed short-term recovery signs (Thai PBS) and markets positioned for this week's PCE inflation data and Fed Chair Kevin Warsh's Jackson Hole speech (Yahoo Finance).
