@@ -209,3 +209,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: RSS (1h window) surfaced a LINE Today headline about the Thai gold price being adjusted 16+ times today; verified via Thairath/Sanook/Markets.com/FXStreet and a direct check of the GTA live price feed that the morning's +250 baht open (72,100) had reversed by afternoon into a net -50 baht day (71,800, 17th price change), amid pre-PCE/Jackson Hole positioning — wrote a fresh article on the reversal since it added new information beyond this morning's already-published +250 baht piece.
+
+## 2026-08-26 [hourly check] UTC — no article
+- Trigger: scheduled (1h)
+- Outcome: no newsworthy news found
+- Self-check: N/A (no draft written)
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: RSS pull (1h window) returned only a rehash of today's already-published volatility/PCE story (LINE TODAY, "ปรับแล้ว 16 ครั้ง" vs. the 17-times figure already reported) and an unrelated Sprott PHYS trust valuation piece (ChartMill) that isn't Thai-audience news; nothing new to report.
