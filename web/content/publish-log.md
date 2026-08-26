@@ -279,3 +279,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: RSS (1h window) surfaced 2 items — Mining.com.au "Gold price slips on Fed bets but investor appetite remains strong" (Google News redirect failed as usual, found and fetched directly) and an unreachable observer.com central-bank-reserves piece (skipped, never cited). Mining.com.au gave genuinely new material beyond today's 12 price-drop-focused articles: spot ~$4,610 (-1%), a named Zaner Metals analyst (Peter Grant) quote calling the dip "just some profit taking" with a $5,000 EOY / new-highs-by-Q2-2027 call, gold-backed ETF inflows, and VanEck GDX miners ETF +35% in a month. Corroborated with a freshly-fetched FXStreet piece (China Hong Kong gold imports +11% MoM in July, Treasury buyback backdrop) not previously cited today. Deliberately omitted Mining.com.au's specific "28+ tonnes, largest since January" ETF stat since it conflicted with the already-verified 46.7-tonne/10-month-high figure in an earlier published article — kept the ETF-inflow claim qualitative to avoid presenting contradictory hard numbers to readers. 4 internal links (3-month-high, drop-4600, close-down-150-baht, Natixis $5,000 target) plus homepage board and articles index.
+
+## 2026-08-26 21:00 UTC — no article
+- Trigger: scheduled (1h)
+- Outcome: no newsworthy news found
+- Self-check: not run (no draft produced)
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: `fetch-gold-news-rss.mjs 1` returned zero items across all three queries (English "gold price", Thai "ราคาทอง", "gold market analysis") in the last 1 hour — no research material to work from, so no article was written.
