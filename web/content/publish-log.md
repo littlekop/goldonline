@@ -307,3 +307,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: N/A — no article written
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: node web/scripts/fetch-gold-news-rss.mjs 1 returned zero items in the last 1-hour window; nothing newsworthy to report.
+
+## 2026-08-27 00:32 UTC — gold-daily-summary-2026-08-27
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar-gold (26 Aug 2026, per GTA hourly OHLC feed) opened 72,100, high 72,150, low 71,650, closed 71,700 (-400 baht intraday, -150 baht vs. prior day's close), driven by USD strength, rising Treasury yields and profit-taking (FXStreet) followed by a hotter-than-expected July PCE print that pushed global gold below $4,600 after Thai market close (FXEmpire); outlook flagged Friday's Jackson Hole speech by new Fed Chair Kevin Warsh.
