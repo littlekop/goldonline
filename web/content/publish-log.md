@@ -335,3 +335,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Thai gold held above the previous day's close (bar sell 71,750 THB, per GTA/Sanook live board at 11:32) while world gold hovered near a 3-month high around $4,650-4,697/oz on dollar weakness and the US Treasury bond buyback plan, with markets awaiting Fed Chair Kevin Warsh's Friday Jackson Hole speech; sourced from two FXStreet analyses and the Sanook gold price page.
+
+## 2026-08-27 09:04 UTC — gold-price-drop-250-baht-fed-hike-bets-2026-08-27
+- Trigger: scheduled (4h)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai gold bar/jewelry prices fell 250 THB in the afternoon (announcement #19, 14:20) to bar sell 71,450 / jewelry sell 72,250 THB per the Gold Traders Association of Thailand, as world spot slipped near $4,601-4,600/oz on rebounding US bond yields and DXY back above 99 after hot PCE inflation data raised Fed hike bets; Iran-Oman Strait of Hormuz talks progress and Treasury bond buybacks capped the downside, while SPDR sold 2.85 tons; markets now await Fed Chair Kevin Warsh's Jackson Hole speech Friday.
