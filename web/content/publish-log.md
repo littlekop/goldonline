@@ -328,3 +328,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: n/a (no draft produced)
 - Facebook: not applicable (no publish)
 - Summary: `fetch-gold-news-rss.mjs 1` returned only 1 item — a Mining.com piece whose Google News redirect title rendered as a raw URL slug ("comex-gold-price-ytd-aug-26-2026"), suggesting a generic year-to-date data/chart page rather than a news event; the redirect link itself was unfetchable (Google News interstitial, no article content). WebSearch for the likely underlying story and for the current top angle (Fed Chair Warsh's Jackson Hole speech) surfaced only material already covered in today's published articles and this morning's daily summary (Warsh speaks Friday Aug 28, ~10am ET; Treasury buyback/soft-dollar backdrop). One search result set (an AI-generated summary citing "$5,597.23 all-time high" and "95.6% one-year gain") looked inconsistent with this site's own verified price history and was discarded rather than cited. Nothing cleared the new-information bar this hour.
+
+## 2026-08-27 05:07 UTC — gold-price-warsh-jackson-hole-2026-08-27
+- Trigger: scheduled (4h)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai gold held above the previous day's close (bar sell 71,750 THB, per GTA/Sanook live board at 11:32) while world gold hovered near a 3-month high around $4,650-4,697/oz on dollar weakness and the US Treasury bond buyback plan, with markets awaiting Fed Chair Kevin Warsh's Friday Jackson Hole speech; sourced from two FXStreet analyses and the Sanook gold price page.
