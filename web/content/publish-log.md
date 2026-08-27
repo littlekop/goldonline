@@ -314,3 +314,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 7/7 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Thai bar-gold (26 Aug 2026, per GTA hourly OHLC feed) opened 72,100, high 72,150, low 71,650, closed 71,700 (-400 baht intraday, -150 baht vs. prior day's close), driven by USD strength, rising Treasury yields and profit-taking (FXStreet) followed by a hotter-than-expected July PCE print that pushed global gold below $4,600 after Thai market close (FXEmpire); outlook flagged Friday's Jackson Hole speech by new Fed Chair Kevin Warsh.
+
+## 2026-08-27 01:01 UTC — no article
+- Trigger: manual (local run, 1h RSS window per task instructions)
+- Outcome: no newsworthy news found
+- Self-check: n/a (no draft produced)
+- Facebook: not applicable (no publish)
+- Summary: `fetch-gold-news-rss.mjs 1` returned only 1 item — a Mining.com piece whose Google News redirect title rendered as a raw URL slug ("comex-gold-price-ytd-aug-26-2026"), suggesting a generic year-to-date data/chart page rather than a news event; the redirect link itself was unfetchable (Google News interstitial, no article content). WebSearch for the likely underlying story and for the current top angle (Fed Chair Warsh's Jackson Hole speech) surfaced only material already covered in today's published articles and this morning's daily summary (Warsh speaks Friday Aug 28, ~10am ET; Treasury buyback/soft-dollar backdrop). One search result set (an AI-generated summary citing "$5,597.23 all-time high" and "95.6% one-year gain") looked inconsistent with this site's own verified price history and was discarded rather than cited. Nothing cleared the new-information bar this hour.
