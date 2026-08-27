@@ -32,7 +32,7 @@ Either way, every run follows the same workflow below.
    ```
    node web/scripts/fetch-gold-news-rss.mjs 48
    ```
-   (pass a different hour count to match your actual check interval, e.g. `1` for an hourly schedule). Pulls recent items from Google News (English "gold price", Thai "ราคาทอง", "gold market analysis") as JSON: `{title, link, source, pubDate}`, no API key needed.
+   (pass a different hour count to match your actual check interval — currently `4`, since the scheduled task runs every 4 hours). Pulls recent items from Google News (English "gold price", Thai "ราคาทอง", "gold market analysis") as JSON: `{title, link, source, pubDate}`, no API key needed.
 
    **What counts as newsworthy — broader than just "the price moved":**
    - An actual gold price move (bar/spot, up or down).
