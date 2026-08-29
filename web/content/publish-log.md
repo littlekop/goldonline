@@ -363,3 +363,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Follow-up on Friday's Warsh selloff — deeper decline than yesterday's article captured (spot gold ~$4,455, -3.1%, per Kitco/FXEmpire), new payroll benchmark-revision catalyst (79,000 jobs), and the 200-day moving average breach that sets up the $4,500-support/$5,000-target technical battle; Thai board price unchanged over the weekend but confirmed to be calculated off the same $4,455 spot figure.
+
+## 2026-08-29 21:02 UTC — no article
+- Trigger: manual (local run, 4h RSS window per task instructions)
+- Outcome: no newsworthy news found
+- Self-check: n/a (no draft produced)
+- Facebook: not applicable (no publish)
+- Summary: `fetch-gold-news-rss.mjs 4` returned 3 items: an unresolvable bangkokbiznews Google News redirect headlining the same "-1,600 บาท" drop already published in gold-price-drop-1600-baht-warsh-speech-2026-08-29.md, an unresolvable FOREX.com redirect on the same "gold smashed 3.2%... Warsh hawkish" story already published in gold-price-breaks-200-day-average-payrolls-2026-08-30.md (13:08 and 17:03 UTC runs today), and an unrelated XRP/crypto piece. WebSearch for both the Thai price and the Warsh/Jackson Hole angle surfaced only the same story across Kitco, FXStreet, Business Standard, SDBullion, Fortune, CNBC, TradingKey (all dated Aug 27-28, pre-dating today's already-published coverage); one Fox News hit about "a single Trump announcement" turned out to be an old Feb 3 2026 Warsh-nomination story, not new. Directly queried the live GTA feed (goldtraders.or.th/api/GoldPrices/Latest) to check for any board movement since the last article: still asTime 2026-08-29T09:08:00, priceSeq 1, bar sell 70,150, spot $4,455 — identical to what's already reported, confirming no new Thai price move this window. Nothing cleared the new-information bar.
