@@ -349,3 +349,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Thai gold closed the trading day down 350 baht (bar sell 71,350) after 29 intraday adjustments, while global gold pulled back to ~$4,649 from above $4,700 on a softer month-over-month PCE reading, with markets now awaiting Fed Chair Kevin Warsh's Friday Jackson Hole speech.
+
+## 2026-08-29 13:08 UTC — gold-price-drop-1600-baht-warsh-speech-2026-08-29
+- Trigger: manual (local run, 4h RSS window per task instructions)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: RSS (4h window) surfaced a Thai LINE TODAY headline about a sharp gold price drop plus English wire pieces on gold's weekly decline; verified directly via the live GTA price API (goldtraders.or.th) that Thai bar gold opened today at a single 09:08 announcement down 1,600 baht (bar sell 70,150, buy 69,950, jewelry sell 70,950) and remains unchanged as of this run, corroborated by สยามบิสซิเนสนิวส์'s matching report. Root cause traced via BullionVault (fetched directly): new Fed Chair Kevin Warsh's first Jackson Hole speech (Fri Aug 28) reaffirmed a "firm, fixed" 2% PCE inflation target, sending world spot gold down ~$70 in minutes from $4,626 to a $4,554 low, fixing near $4,560 at London's PM auction, cutting August's monthly gain from 15.8% to 13.3% and pushing rate-hike odds from ~1-in-3 to over 2-in-5 (year-end Fed funds expectation 3.94%, 3-week high). Corroborated with IANS Live (fetched directly): weekly gold decline ~1.86%, July PCE 3.7% YoY, September hike odds ~33%→40%+. Note: found an earlier unpublished/stale draft (gold-price-4527-support-warsh-speech-2026-08-28.md, dated pre-speech "tonight" framing) sitting in drafts/ from a prior run — left untouched per instructions (not asked to clean up), but did not reuse it since it predates the actual speech and price move. 3 internal links (warsh-jackson-hole, close-350-baht-warsh, Natixis $5,000 target) plus homepage board and articles index.
