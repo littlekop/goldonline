@@ -370,3 +370,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: n/a (no draft produced)
 - Facebook: not applicable (no publish)
 - Summary: `fetch-gold-news-rss.mjs 4` returned 3 items: an unresolvable bangkokbiznews Google News redirect headlining the same "-1,600 บาท" drop already published in gold-price-drop-1600-baht-warsh-speech-2026-08-29.md, an unresolvable FOREX.com redirect on the same "gold smashed 3.2%... Warsh hawkish" story already published in gold-price-breaks-200-day-average-payrolls-2026-08-30.md (13:08 and 17:03 UTC runs today), and an unrelated XRP/crypto piece. WebSearch for both the Thai price and the Warsh/Jackson Hole angle surfaced only the same story across Kitco, FXStreet, Business Standard, SDBullion, Fortune, CNBC, TradingKey (all dated Aug 27-28, pre-dating today's already-published coverage); one Fox News hit about "a single Trump announcement" turned out to be an old Feb 3 2026 Warsh-nomination story, not new. Directly queried the live GTA feed (goldtraders.or.th/api/GoldPrices/Latest) to check for any board movement since the last article: still asTime 2026-08-29T09:08:00, priceSeq 1, bar sell 70,150, spot $4,455 — identical to what's already reported, confirming no new Thai price move this window. Nothing cleared the new-information bar.
+
+## 2026-08-30 00:32 UTC — gold-daily-summary-2026-08-30
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Yesterday (Sat 29 Aug) Thai bar gold O=H=L=C 70,150 THB per GTA's hourly OHLC feed — a single 09:08 announcement with zero intraday movement since the Thai market is closed weekends, opening 1,600 baht below Friday's 71,750 close as the delayed reflection of Friday night's Warsh Jackson Hole selloff; explained via LiteFinance (confirms Aug 29-30 non-trading days, week-ahead data calendar, 61.1% September hold odds) and CNBC (Warsh's hawkish tone) fetched/searched this run.
