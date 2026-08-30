@@ -377,3 +377,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 7/7 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Yesterday (Sat 29 Aug) Thai bar gold O=H=L=C 70,150 THB per GTA's hourly OHLC feed — a single 09:08 announcement with zero intraday movement since the Thai market is closed weekends, opening 1,600 baht below Friday's 71,750 close as the delayed reflection of Friday night's Warsh Jackson Hole selloff; explained via LiteFinance (confirms Aug 29-30 non-trading days, week-ahead data calendar, 61.1% September hold odds) and CNBC (Warsh's hawkish tone) fetched/searched this run.
+
+## 2026-08-30 01:01 UTC — no article
+- Trigger: manual (local run, 4h RSS window per task instructions)
+- Outcome: no newsworthy news found
+- Self-check: n/a (no draft produced)
+- Facebook: not applicable (no publish)
+- Summary: `fetch-gold-news-rss.mjs 4` returned 1 item — bangkokbiznews headline on the same "-1,600 บาท" drop already covered in gold-price-drop-1600-baht-warsh-speech-2026-08-29.md and gold-price-breaks-200-day-average-payrolls-2026-08-30.md (the Google News redirect link itself was unfetchable, but the headline matches those articles exactly). Directly queried the live GTA feed (goldtraders.or.th/api/GoldPrices/Latest): still asTime 2026-08-29T09:08:00, priceSeq 1, bar sell 70,150, spot $4,455 — unchanged since the prior 21:02 UTC check, Thai market closed for the weekend. WebSearch for the Warsh/Jackson Hole angle surfaced only the same Friday Aug 28 selloff story (Yahoo Finance, CNBC, Mining.com) already reported in today's two published articles, nothing new to add. Nothing cleared the new-information bar this hour.
