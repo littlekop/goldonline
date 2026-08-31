@@ -391,3 +391,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: n/a (no draft produced)
 - Facebook: not applicable (no publish)
 - Summary: `fetch-gold-news-rss.mjs 4` returned 5 items. The bangkokbiznews "-1,600 บาท" headline is the same Aug 29 story already published twice (gold-price-drop-1600-baht-warsh-speech-2026-08-29.md, gold-price-breaks-200-day-average-payrolls-2026-08-30.md). The lead that looked genuinely new — "Gold Crosses $4,600: What Could Push Prices Past Goldman's $4,900 Target?" (outlookbusiness.com, via unfetchable Google News redirect) — did not survive verification: WebSearch/WebFetch on the matching businesstoday.in piece traced the "$4,600" comparison to a Goldman Sachs note dated "as of August 25," i.e. pre-Friday's Warsh selloff, not a fresh Aug 30 price move; a second WebSearch confirmed the US spot market is still closed for the weekend (7:07am NY time) and Kitco has no fresh Aug 30 print. Cross-checked directly against the live GTA feed (goldtraders.or.th/api/GoldPrices/Latest): asTime now 2026-08-30T09:01:00 (new announcement vs. the prior 08-29T09:08:00), bar sell up only 100 THB to 70,250, goldSpot $4,463 (vs. Friday's already-reported $4,455) — a marginal uptick, not a breakout to $4,600, and too small on its own to clear the reporting bar. Also in the pull: an Orosur Mining small-cap stock piece (Share Talk, not a macro/gold-market story), a Khaleej Times piece on Dubai 22K jewelry pricing (regional retail, same post-Warsh weakness already covered, no new driver), and a Vietnam.vn regional price roundup (not relevant to the Thai audience, no new macro angle). Nothing cleared the new-information bar this hour.
+
+## 2026-08-31 01:03 UTC — gold-daily-summary-2026-08-31
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Yesterday (Sun 30 Aug) Thai bar gold O=H=L=C 70,250 THB per GTA's hourly OHLC feed — a single 09:00 announcement with zero intraday movement since the Thai market is closed weekends, up 100 baht from Saturday's flat 70,150 close; explained via Crypto Briefing (world gold steadying $4,455-4,615 after Friday's >3% Warsh-driven selloff) and LiteFinance/CME (61.1% odds Fed holds rates in September, this week's data calendar through Sept 4 NFP) fetched this run.
+
+## 2026-08-31 01:08 UTC — gold-price-goldman-4900-target-2026-08-31
+- Trigger: scheduled (daily 08:00)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: New angle not covered by today's already-published daily summary — Goldman Sachs' $4,900 EOY 2026 gold target (central bank buying ~50t/month vs 17t/month pre-2022, Q2 2026 central bank purchases of 289t) plus the US Treasury's Aug 19 doubling of its long-bond buyback to $4bn/operation and gold bulls shifting to exotic options/call spreads, synthesized from BusinessToday.in, Crypto Briefing, and KuCoin News.
