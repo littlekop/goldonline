@@ -405,3 +405,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: New angle not covered by today's already-published daily summary — Goldman Sachs' $4,900 EOY 2026 gold target (central bank buying ~50t/month vs 17t/month pre-2022, Q2 2026 central bank purchases of 289t) plus the US Treasury's Aug 19 doubling of its long-bond buyback to $4bn/operation and gold bulls shifting to exotic options/call spreads, synthesized from BusinessToday.in, Crypto Briefing, and KuCoin News.
+
+## 2026-09-01 01:04 UTC — gold-daily-summary-2026-09-01
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Yesterday (Mon 31 Aug) Thai bar gold O=69,600 H=69,850 L=69,250 C=69,850 THB per GTA's hourly OHLC feed — opened ~650 baht below Sunday's 70,250 close, dipped further to 69,250 in the morning, then recovered through the day to close up 250 baht from the open; explained via Yahoo Finance (Dec futures opened -1.0% on US strikes on Iranian rocket launchers plus rising Sept Fed hike bets, then recovered to $4,507.20 by 8:22am ET) and Trading Economics ($4,440, near 2-week low, +9.3% on the month) fetched this run.
+
+## 2026-09-01 01:10 UTC — gold-etf-demand-central-bank-buying-2026-08
+- Trigger: scheduled (24h, local, part of daily run)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Wrote a fresh article on gold/silver ETF demand recovering (Heraeus/KITCO) and record central bank gold buying in Q2 2026 led by Poland and China (IndexBox), plus an analyst's attributed view on the current correction — a genuinely new angle beyond the Iran-strikes/Fed-hike dip story already covered in today's daily summary.
