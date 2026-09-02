@@ -419,3 +419,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Wrote a fresh article on gold/silver ETF demand recovering (Heraeus/KITCO) and record central bank gold buying in Q2 2026 led by Poland and China (IndexBox), plus an analyst's attributed view on the current correction — a genuinely new angle beyond the Iran-strikes/Fed-hike dip story already covered in today's daily summary.
+
+## 2026-09-02 01:01 UTC — gold-daily-summary-2026-09-02
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Yesterday (Tue 1 Sep) Thai bar gold O=69,900 H=69,900 L=68,950 C=69,050 THB per GTA's hourly OHLC feed — opened at the day's high, then fell continuously with no intraday bounce, down 850 baht net; explained via FXStreet (world gold hit a 2-week low near $4,460/oz, broke its uptrend channel, RoboForex sees further downside to $4,377-4,318) and Yahoo Finance (Fed Chair Warsh's "work to do" on inflation comments pushed September rate-hike odds to 66.4% from 36% a week earlier, plus fresh US-Iran strikes in the Strait of Hormuz region) fetched this run.
+
+## 2026-09-02 01:05 UTC — gold-price-comex-close-85-bond-yield-20-month-high-2026-09-02
+- Trigger: scheduled (24h, local, part of daily run)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Fresh angle beyond today's daily summary — COMEX Dec gold's actual NY close (-$85.10/-1.90% to $4,396.40, per infoquest.co.th) plus the 10Y Treasury yield hitting a 20-month high (4.7880%), World Gold Council's technical pullback risk to $4,215/oz (Kitco), and Mining.com's updated ~70% September Fed-hike odds with a named TD Securities quote — none of which were in the earlier daily-summary article.
