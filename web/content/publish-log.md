@@ -433,3 +433,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Fresh angle beyond today's daily summary — COMEX Dec gold's actual NY close (-$85.10/-1.90% to $4,396.40, per infoquest.co.th) plus the 10Y Treasury yield hitting a 20-month high (4.7880%), World Gold Council's technical pullback risk to $4,215/oz (Kitco), and Mining.com's updated ~70% September Fed-hike odds with a named TD Securities quote — none of which were in the earlier daily-summary article.
+
+## 2026-09-03 01:02 UTC — gold-daily-summary-2026-09-03
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Wed 2 Sept 2026 opened 67,900, high 68,250, low 67,700, closed 68,050 THB (+150, +0.22%) per Gold Traders Association of Thailand hourly feed — opened sharply lower after overnight COMEX slump on US-Iran military escalation and 20-month-high bond yields, then rebounded through the day as yields/dollar eased on Fed's John Williams comments (FXStreet, Yahoo Finance).
+
+## 2026-09-03 01:08 UTC — gold-dutch-central-bank-86-tonnes-schroders-bullish-2026-09-03
+- Trigger: scheduled (daily 08:00, part 2 — 24h lookback)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: DNB moved 86 tonnes of gold reserves from US/Canada to UK citing geopolitical unrest, and Schroders separately turned bullish on gold citing debt/inflation/currency risk outweighing high real yields — distinct from today's already-published daily OHLC summary, sourced via Euronews, KITCO, and investingLive.
