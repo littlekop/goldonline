@@ -447,3 +447,10 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: DNB moved 86 tonnes of gold reserves from US/Canada to UK citing geopolitical unrest, and Schroders separately turned bullish on gold citing debt/inflation/currency risk outweighing high real yields — distinct from today's already-published daily OHLC summary, sourced via Euronews, KITCO, and investingLive.
+
+## 2026-09-04 02:53 UTC — gold-daily-summary-2026-09-04 (recovered)
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published — article, cover image, and used-images.json update were all written to disk during the 2026-09-04 run but the run ended before logging or committing; recovered and committed by the following day's (2026-09-05) run.
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Thu 3 Sept 2026 opened 69,200 (up 1,150 baht from Wed's 68,050 close), high 69,300, low 69,100, closed 69,150 THB (-50 net) per GTA's hourly OHLC feed — the overnight jump priced in a 2%+ global gold surge on Fed Governor Waller's dovish comments and fresh US-Iran Hormuz tensions, then held a narrow range the rest of the day; sourced via FXStreet and Yahoo Finance.
