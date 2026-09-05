@@ -454,3 +454,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 7/7 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Thai bar gold on Thu 3 Sept 2026 opened 69,200 (up 1,150 baht from Wed's 68,050 close), high 69,300, low 69,100, closed 69,150 THB (-50 net) per GTA's hourly OHLC feed — the overnight jump priced in a 2%+ global gold surge on Fed Governor Waller's dovish comments and fresh US-Iran Hormuz tensions, then held a narrow range the rest of the day; sourced via FXStreet and Yahoo Finance.
+
+## 2026-09-05 01:03 UTC — gold-daily-summary-2026-09-05
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Fri 4 Sept 2026 opened 69,800 baht (+650 from Thu's 69,150 close), high 69,900, low 69,650, closed 69,650 THB (-150 net, -0.21%) per GTA's hourly OHLC feed — global gold consolidated below $4,500 during Thai trading hours as traders held back ahead of the US August jobs report, then the report (162K vs 55K forecast) smashed expectations after Thai market close, sending global gold from Thursday's $4,539.90 close toward $4,427 and lifting September Fed rate-hike odds back above 60%; sourced via two FXStreet reports.
+
+## 2026-09-05 01:09 UTC — gold-price-sentiment-survey-cpi-outlook-2026-09-05
+- Trigger: scheduled (daily 08:00 Asia/Bangkok, part 2 of run)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Distinct angle from the same-run daily summary — Kitco's weekly Wall Street (38% bull/31% bear/31% neutral) vs Main Street (55% bull, weakened from prior week) sentiment survey, plus FXStreet's technical support/resistance levels ($4,240-$4,850 range) and Fed Governor Waller's CPI-dependent stance, framing next Friday's US CPI release as the key catalyst before the Sept 15-16 FOMC meeting.
