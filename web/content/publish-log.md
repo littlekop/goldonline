@@ -468,3 +468,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Distinct angle from the same-run daily summary — Kitco's weekly Wall Street (38% bull/31% bear/31% neutral) vs Main Street (55% bull, weakened from prior week) sentiment survey, plus FXStreet's technical support/resistance levels ($4,240-$4,850 range) and Fed Governor Waller's CPI-dependent stance, framing next Friday's US CPI release as the key catalyst before the Sept 15-16 FOMC meeting.
+
+## 2026-09-06 01:05 UTC — gold-daily-summary-2026-09-06
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Sat 5 Sept 2026 posted a single flat quote all day (open=high=low=close=69,150 THB, per GTA's hourly OHLC feed, unchanged intraday) — 500 baht below Friday's 69,650 close, reflecting Thailand's normal Saturday single-reference-quote convention catching up to Friday night's global selloff after the August NFP report (162K vs 56K forecast, unemployment 4.1%) pushed spot gold from ~$4,522 to ~$4,437 and lifted September Fed rate-hike odds to 61%; sourced via Yahoo Finance and FXStreet.
+
+## 2026-09-06 01:10 UTC — gold-price-jefferies-5000-scenarios-2026-09-06
+- Trigger: scheduled (daily 08:00, part 2)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Wrote a forward-looking forecast piece on Jefferies' new quant model (3 scenarios for gold above $5,000: fiscal deficit back to ~14% of GDP, USD reserve share below 40%, or central banks doubling gold-buying pace; base case $4,500 H2 2026 / $5,000 H1 2027) and Goldman Sachs' $4,900 EOY-2026 target, framed against the Sept 4-5 jobs-data-driven selloff — deliberately chosen as an additive angle distinct from the parallel daily-summary agent's coverage of the same day's price move.
