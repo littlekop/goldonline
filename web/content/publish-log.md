@@ -482,3 +482,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Wrote a forward-looking forecast piece on Jefferies' new quant model (3 scenarios for gold above $5,000: fiscal deficit back to ~14% of GDP, USD reserve share below 40%, or central banks doubling gold-buying pace; base case $4,500 H2 2026 / $5,000 H1 2027) and Goldman Sachs' $4,900 EOY-2026 target, framed against the Sept 4-5 jobs-data-driven selloff — deliberately chosen as an additive angle distinct from the parallel daily-summary agent's coverage of the same day's price move.
+
+## 2026-09-07 01:04 UTC — gold-daily-summary-2026-09-07
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Sun 6 Sept 2026 posted a second straight flat single quote (O=H=L=C=69,150 THB, per GTA's hourly OHLC feed, unchanged from Saturday's 69,150) reflecting the weekend-closure single-reference-quote convention and continuing to price in Friday 4 Sept's post-NFP selloff (gold fell almost $100/2.5%+ on stronger-than-expected August payrolls, per FXStreet); outlook flagged this week's ADP (Sept 8), jobless claims/PPI (Sept 10) and CPI/Michigan sentiment (Sept 11) data ahead of the Sept 16 FOMC meeting, where markets see a 59.9% chance of a rate hike (LiteFinance).
+
+## 2026-09-07 01:08 UTC — no article
+- Trigger: scheduled (daily, part 2 of 08:00 run — after daily summary)
+- Outcome: no newsworthy news found — everything in the 24h RSS window was a rehash of stories already covered today/yesterday
+- Self-check: not run (no draft produced)
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Ran `node web/scripts/fetch-gold-news-rss.mjs 24`; the window was dominated by the strong US August payrolls / Fed rate-hike-bets story (already fully covered in gold-daily-summary-2026-09-05/06/07 and gold-price-jefferies-5000-scenarios-2026-09-06), plus a Christopher Waller dovish-comments angle and a China PBOC gold-reserves data point that both turned out to be older news (Sept 3-4 and July, respectively) already folded into this week's daily summaries. Checked an NDTV Profit-syndicated "Iran tensions" weekly outlook piece (via Daily Pioneer / Time News mirrors) and a Moneycontrol correction-analysis piece and an FXEmpire technical piece — all three restated the same payrolls/Fed/CPI-on-Sept-11 narrative already in today's daily summary, or cited stale/inconsistent figures, with no new verifiable fact to add. Remaining RSS items were out of scope for this audience (Bangladesh bhori prices, a Korean gold-covered-call ETF product, an Endeavour Mining dividend story, Ghana GoldBod/LBMA benchmark news). Per the "only skip when it's a word-for-word rehash with nothing to add" bar, held off rather than force a low-value article.
