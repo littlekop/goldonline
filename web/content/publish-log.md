@@ -496,3 +496,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: not run (no draft produced)
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Ran `node web/scripts/fetch-gold-news-rss.mjs 24`; the window was dominated by the strong US August payrolls / Fed rate-hike-bets story (already fully covered in gold-daily-summary-2026-09-05/06/07 and gold-price-jefferies-5000-scenarios-2026-09-06), plus a Christopher Waller dovish-comments angle and a China PBOC gold-reserves data point that both turned out to be older news (Sept 3-4 and July, respectively) already folded into this week's daily summaries. Checked an NDTV Profit-syndicated "Iran tensions" weekly outlook piece (via Daily Pioneer / Time News mirrors) and a Moneycontrol correction-analysis piece and an FXEmpire technical piece — all three restated the same payrolls/Fed/CPI-on-Sept-11 narrative already in today's daily summary, or cited stale/inconsistent figures, with no new verifiable fact to add. Remaining RSS items were out of scope for this audience (Bangladesh bhori prices, a Korean gold-covered-call ETF product, an Endeavour Mining dividend story, Ghana GoldBod/LBMA benchmark news). Per the "only skip when it's a word-for-word rehash with nothing to add" bar, held off rather than force a low-value article.
+
+## 2026-09-08 01:10 UTC — gold-daily-summary-2026-09-08
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Mon 7 Sept 2026 (first real trading day after the weekend's flat 69,150 quote) opened 68,750, high 68,850, low 68,450, closed 68,550 THB (-200, -0.29%) per GTA's hourly OHLC feed — global gold tumbled toward $4,395 and held below $4,400 after Friday's stronger-than-expected August NFP (162K vs 56K forecast) pushed September Fed rate-hike odds to ~58.3%, with US-Iran Strait of Hormuz tensions offering only partial oil-driven support; outlook flagged today's ADP report, Thursday's PPI, and Friday's CPI/Michigan sentiment ahead of the Sept 16 FOMC meeting, sourced via two FXStreet reports (Tai Wong, TD Securities quotes).
+
+## 2026-09-08 01:20 UTC — gold-price-drop-600-baht-nfp-fed-hike-2026-09-08
+- Trigger: scheduled (daily 08:00)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai gold closed down 600 baht (28 price changes) on 2026-09-07 per the Gold Traders Association of Thailand, after August US Nonfarm Payrolls beat expectations by a wide margin (162k vs 55k), lifting Fed September rate-hike odds from ~50% to ~58-60% and pushing world spot gold down 0.8% to ~$4,392.88/oz; outlook now hinges on this week's US PPI (Thu) and CPI (Fri) prints per Reuters/KCM Trade analyst commentary.
