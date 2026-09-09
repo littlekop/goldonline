@@ -510,3 +510,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Thai gold closed down 600 baht (28 price changes) on 2026-09-07 per the Gold Traders Association of Thailand, after August US Nonfarm Payrolls beat expectations by a wide margin (162k vs 55k), lifting Fed September rate-hike odds from ~50% to ~58-60% and pushing world spot gold down 0.8% to ~$4,392.88/oz; outlook now hinges on this week's US PPI (Thu) and CPI (Fri) prints per Reuters/KCM Trade analyst commentary.
+
+## 2026-09-09 01:08 UTC — gold-daily-summary-2026-09-09
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed (note: item 1 sourced via corroborated secondary reporting rather than a direct feed fetch — see summary)
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Tue 8 Sept 2026 opened 68,900 (+350 vs Mon's 68,550 close), high 68,900, low 68,550, closed 68,600 THB (net +50 vs Monday, -300/-0.44% vs the day's own open) — the GTA's own OHLC API (goldtraders.or.th) was unreachable this run despite ~30 retries and NXDOMAIN from both Google (8.8.8.8) and Cloudflare (1.1.1.1) public DNS resolvers, confirming a genuine outage rather than a transient blip; numbers instead cross-verified via two independent Thairath reports of the GTA's own official price announcements (consistent with each other and with a direct GTA feed fetch of Monday's 68,550 close captured earlier this run). Driver: Yahoo Finance reported gold torn between rising Fed rate-hike bets (meeting starts Sept 15) pressuring prices down and Iran/Middle East tensions pushing oil near $100/barrel offering support; quotes from Darrell Fletcher (Bannockburn Capital Markets) and Alex Tsepaev (B2PRIME Group) included, with this week's PPI (Thu)/CPI (Fri) flagged as next catalysts.
+
+## 2026-09-09 01:13 UTC — gold-price-drop-4350-oil-dow-plunge-2026-09-09
+- Trigger: scheduled (daily 08:00, part 2 — after daily summary)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Distinct from today's daily summary (which covered Tuesday 8 Sept Thai price action) — this piece covers gold's further slide to near $4,350/oz in early Wednesday Asian trade, alongside Wall Street's sharpest one-day drop in a while (Dow -628.18pts/-1.2% to 52,786.07, per Eurasia Business News) as Brent neared $99.45 intraday and WTI hit a post-early-June high near $92-93 on Houthi attacks on Saudi energy facilities and reported explosions near Iran's Kharg Island; framed as oil-driven inflation fears (CME FedWatch 59.4% vs a separate FXStreet report's 63% Fed September hike odds) outweighing gold's usual safe-haven bid, with Christopher Wong (OCBC) quoted via FXStreet and PPI (Thu)/CPI (Fri) flagged ahead of the Sept 15 FOMC.
