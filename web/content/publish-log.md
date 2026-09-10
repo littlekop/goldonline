@@ -524,3 +524,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Distinct from today's daily summary (which covered Tuesday 8 Sept Thai price action) — this piece covers gold's further slide to near $4,350/oz in early Wednesday Asian trade, alongside Wall Street's sharpest one-day drop in a while (Dow -628.18pts/-1.2% to 52,786.07, per Eurasia Business News) as Brent neared $99.45 intraday and WTI hit a post-early-June high near $92-93 on Houthi attacks on Saudi energy facilities and reported explosions near Iran's Kharg Island; framed as oil-driven inflation fears (CME FedWatch 59.4% vs a separate FXStreet report's 63% Fed September hike odds) outweighing gold's usual safe-haven bid, with Christopher Wong (OCBC) quoted via FXStreet and PPI (Thu)/CPI (Fri) flagged ahead of the Sept 15 FOMC.
+
+## 2026-09-10 01:02 UTC — gold-daily-summary-2026-09-10
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Wed 9 Sept 2026 opened 68,150 THB (gap down 450 vs Tue's 68,600 close), high 68,550, low 68,100, closed 68,450 (+300/+0.44% vs the day's own open, but -150/-0.22% vs Tuesday's close) per the GTA's own OHLC feed, after US strikes sank five Iranian oil tankers (world gold opened -0.9% at $4,399/oz per Yahoo Finance) before a weaker dollar helped gold reclaim $4,400 and snap a three-day losing streak per FXStreet, with TD Securities quoted on data sensitivity ahead of today's PPI (Thu) and tomorrow's CPI (Fri) print before the Sept 15-16 FOMC meeting.
+
+## 2026-09-10 01:10 UTC — gold-price-pboc-china-buying-etf-inflows-2026-09-10
+- Trigger: scheduled (daily 08:00, part 2, 24h RSS lookback)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: PBOC gold buying (650,000 oz / ~20.2t in August, 22nd straight month, biggest monthly add since Oct 2023) and WGC-reported $18B gold ETF inflows in August (2nd-largest on record, sovereign debt/yield-driven) were fresh, uncovered demand-side stories not duplicative of same-day daily summary or prior ETF/central-bank articles; wrote and published new article citing investingLive, KITCO, and goldsilver.com.
