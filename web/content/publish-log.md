@@ -538,3 +538,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: PBOC gold buying (650,000 oz / ~20.2t in August, 22nd straight month, biggest monthly add since Oct 2023) and WGC-reported $18B gold ETF inflows in August (2nd-largest on record, sovereign debt/yield-driven) were fresh, uncovered demand-side stories not duplicative of same-day daily summary or prior ETF/central-bank articles; wrote and published new article citing investingLive, KITCO, and goldsilver.com.
+
+## 2026-09-11 01:02 UTC — gold-daily-summary-2026-09-11
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Thu 10 Sept 2026 opened 68,700 THB (+250 vs Wed's 68,450 close), high 69,000, low 68,500, closed 68,550 (-150/-0.22% vs the day's own open, but +100/+0.15% vs Wednesday's close) per the GTA's own OHLC feed, as the market awaited US PPI/CPI ahead of the Sept 15-16 FOMC; hot August PPI (5.4% YoY, above forecast) released after Thai market close per GoldSilver.com sank world gold ~0.7-0.9% to ~$4,370/oz and silver 3-4%, pushing Fed September hike odds to ~60% (a sharp reversal from prior "Fed done hiking" pricing), framed as an oil-driven inflation shock (diesel +24.1%) rather than economic overheating; outlook flags Friday's CPI as the last data point before FOMC, sourced via Yahoo Finance and GoldSilver.com.
+
+## 2026-09-11 01:10 UTC — gold-price-drop-4320-iran-tanker-fed-hike-70-2026-09-11
+- Trigger: scheduled (daily 08:00, part 2 of 2)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Gold fell below $4,320/oz in early Asian trade Friday Sept 11 after Iran and the US clashed over oil tankers near the Strait of Hormuz (Iran hit 10 ships, US sank 5 Iranian tankers — worst maritime clash in 6 months), sending WTI/Brent above $100 for the first time since May; combined with hot US PPI (5.4% YoY), CME FedWatch odds of a Fed hike next week jumped to 70%; TD Securities flagged $4,367 and $4,300 as key support levels to watch, though it stays long-term bullish ($5,350 by Q3 2027). Distinct new material vs. today's earlier daily-summary article (fresh Iran-US tanker attack details, new $4,320 price level, updated 70% hike odds vs. 60% reported earlier).
