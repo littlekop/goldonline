@@ -552,3 +552,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Gold fell below $4,320/oz in early Asian trade Friday Sept 11 after Iran and the US clashed over oil tankers near the Strait of Hormuz (Iran hit 10 ships, US sank 5 Iranian tankers — worst maritime clash in 6 months), sending WTI/Brent above $100 for the first time since May; combined with hot US PPI (5.4% YoY), CME FedWatch odds of a Fed hike next week jumped to 70%; TD Securities flagged $4,367 and $4,300 as key support levels to watch, though it stays long-term bullish ($5,350 by Q3 2027). Distinct new material vs. today's earlier daily-summary article (fresh Iran-US tanker attack details, new $4,320 price level, updated 70% hike odds vs. 60% reported earlier).
+
+## 2026-09-12 01:03 UTC — gold-daily-summary-2026-09-12
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Fri 11 Sept 2026 opened 68,000 THB, high 68,200, low 67,650, closed 68,050 (+50/+0.07% vs open, tight 550-baht range) per the GTA's own OHLC feed, as the market awaited the US August CPI report ahead of the Sept 15-16 FOMC; world gold (Dec futures) opened Friday at a one-month low of $4,359.40/oz on rising ~70% Fed-hike odds per Yahoo Finance, then after Thai market close hot CPI (3.4% YoY, core 2.4%) initially sank gold below $4,300 but it reversed sharply to +1.29% at $4,373.70 as the 10-year Treasury yield dipped and University of Michigan consumer sentiment slumped to 47.8, per FXStreet; outlook flags the FOMC meeting and whether soft-economy signals keep outweighing hike odds.
+
+## 2026-09-12 01:10 UTC — gold-wall-street-survey-ubs-fed-outlook-2026-09-12
+- Trigger: scheduled (daily 08:00, part 2 — after daily summary)
+- Outcome: published
+- Self-check: 8/8 passed (note: item 1 partially relies on the same-day already-published daily summary for the Fri 11 Sept 68,050 THB close, since the GTA OHLC feed returned HTTP 403 to a direct WebFetch this run — consistent with prior precedent when the feed wasn't directly fetchable; core new claims (Kitco survey, UBS quote) were freshly fetched and read)
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Distinct new material vs. today's earlier daily-summary article and Sept 11's Iran/tanker piece — Kitco's Sept 11 Weekly Gold Survey (Wall Street 64% bullish, up from split view a week earlier; Main Street 53% bullish by a narrow margin) with named analyst targets (Marc Chandler $4,460-4,510, Jesse Colombo/Bob Haberkorn eyeing $5,000), plus UBS strategist Joni Teves warning of a possible short-term "knee-jerk" pullback if the Fed hikes on Sept 15-16 but staying bullish long-term on PBOC buying (~20t in August, ~80t YTD), ETF inflows, and Indian seasonal demand; framed as forward-looking analyst outlook ahead of FOMC, not the article's own advice.
