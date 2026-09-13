@@ -566,3 +566,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed (note: item 1 partially relies on the same-day already-published daily summary for the Fri 11 Sept 68,050 THB close, since the GTA OHLC feed returned HTTP 403 to a direct WebFetch this run — consistent with prior precedent when the feed wasn't directly fetchable; core new claims (Kitco survey, UBS quote) were freshly fetched and read)
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Distinct new material vs. today's earlier daily-summary article and Sept 11's Iran/tanker piece — Kitco's Sept 11 Weekly Gold Survey (Wall Street 64% bullish, up from split view a week earlier; Main Street 53% bullish by a narrow margin) with named analyst targets (Marc Chandler $4,460-4,510, Jesse Colombo/Bob Haberkorn eyeing $5,000), plus UBS strategist Joni Teves warning of a possible short-term "knee-jerk" pullback if the Fed hikes on Sept 15-16 but staying bullish long-term on PBOC buying (~20t in August, ~80t YTD), ETF inflows, and Indian seasonal demand; framed as forward-looking analyst outlook ahead of FOMC, not the article's own advice.
+
+## 2026-09-13 01:20 UTC — gold-daily-summary-2026-09-13
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Sat 12 Sept 2026 posted a single flat quote all day (O=H=L=C=68,250 THB, per GTA's hourly OHLC feed), +200 baht (+0.29%) above Friday 11 Sept's 68,050 close, reflecting the weekend single-reference-quote convention catching up to Friday's volatile world gold session: futures opened at $4,359.40 (down 1.1%, a 1-month low) ahead of in-line US August CPI (3.4% YoY/0.4% MoM) but hotter core CPI (0.3% MoM) and a weak Michigan sentiment reading (47.8), whipsawing gold from a weekly low near $4,293 to a high near $4,402 before settling near $4,362 intraday (per FX Daily Report) and closing the week at $4,348.60, -1.84% weekly, a third straight weekly loss, as Fed September rate-hike odds climbed to ~90% (per FMV Gold); outlook flagged the Sept 15-16 FOMC meeting, a widely expected quarter-point hike from 3.50-3.75%, and Fed Chair Kevin Warsh's Wednesday 2:30pm ET press conference.
+
+## 2026-09-13 01:05 UTC — no article
+- Trigger: scheduled (daily 08:00, part 2 of run)
+- Outcome: no newsworthy news found
+- Self-check: n/a — no draft written
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Checked last-24h RSS pull; nearly all leads (post-CPI gold rebound to ~$4,400, Fed hike odds climbing to ~85-90% ahead of Sept 15-16 FOMC, Iran/Hormuz tanker conflict) were already fully covered by gold-daily-summary-2026-09-13 (published minutes earlier by a separate run) and by the already-published gold-price-drop-4320-iran-tanker-fed-hike-70-2026-09-11 and gold-wall-street-survey-ubs-fed-outlook-2026-09-12. A StoneX "Dead Cat Bounce" piece surfaced by Google News as if same-day was found on fetch to carry a March 31, 2026 byline and mismatched market context, so it was discarded as likely stale/mis-indexed rather than cited. No genuinely new, uncovered story cleared the bar, so no article was written.
