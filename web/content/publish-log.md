@@ -580,3 +580,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: n/a — no draft written
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Checked last-24h RSS pull; nearly all leads (post-CPI gold rebound to ~$4,400, Fed hike odds climbing to ~85-90% ahead of Sept 15-16 FOMC, Iran/Hormuz tanker conflict) were already fully covered by gold-daily-summary-2026-09-13 (published minutes earlier by a separate run) and by the already-published gold-price-drop-4320-iran-tanker-fed-hike-70-2026-09-11 and gold-wall-street-survey-ubs-fed-outlook-2026-09-12. A StoneX "Dead Cat Bounce" piece surfaced by Google News as if same-day was found on fetch to carry a March 31, 2026 byline and mismatched market context, so it was discarded as likely stale/mis-indexed rather than cited. No genuinely new, uncovered story cleared the bar, so no article was written.
+
+## 2026-09-14 01:10 UTC — gold-daily-summary-2026-09-14
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Sun 13 Sept 2026 posted a second straight fully flat day (O=H=L=C=68,250 THB, single weekend reference quote per GTA's own hourly OHLC feed), unchanged from Saturday 12 Sept's also-flat 68,250 close, as the Thai market stayed closed for the weekend; world gold closed out the week under $4,400/oz with the 10-year Treasury yield at 4.96% (highest since Oct 2023) capping gains, per FXStreet's weekly forecast, marking a third straight weekly loss per GoldSilver.com, with Deutsche Bank (hot PPI feeding into PCE) and TD Securities ("constructive" backdrop, hawkish Fed may only delay rather than derail the next leg higher) quoted ahead of the Sept 15-16 FOMC meeting, dot-plot revision, and Fed Chair Kevin Warsh's press conference; FXStreet flagged $4,510-4,535 as key technical resistance to watch this week.
+
+## 2026-09-14 01:10 UTC — gold-price-cpi-rebound-fed-hike-87-percent-2026-09-14
+- Trigger: scheduled (daily 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: World spot gold rebounded 1.2% to $4,366.69/oz on Friday Sep 11 despite a hot US August CPI report (headline +0.4% m/m, core +0.3% m/m), which pushed the CME FedWatch odds of a Sept 15-16 Fed rate hike to 87% from 67% (FXStreet's Prime Terminal data put it as high as 91%); crude oil holding above $100/barrel on US-Iran tensions is now layering onto that as an inflation complication ("three-way headwind" per Business Today); Thai gold bar held flat at 68,250/68,050 THB (GTA, as of Sunday 13 Sep close) pending Monday's reopen. New numbers not covered in today's earlier daily-summary article (which only had the 70% hike-odds figure and last week's close/yield levels) or in the Sept 11 Iran-tanker article.
