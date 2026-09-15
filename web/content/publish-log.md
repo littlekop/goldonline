@@ -594,3 +594,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: World spot gold rebounded 1.2% to $4,366.69/oz on Friday Sep 11 despite a hot US August CPI report (headline +0.4% m/m, core +0.3% m/m), which pushed the CME FedWatch odds of a Sept 15-16 Fed rate hike to 87% from 67% (FXStreet's Prime Terminal data put it as high as 91%); crude oil holding above $100/barrel on US-Iran tensions is now layering onto that as an inflation complication ("three-way headwind" per Business Today); Thai gold bar held flat at 68,250/68,050 THB (GTA, as of Sunday 13 Sep close) pending Monday's reopen. New numbers not covered in today's earlier daily-summary article (which only had the 70% hike-odds figure and last week's close/yield levels) or in the Sept 11 Iran-tanker article.
+
+## 2026-09-15 01:02 UTC — gold-daily-summary-2026-09-15
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Mon 14 Sept 2026 opened at 68,250 THB, held there for its high, slid to a low of 67,550 THB, and closed at 67,600 THB (-650 THB on the day), per GTA's own hourly OHLC feed; the drop tracked hot US August CPI (+0.4% m/m, +3.4% y/y, gasoline +3.9%) and rising oil prices (Brent above $107/bbl) pushing CME FedWatch odds of a Sept 15-16 Fed rate hike to ~85.8%, per the Gold Traders Association's own site and Money & Banking Magazine (which independently confirmed the same -650 THB move to 68,400 jewelry-gold), with world spot gold easing to ~$4,290/oz per Bloomberg.
+
+## 2026-09-15 01:07 UTC — gold-price-one-month-low-yield-5-percent-houthi-2026-09-14
+- Trigger: scheduled (daily 08:00, part 2 of run)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Distinct new material vs. today's earlier daily-summary and the Sept 14 CPI-rebound article — Monday Sept 14 gold hit a fresh one-month low ($4,253 intraday per FXStreet; $4,312.59/-0.8% per Reuters/Kitco, lowest since Aug 7) as the US 10-year Treasury yield crossed 5% for the first time since 2023, and a new Houthi attack on Saudi Arabia's East-West oil pipeline (forcing a shutdown of ~7 million bpd) pushed WTI above $100, distinct from the earlier-reported Iran-US tanker clashes near Hormuz; Fed hike odds rose to 92-93% (from 85.8-87% reported earlier the same week), a Reuters poll of economists flagged a likely additional Fed hike by end of March 2027 (a new forward-looking data point), with a named quote from Jim Wyckoff (American Gold Exchange) and fresh cross-metals/FX data (silver, platinum, palladium, dollar 2-week high); also folded in World Gold Council's own August PBOC-buying confirmation (9% of FX reserves, up from 8%).
