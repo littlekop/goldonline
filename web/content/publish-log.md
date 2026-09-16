@@ -608,3 +608,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Distinct new material vs. today's earlier daily-summary and the Sept 14 CPI-rebound article — Monday Sept 14 gold hit a fresh one-month low ($4,253 intraday per FXStreet; $4,312.59/-0.8% per Reuters/Kitco, lowest since Aug 7) as the US 10-year Treasury yield crossed 5% for the first time since 2023, and a new Houthi attack on Saudi Arabia's East-West oil pipeline (forcing a shutdown of ~7 million bpd) pushed WTI above $100, distinct from the earlier-reported Iran-US tanker clashes near Hormuz; Fed hike odds rose to 92-93% (from 85.8-87% reported earlier the same week), a Reuters poll of economists flagged a likely additional Fed hike by end of March 2027 (a new forward-looking data point), with a named quote from Jim Wyckoff (American Gold Exchange) and fresh cross-metals/FX data (silver, platinum, palladium, dollar 2-week high); also folded in World Gold Council's own August PBOC-buying confirmation (9% of FX reserves, up from 8%).
+
+## 2026-09-16 01:01 UTC — gold-daily-summary-2026-09-16
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Tue 15 Sept 2026 opened at 67,750 THB, rose to a high of 67,900 THB, fell to a low of 67,300 THB, and closed at 67,400 THB (-350 THB on the day), per GTA's own hourly OHLC feed; the second straight down day tracked a stronger US dollar and the 10-year Treasury yield hitting its highest level since 2007 ahead of the Sept 15-16 FOMC meeting, with CME FedWatch odds of a Fed rate hike surging to 92.5% (from 86.5% the day before), per Yahoo Finance and Tradingpedia, plus continued Houthi/Saudi oil-supply tension keeping the dollar's safe-haven bid firm; named quotes from Darrell Fletcher (Bannockburn Capital Markets) and Alex Tsepaev (B2PRIME Group) included.
+
+## 2026-09-16 01:10 UTC — gold-price-citi-trims-position-empire-state-2026-09-16
+- Trigger: scheduled (daily 08:00, part 2 of 2)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Citi trimmed its long spot-gold position after reassessing the Fed toward a hawkish hike (from TradingPedia), and the NY Fed's Empire State manufacturing survey missed badly (7.6 vs 14.8 expected, down from 20.6, per Kitco) with gold barely reacting as the market focuses on tonight's FOMC decision — both genuinely new items not covered by today's daily summary article.
