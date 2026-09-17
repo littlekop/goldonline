@@ -622,3 +622,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Citi trimmed its long spot-gold position after reassessing the Fed toward a hawkish hike (from TradingPedia), and the NY Fed's Empire State manufacturing survey missed badly (7.6 vs 14.8 expected, down from 20.6, per Kitco) with gold barely reacting as the market focuses on tonight's FOMC decision — both genuinely new items not covered by today's daily summary article.
+
+## 2026-09-17 01:05 UTC — gold-daily-summary-2026-09-17
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Wed 16 Sept 2026 opened at 67,600 THB and climbed steadily all day to close at 68,400 THB (+800 THB), per GTA's own hourly OHLC feed, tracking a pre-FOMC short-covering bounce in world gold (up ~$50 overnight to ~$4,383, per FXStreet) ahead of the 94%-probability Fed rate-hike odds; after Thai trading hours closed, the Fed delivered the hike to 3.75-4.00% and Chair Kevin Warsh's hawkish press conference plus a dot plot signaling further hikes (per CNBC and GoldSilver.com) sent world gold reversing from ~$4,368 down to ~$4,306 (+0.3% on the day, giving back its earlier gains) — flagged as a risk for today's Thai gold open since that reversal happened after Thai trading hours closed.
+
+## 2026-09-17 01:10 UTC — gold-price-fed-hike-dot-plot-warsh-2026-09-17
+- Trigger: scheduled (daily 08:00 content run, 24h RSS lookback)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Confirmed FOMC outcome (unanimous 12-0 25bp hike to 3.75-4.00%, dot plot shifting to 16-of-18 policymakers expecting another 2026 hike vs 6 in June) with Warsh's hawkish presser quote and gold's continued post-decision slide from >$4,360 to $4,256-4,265 before a partial bounce toward $4,300 — new detail beyond what today's earlier daily-summary article (published 01:04 UTC) covered, so it clears the "new information to report" bar rather than duplicating it.
