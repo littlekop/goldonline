@@ -636,3 +636,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Confirmed FOMC outcome (unanimous 12-0 25bp hike to 3.75-4.00%, dot plot shifting to 16-of-18 policymakers expecting another 2026 hike vs 6 in June) with Warsh's hawkish presser quote and gold's continued post-decision slide from >$4,360 to $4,256-4,265 before a partial bounce toward $4,300 — new detail beyond what today's earlier daily-summary article (published 01:04 UTC) covered, so it clears the "new information to report" bar rather than duplicating it.
+
+## 2026-09-18 01:12 UTC — gold-price-rebound-4381-dollar-oil-2026-09-18
+- Trigger: scheduled (daily 08:00 content run, part 2 of 2, 24h RSS lookback)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Gold rebounded sharply from its post-Fed low of ~$4,257 to a four-day high of $4,381 (per FXEmpire/Bruce Powers), trading near $4,345 in early Asian hours per FXStreet, driven by a second straight day of falling oil prices (Saudi pipeline restoration hopes easing inflation fears, quote from David Meger/High Ridge Futures), a weaker dollar (DXY -0.12% to 100.22), and the 10-year Treasury yield easing 7bp to 4.949% — new information beyond yesterday's Fed-hike-drop article (published 2026-09-17), since that one covered the initial slide to $4,256-4,265 while this covers the subsequent rebound and its distinct drivers; Thai bar gold's Sept 17 close (-300 THB to 68,100 sell) attributed to the Gold Traders Association of Thailand via Thairath, noted as not yet reflecting the overnight world rebound.
+
+## 2026-09-18 01:05 UTC — gold-daily-summary-2026-09-18
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Thu 17 Sept 2026 opened at 68,050 THB, ranged narrowly between 67,750-68,350 THB, and closed at 68,100 THB (+50 THB from open), per GTA's own hourly OHLC feed — a quiet, range-bound session as world gold recovered from its post-Fed-hike low near $4,235 back toward $4,310-4,355 on falling oil prices (Saudi pipeline restoration news easing inflation fears, per Yahoo Finance) and easing Treasury yields (per TradingKey and Rio Times Online), with dollar strength and higher real yields still capping the rebound.
