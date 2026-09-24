@@ -650,3 +650,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 7/7 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Thai bar gold on Thu 17 Sept 2026 opened at 68,050 THB, ranged narrowly between 67,750-68,350 THB, and closed at 68,100 THB (+50 THB from open), per GTA's own hourly OHLC feed — a quiet, range-bound session as world gold recovered from its post-Fed-hike low near $4,235 back toward $4,310-4,355 on falling oil prices (Saudi pipeline restoration news easing inflation fears, per Yahoo Finance) and easing Treasury yields (per TradingKey and Rio Times Online), with dollar strength and higher real yields still capping the rebound.
+
+## 2026-09-24 01:02 UTC — gold-daily-summary-2026-09-24
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Wed 23 Sept 2026 opened at 68,150 THB, hit a high of 68,300 THB and a low of 68,000 THB, and closed at 68,000 THB (-150 THB on the day), per GTA's own hourly OHLC feed; the dollar rose to a two-month high on Fed rate-hike bets (Barkin quote, per Reuters/Kitco), the baht weakened to 33.26 (per Infoquest), and after Thai hours strong US PMI data (mfg 57.0 vs 53.5 expected) plus hawkish Barr/Collins comments pushed world gold below $4,300 (per FXStreet), with October hike odds at 69.7% — flagged as a risk for today's Thai open. Note: no commits/runs exist for 19–23 Sept, so earlier daily summaries appear to have been missed.
+
+## 2026-09-24 01:04 UTC — gold-price-banks-bullish-china-hidden-buying-2026-09-24
+- Trigger: scheduled (daily 08:00 content run, part 2 of 2, 24h RSS lookback)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: With world gold dropping below $4,300, three banks published bullish longer-term views on the same day (all per Kitco): Goldman Sachs kept its $4,900 end-2026 target, with its nowcast putting China's July buying at ~35t vs ~17t officially reported (+75%) and a $4,440 downside scenario; BMO forecast an H2-2026 average of $4,625 and >$5,000 in Q1 2027, citing stronger physical demand in India and China; TD Securities (Ryan McKay) sees >$5,000 into 2027. This is new information beyond the Aug 31 Goldman and Sept 10 PBOC articles.
