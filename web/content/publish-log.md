@@ -664,3 +664,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: With world gold dropping below $4,300, three banks published bullish longer-term views on the same day (all per Kitco): Goldman Sachs kept its $4,900 end-2026 target, with its nowcast putting China's July buying at ~35t vs ~17t officially reported (+75%) and a $4,440 downside scenario; BMO forecast an H2-2026 average of $4,625 and >$5,000 in Q1 2027, citing stronger physical demand in India and China; TD Securities (Ryan McKay) sees >$5,000 into 2027. This is new information beyond the Aug 31 Goldman and Sept 10 PBOC articles.
+
+## 2026-09-25 01:03 UTC — gold-daily-summary-2026-09-25
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Thu 24 Sept 2026 opened at 67,800 THB, hit a high of 67,950 THB, slid to a low of 67,450 THB and closed at 67,500 THB (-300 THB from open, -500 THB vs the prior 68,000 close), per GTA's own hourly OHLC feed. Drivers: oil jumped on reported Houthi attacks on Saudi Arabia (Brent +3.4% to $106.60), the 10-year Treasury yield hit 5.133% (highest since July 2008), DXY rose to 101.28, and Fed officials Paulson and Barr made hawkish comments (per Infoquest/Kitco). Spot gold fell to $4,265 and COMEX Dec closed at $4,298 (-$20.40), while the baht weakened to 33.48, the weakest in the region. The outlook section covers the Trump-Xi trade-truce extension (per Al Jazeera) and $4,235 support.
+
+## 2026-09-25 01:05 UTC — gold-price-trump-xi-truce-l1-fund-2026-09-25
+- Trigger: scheduled (daily 08:00 content run, part 2 of 2, 24h RSS lookback)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: The Trump-Xi summit ended with the US-China trade truce extended to Jan 10 and tariffs unchanged at 36.5%/31% (per NBC News and Al Jazeera, with analyst quotes from Tangen, Le Corre and Sun). Separately, L1 Gold Fund's strategy (Lamm/Landau, ~235% net since Feb 2025, per Discovery Alert citing Bloomberg) views gold's decline as temporary, citing fiscal deficits and central-bank buying. This is new information: the summit outcome and the fund view were not in the Sept 24 bank-forecast article.
