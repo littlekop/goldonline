@@ -678,3 +678,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: The Trump-Xi summit ended with the US-China trade truce extended to Jan 10 and tariffs unchanged at 36.5%/31% (per NBC News and Al Jazeera, with analyst quotes from Tangen, Le Corre and Sun). Separately, L1 Gold Fund's strategy (Lamm/Landau, ~235% net since Feb 2025, per Discovery Alert citing Bloomberg) views gold's decline as temporary, citing fiscal deficits and central-bank buying. This is new information: the summit outcome and the fund view were not in the Sept 24 bank-forecast article.
+
+## 2026-09-26 01:10 UTC — gold-daily-summary-2026-09-26
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Fri 25 Sept 2026 opened at 67,900 THB (the day's high), dipped to a low of 67,450 THB around midday and closed at 67,900 THB (flat vs open, +400 THB vs the prior 67,500 close), per GTA's own hourly OHLC feed. The article covers post-close UMich 1-yr inflation expectations jumping to 4.6%, which pushed spot to $4,254 (per Kitco), and the partial recovery to ~$4,280 as WTI fell 3% on US-Iran talk progress and DXY eased to 101.02 (per FXStreet). COMEX Dec closed +$23.20 at $4,321.20 but posted a 4th weekly loss in 5 weeks, with Oct hike odds at ~66% (per Infoquest). Outlook: Aug PCE on Sept 30 (per StockMarketHours.org).
+
+## 2026-09-26 01:12 UTC — gold-price-thai-customs-gold-tax-study-imports-2026-09-26
+- Trigger: scheduled (daily 08:00 content run, part 2 of 2, 24h RSS lookback)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai Customs Director-General Phanthong Loykulnanta said Thailand imported 901,114.85M THB of gold in 11 months of FY2569 (+53% YoY, 3rd-largest import, ~8% of the total), noted that excluding gold and crude oil Thailand would run a ~400bn THB trade surplus, and said a gold import duty (currently 0%; Malaysia 10%, India 15%) is under study with no decision yet (per Bangkokbiznews). Gold Traders Association chairman Jitti Tangsitpakdee called Jan-Jul imports of 128t (610bn THB) "normal", described the domestic market as sluggish, and sees 70,000+ THB in Q4 (per Thansettakij). China's Jan-Aug imports of 1,100t+ were the highest since at least 2017 (per FXStreet/Money Metals). This is new information: the site had not covered Thai import data or the tax study before.
