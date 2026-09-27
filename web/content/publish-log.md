@@ -692,3 +692,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: 8/8 passed
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: Thai Customs Director-General Phanthong Loykulnanta said Thailand imported 901,114.85M THB of gold in 11 months of FY2569 (+53% YoY, 3rd-largest import, ~8% of the total), noted that excluding gold and crude oil Thailand would run a ~400bn THB trade surplus, and said a gold import duty (currently 0%; Malaysia 10%, India 15%) is under study with no decision yet (per Bangkokbiznews). Gold Traders Association chairman Jitti Tangsitpakdee called Jan-Jul imports of 128t (610bn THB) "normal", described the domestic market as sluggish, and sees 70,000+ THB in Q4 (per Thansettakij). China's Jan-Aug imports of 1,100t+ were the highest since at least 2017 (per FXStreet/Money Metals). This is new information: the site had not covered Thai import data or the tax study before.
+
+## 2026-09-27 01:03 UTC — gold-daily-summary-2026-09-27
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Sat 26 Sept 2026 had a single announcement, so O/H/L/C were all 67,850 THB (flat on the day, -50 THB vs Friday's 67,900 close), per GTA's own hourly OHLC feed; the reference was spot at $4,286 and THB 33.42 (per PPTVHD36/Thairath). With world markets shut for the weekend, the article covers Kitco's Friday wrap (gold $4,284.97, -2.17% on the week, pressured by yields and Fed-hike bets), the split weekly survey (Wall St 36% up/29% down/36% sideways; Main St 57% bullish), and this week's US calendar (PCE Wed 30 Sept, NFP Fri 2 Oct). It links to Jitti's 70,000 THB Q4 view (per Thansettakij).
+
+## 2026-09-27 01:02 UTC — no article
+- Trigger: scheduled (daily 08:00 content run, part 2 of 2, 24h RSS lookback)
+- Outcome: no newsworthy news found
+- Self-check: n/a
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: The 24h RSS pull (31 items, a weekend) had no new information. The Thai Saturday price items are already in today's daily summary. China's 1,100t Jan-Aug imports (Yahoo/Moneywise) and Jitti's 70,000 THB Q4 view (Thansettakij) were covered in the Sept 26 customs article. The Kitco weekly survey and next week's calendar went into today's daily summary. The other items were FXEmpire/FOREX.com/TradingView technical pieces (skipped per the no-forex/CFD rule), Vietnam/Bangladesh/India/Indonesia local prices, or a Bitcoin-vs-gold correlation piece with no gold driver.
