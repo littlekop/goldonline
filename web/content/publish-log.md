@@ -706,3 +706,17 @@ Audit trail for every gold-news-writer run — one entry per run, whether it pub
 - Self-check: n/a
 - Facebook: handled by wrapper script after deploy (not this run's concern)
 - Summary: The 24h RSS pull (31 items, a weekend) had no new information. The Thai Saturday price items are already in today's daily summary. China's 1,100t Jan-Aug imports (Yahoo/Moneywise) and Jitti's 70,000 THB Q4 view (Thansettakij) were covered in the Sept 26 customs article. The Kitco weekly survey and next week's calendar went into today's daily summary. The other items were FXEmpire/FOREX.com/TradingView technical pieces (skipped per the no-forex/CFD rule), Vietnam/Bangladesh/India/Indonesia local prices, or a Bitcoin-vs-gold correlation piece with no gold driver.
+
+## 2026-09-28 01:03 UTC — gold-daily-summary-2026-09-28
+- Trigger: scheduled (daily analysis, 08:00 Asia/Bangkok)
+- Outcome: published
+- Self-check: 7/7 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Thai bar gold on Sun 27 Sept 2026 had a single announcement, so O/H/L/C were all 67,850 THB (flat, unchanged vs Saturday), per GTA's own hourly OHLC feed (confirmed by Thairath: buy 67,650/sell 67,850, jewelry sell 68,650). The article recaps the week (-1,200 THB vs the prior 69,050 weekly close, range 67,450-68,950, per the GTA survey page) and the world backdrop (spot ~$4,285, -2.13% w/w, 10y yield >5%, DXY +0.82%, per FXLeaders). Outlook: PCE 30 Sept, NFP 2 Oct, China Golden Week 1-7 Oct.
+
+## 2026-09-28 01:05 UTC — gold-price-leng-hong-sideways-pce-nonfarm-2026-09-28
+- Trigger: scheduled (daily 08:00 content run, part 2 of 2, 24h RSS lookback)
+- Outcome: published
+- Self-check: 8/8 passed
+- Facebook: handled by wrapper script after deploy (not this run's concern)
+- Summary: Leng Hong Commodities COO Pattarin Wachirakoraphan (per Khaosod via LINE TODAY) sees gold sideways at $4,230-4,430 this week, with pressure from the 10y yield at ~5.09% and >60% odds of an October Fed hike; she puts Thai support at 67,300-67,400 THB and resistance at ~68,200, and gives consensus for Core PCE (+0.1-0.3%) and NFP (162K→98K). The article also covers the GRC weekly survey (investors 45% down, traders 46% flat, per GTA) and FXLeaders' backdrop. This is new information: Leng Hong's view and the week's levels had not been covered. The Economic Times forecast piece was unfetchable and was skipped. The Gold Fields/Northern Star M&A item was skipped as not a gold-price driver.
